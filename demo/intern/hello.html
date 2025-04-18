@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Valuation Report</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: white;
+        }
+
+        .content-wrapper {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            margin-left: 10px;
+        }
+
+        .logo-text span {
+            color: #FFA500;
+        }
+
+        .logo-text .ki {
+            color: #800080;
+        }
+        .divider {
+            height: 2px;
+            background-color: lightgray;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #0066FF;
+            font-weight: bold;
+            text-align: right;
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .request-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .request-by {
+            font-weight: bold;
+        }
+
+        .ticket-no {
+            background: #3B5998;
+            color: white;
+            margin-top: 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        .vehicle-details {
+            margin-bottom: 20px;
+        }
+
+        .vehicle-name {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .model {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .registration {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .loan-account {
+            font-size: 16px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .vehicle-image {
+            width: 60%;
+        }
+
+        .vehicle-image img {
+            width: 80%;
+            border: 1px solid #ddd;
+        }
+
+        .rating-section {
+            width: 35%;
+            display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+        }
+
+        .rating-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            justify-content: flex-end;  /* This will align the rating boxes to the right */
+    width: 100%;
+        }
+
+        .overall-rating {
+            align-content: right;
+            background: #E6E6FA;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .valuation-price {
+            background: #FFE4B5;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .price-details {
+            text-align: right;
+            font-size: 16px;
+            line-height: 1.6;
+            width: 100%;
+        }
+
+        .score-section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .score {
+            width: 60px;
+            height: 60px;
+            background: #FFA500;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .qr-code {
+            width: 80px;
+            height: 80px;
+        }
+
+        .major-issues {
+            width: 40%;
+            margin-left: auto;
+            margin-top: 20px;
+        }
+
+        .issues-header {
+            background: #FFA07A;
+            padding: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .issues-content {
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .remarks {
+            background: #FFE4E1;
+            padding: 15px;
+            margin-top: 20px;
+            width: 40%;
+        }
+
+        .v-de-dupe {
+            background: #32CD32;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: flex-end; 
+        }
+        .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    width: 100%;
+    background: #e0e0e0;
+}
+
+.grid-item {
+    padding: 15px;
+    text-align: center;
+    background: white;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px;
+}
+
+.label {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.value {
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.details-table td {
+    border: 1px solid #e0e0e0;
+    padding: 8px 12px;
+}
+
+.details-table td:first-child {
+    font-weight: 500;
+    width: 25%;
+    color: #2c3e50;
+}
+.policy-container {
+    display: flex;
+    width: 100%;
+    gap: 1px;
+    font-family: Arial, sans-serif;
+}
+ h3{
+    margin-bottom: 5px;
+    margin-left: 10px;
+ }
+.policy-box {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+}
+
+.policy-label {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.policy-number {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.policy-company {
+    font-size: 16px;
+}
+.video-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.video-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+}
+
+.video-player {
+    display: none; /* Hidden by default */
+    width: 100%;
+}
+
+.video-player.active {
+    display: block;
+}
+
+.video-preview {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #333;
+    color: white;
+}
+
+.video-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.play-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.video-link {
+    text-align: center;
+    padding: 15px;
+    color: #0066cc;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.video-link:hover {
+    text-decoration: underline;
+}
+.ve-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 100%;
+        }
+
+        .ve-item {
+            position: relative;
+            width: calc(33.33% - 5px); /* Adjusted to remove side gaps */
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .ve-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .ve-label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: lightgray;
+            color: #333;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .ve-item {
+                width: calc(50% - 5px); /* 2 columns on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ve-item {
+                width: 100%; /* 1 column on mobile */
+            }
+        }
+        .veh-container {
+            max-width: 100%;
+        }
+
+        /* Row labels styling */
+        .veh-label-row {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: white;
+        }
+
+        .veh-label-row span {
+            flex: 1;
+            text-align: center;
+            color: #444;
+        }
+
+        /* Light grey separator line */
+        .veh-separator {
+            width: 100%;
+            height: 2px;
+            background: #d3d3d3;
+            margin: 5px 0;
+        }
+
+        /* Image grid container */
+        .veh-image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .veh-item {
+            position: relative;
+            width: calc(25% - 10px); /* 4 columns */
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .veh-item img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Image labels */
+        .veh-label {
+            text-align: center;
+            display: block;
+            padding: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            background: lightgray;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .veh-item {
+                width: calc(33.33% - 10px); /* 3 columns on medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .veh-item {
+                width: calc(50% - 10px); /* 2 columns on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .veh-item {
+                width: 100%; /* 1 column on mobile */
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="{{TVS_logo}}" alt="TVS Logo">
+                <div class="logo-text">
+                    AUTO<span>ASSIST</span> (<span class="ki">Ki</span> Mobility)
+                </div>
+            </div>
+            <div class="title">
+                VEHICLE VALUATION REPORT<br>
+                FOR PRIVATE VEHICLE
+            </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="request-section">
+            <div class="request-by">
+                <p>Report Requested By</p><br>
+                <img src="{{Bank_logo}}" alt="Axis Bank Logo">
+            </div>
+            <div class="ticket-no">
+                {{Ticket_no}}
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="vehicle-details">
+            <div class="vehicle-name">{{Vehicle_Brand}}</div>
+            <div class="model">{{Vehicle_Model}}</div>
+            <div class="registration">{{REGISTRATION_NO}}</div>
+            <div class="loan-account">{{Loan_Account_No}}</div>
+        </div>
+
+        <div class="main-content">
+            <div class="vehicle-image">
+                <img src="{{Vehicle_Img}}" alt="Vehicle Image">
+            </div>
+            <div class="rating-section">
+                <div class="rating-box">
+                    <div class="overall-rating">
+                        Overall Rating:<br>
+                        <strong>{{rating}}</strong> ✅✅✅
+                    </div>
+                    <div class="valuation-price">
+                        Valuation Price:<br>
+                        <strong>{{valuation_price}}</strong>
+                    </div>
+                </div>
+                <div class="price-details">
+                    Ex Showroom Price: <strong>{{Ex_showroom_price}}</strong><br>
+                    Resell Value: <strong>{{Resell_value}}</strong><br>
+                    Report Date: <strong>{{Report_Date}}</strong>
+                </div>
+                <div class="v-de-dupe">{{V_DE_DUPE}}</div>
+            </div>
+        </div>
+
+        <div class="score-section">
+            SCORE
+            <div class="score">{{val}}</div>
+            <img src="{{QR_code_link}}" alt="QR Code" class="qr-code">
+        </div>
+
+        <div class="major-issues">
+            <div class="issues-header">Major Issues</div>
+            <div class="issues-content">
+                <img src="/api/placeholder/25/25" alt="Wrench Icon">
+                {{Major_Issues}}
+            </div>
+        </div>
+
+        <div class="remarks">
+            <strong>Additional Remarks:</strong> {{Remarks}}
+        </div>
+        <div class="divider"></div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="icon">🎨</div>
+                <div class="label">Color</div>
+                <div class="value">{{color}}</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">⛽</div>
+                <div class="label">Fuel Type</div>
+                <div class="value">{{Fuel_type}}</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">⌛</div>
+                <div class="label">Month, Year</div>
+                <div class="value">{{Month_Year}}</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">👤</div>
+                <div class="label">Owners</div>
+                <div class="value">{{no_of_owners}}</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v2"/>
+                        <path d="M12 16v2"/>
+                        <path d="M6 12h2"/>
+                        <path d="M16 12h2"/>
+                        <path d="M12 12L8 8"/>
+                    </svg>
+                </div>
+                <div class="label">Odometer</div>
+                <div class="value">{{Reading}}</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">🔄</div>
+                <div class="label">Transmission</div>
+                <div class="value">{{transmission}}</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">🚙</div>
+                <div class="label">Vehicle Type</div>
+                <div class="value">{{vehicle_type}}</div>
+            </div>
+            <div class="grid-item">
+                <div class="icon">✓</div>
+                <div class="label">Insurance</div>
+                <div class="value">{{insurance}}</div>
+            </div>
+            
+        </div>
+        <div class="divider"></div>
+        <div class="title">VAHAN DETAILS</div>
+    
+        <table class="details-table">
+            <tr>
+                <td>Owner Name</td>
+                <td>{{Owner_Name}}</td>
+                <td>Present Address</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Permanent Address</td>
+                <td>{{Permanent_Address}}</td>
+                <td>Financier</td>
+                <td>{{Financier}}</td>
+            </tr>
+            <tr>
+                <td>Insurer</td>
+                <td>{{Insurer}}</td>
+                <td>Registration Number</td>
+                <td>{{Registration_Number}}</td>
+            </tr>
+            <tr>
+                <td>Registered at RTO</td>
+                <td>{{RTO_Office}}</td>
+                <td>Owner Serial No.</td>
+                <td>{{Serial_No}}</td>
+            </tr>
+            <tr>
+                <td>Vehicle Make</td>
+                <td>{{Vehicle_Maker}}</td>
+                <td>Color</td>
+                <td>{{Couor_of_vehicle}}</td>
+            </tr>
+            <tr>
+                <td>Chassis Number</td>
+                <td>{{Chassis_number}}</td>
+                <td>Engine Number</td>
+                <td>{{Engine_Number}}</td>
+            </tr>
+            <tr>
+                <td>Vehicle Category</td>
+                <td>{{Vehicle_Category}}</td>
+                <td>Vehicle Class Description</td>
+                <td>{{Vehicle_Class_Description}}</td>
+            </tr>
+            <tr>
+                <td>Body Type</td>
+                <td>{{Body_Type}}</td>
+                <td>Mobile No</td>
+                <td>{{Mobile_No}}</td>
+            </tr>
+            <tr>
+                <td>RC Fitness Validity</td>
+                <td>{{Fitness_validity}}</td>
+                <td>RC Tax Validity</td>
+                <td>{{Tax_validity}}</td>
+            </tr>
+            <tr>
+                <td>Insurance Policy Number</td>
+                <td>{{Policy_No}}</td>
+                <td>Insurance Validity</td>
+                <td>{{Insu_Validity}}</td>
+            </tr>
+            <tr>
+                <td>Registration Date</td>
+                <td>{{Registration_Date}}</td>
+                <td>RC Status</td>
+                <td>{{RC_Status}}</td>
+            </tr>
+            <tr>
+                <td>Manufacturing Date</td>
+                <td>{{Manufacturing_Date}}</td>
+                <td>Vehicle Model</td>
+                <td>{{Vehicle_Model}}</td>
+            </tr>
+            <tr>
+                <td>Fuel</td>
+                <td>{{Fuel_Type}}</td>
+                <td>Fuel Norms</td>
+                <td>{{Fuel_Norms}}</td>
+            </tr>
+            <tr>
+                <td>Engine Cubic Capacity</td>
+                <td>{{Cubic_Capacity}}</td>
+                <td>NCRB Status</td>
+                <td>{{status}}</td>
+            </tr>
+            <tr>
+                <td>Blacklist Status</td>
+                <td>{{Blacklist_Status}}</td>
+                <td>NOC Details</td>
+                <td>{{NOC_Details}}</td>
+            </tr>
+            <tr>
+                <td>Permit No</td>
+                <td>{{Permit_No}}</td>
+                <td>Permit Issue Date</td>
+                <td>{{Permit_Issue_Date}}</td>
+            </tr>
+            <tr>
+                <td>Permit Valid from Date</td>
+                <td>{{Permit_valid_from}}</td>
+                <td>Permit Valid upto Date</td>
+                <td>{{Permit_valid_to}}</td>
+            </tr>
+            <tr>
+                <td>Permit Type</td>
+                <td>{{Permit_Type}}</td>
+                <td>RC Status as on</td>
+                <td>{{RC_Status_till}}</td>
+            </tr>
+        </table>
+         <h3>Policy Details</h3>
+        <div class="policy-container">
+            <div class="policy-box">
+                <div class="policy-label">Policy Number</div>
+                <div class="policy-number">{{policy_Number}}</div>
+                <div class="policy-company">{{Policy_company}}</div>
+            </div>
+            <div class="policy-box">
+                <div class="policy-label">Policy Period</div>
+                <div class="policy-number">{{policy_Period}}</div>
+            </div>
+        </div>
+        <div class="video-section">
+            <div class="video-title">Dashboard and Chassis Number Video</div>
+            <div class="video-container">
+                <video id="dashboardVideo" class="video-player" controls>
+                    <source src="{{VIDEO_URL}}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <div id="videoPreview" class="video-preview">
+                    <div class="video-controls">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="10 8 16 12 10 16" fill="currentColor"/>
+                        </svg>
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                </div>
+                <a class="video-link" onclick="playVideo(); return false;">Click to view video</a>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: left; padding: 24px;">
+
+            <!-- Title and Link (Aligned Left & Right) -->
+            <div style="width: 100%; max-width: 640px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <p>CHASSIS NUMBER</p>
+                <a href="#" onclick="showImageModal()" style="color: #2563eb; text-decoration: underline; margin-left: auto;">View Chassis Impression</a>
+            </div>
+    
+            <!-- Chassis Image -->
+            <div style="width: 100%; height: 80vh; overflow: hidden;">
+                <img src="{{Chasis_num_img}}" alt="Chassis Number" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    
+        <!-- Modal (Hidden by default) -->
+        <div id="imageModal" style="position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5);">
+            <div style="position: relative; background: white; padding: 16px; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
+                <button onclick="closeImageModal()" style="position: absolute; top: 8px; right: 8px; font-size: 1.5rem; background: none; border: none; cursor: pointer;">&times;</button>
+                <img src="{{Chasis_num_img}}" alt="Chassis Number" style="width: 100%; max-width: 400px;">
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: left; padding: 24px;">
+
+            <!-- Title and Link (Aligned Left & Right) -->
+            <div style="width: 100%; max-width: 640px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <p>CHASSIS PRINT</p>
+                <a href="#" onclick="showPrintModal()" style="color: #2563eb; text-decoration: underline; margin-left: auto;">View Chassis Impression</a>
+            </div>
+    
+            <!-- Chassis Image -->
+            <div style="width: 100%; height: 80vh; overflow: hidden;">
+                <img src="{{Chasis_print_img}}" alt="Chassis print" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    
+        <!-- Modal (Hidden by default) -->
+        <div id="printModal" style="position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.5);">
+            <div style="position: relative; background: white; padding: 16px; border-radius: 8px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
+                <button onclick="closePrintModal()" style="position: absolute; top: 8px; right: 8px; font-size: 1.5rem; background: none; border: none; cursor: pointer;">&times;</button>
+                <img src="{{Chasis_print_img}}" alt="Chassis print" style="width: 100%; max-width: 400px;">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="ve-container">
+            <div class="ve-item">
+                <span class="ve-label">SELFIE WITH VEHICLE</span>
+                <img src="{{selfie_with_vehicle}}" alt="Selfie with Vehicle">
+            </div>
+            <div class="ve-item">
+                <span class="ve-label">RC FRONT</span>
+                <img src="{{rc_front}}" alt="RC Front">
+            </div>
+            <div class="ve-item">
+                <span class="ve-label">FRONT SIDE</span>
+                <img src="{{front_side}}" alt="Front Side">
+            </div>
+            <div class="ve-item">
+                <span class="ve-label">RIGHT SIDE</span>
+                <img src="{{right_side}}" alt="Right Side">
+            </div>
+            <div class="ve-item">
+                <span class="ve-label">BACK SIDE</span>
+                <img src="{{back_side}}" alt="Back Side">
+            </div>
+            <div class="ve-item">
+                <span class="ve-label">LEFT SIDE</span>
+                <img src="{{left_side}}" alt="Left Side">
+            </div>
+            <div class="ve-item">
+                <span class="ve-label">ENGINE</span>
+                <img src="{{engine}}" alt="Engine">
+            </div>
+            <div class="ve-item">
+                <span class="ve-label">ENGINE & PLATE PHOTO</span>
+                <img src="{{engine_plate}}" alt="Engine & Plate Photo">
+            </div>
+            <div class="ve-item">
+                <span class="ve-label">CHASSIS PLATE</span>
+                <img src="{{chassis_plate}}" alt="Chassis Plate">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="veh-container">
+
+            <!-- Separator -->
+            <div class="veh-separator"></div>
+    
+            <!-- Image section -->
+            <div class="veh-image-container">
+                <div class="veh-item">
+                    <img src="{{odometer_img}}" alt="Odometer">
+                    <span class="veh-label">ODOMETER</span>
+                </div>
+                <div class="veh-item">
+                    <img src="{{dashboard}}" alt="Dashboard">
+                    <span class="veh-label">DASHBOARD</span>
+                </div>
+                <div class="veh-item">
+                    <img src="{{seat}}" alt="Seat">
+                    <span class="veh-label">SEAT</span>
+                </div>
+                <div class="veh-item">
+                    <img src="{{gear_pedal}}" alt="Gear and Pedal">
+                    <span class="veh-label">GEAR AND PEDAL</span>
+                </div>
+            </div>
+    
+
+
+    
+            <!-- Image section -->
+            <div class="veh-image-container">
+                <div class="veh-item">
+                    <img src="{{wind_shield}}" alt="Wind Shield">
+                    <span class="veh-label">WIND SHIELD</span>
+                </div>
+                <div class="veh-item">
+                    <img src="{{all_boot}}" alt="All Boot">
+                    <span class="veh-label">ALL BOOT</span>
+                </div>
+                <div class="veh-item">
+                    <img src="{{tyre1}}" alt="Tyre 1">
+                    <span class="veh-label">TYRE 1 - 90%</span>
+                </div>
+                <div class="veh-item">
+                    <img src="{{tyre2}}" alt="Tyre 2">
+                    <span class="veh-label">TYRE 2 - 90%</span>
+                </div>
+            </div>
+            <!-- Image section -->
+            <div class="veh-image-container">
+                <div class="veh-item">
+                    <img src="{{tyre3}}" alt="Tyre 3">
+                    <span class="veh-label">TYRE 3 - 90%</span>
+                </div>
+                <div class="veh-item">
+                    <img src="{{tyre4}}" alt="Tyre 4">
+                    <span class="veh-label">TYRE 4 - 90%</span>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <script>
+        function playVideo() {
+            const video = document.getElementById('dashboardVideo');
+            const preview = document.getElementById('videoPreview');
+            const link = document.querySelector('.video-link');
+            
+            // Show video player
+            video.classList.add('active');
+            // Hide preview
+            preview.style.display = 'none';
+            link.style.display = 'none';
+            // Start playing
+            video.play();
+        }
+        function showImageModal() {
+            document.getElementById('imageModal').style.display = 'flex';
+        }
+
+        function closeImageModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+        function showPrintModal() {
+            document.getElementById('printModal').style.display = 'flex';
+        }
+
+        function closePrintModal() {
+            document.getElementById('printModal').style.display = 'none';
+        }
+        </script>
+</body>
+</html>

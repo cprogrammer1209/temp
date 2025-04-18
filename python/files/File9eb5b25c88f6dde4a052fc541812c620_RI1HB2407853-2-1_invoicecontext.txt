@@ -1,0 +1,59 @@
+[Page 0, Line 0]                                                                                                                                                                                            CN:2995549
+<<1>>                                                                              Landmark Trading FZE
+<<2>>                                                                                  LPPELY
+
+<<3>>                                                                                            Commercial Invoice
+<<4>>     LANDMARK RETAIL INVESTMENT CO. L.L.C
+<<5>>     P.O.BOX.113630,,                                                                                                                                  Invoice No: DIRLTAE24-002056
+<<6>>     DUBAI,                                                                                                                                              Invoice Date: 30-Jul-24
+<<7>>     UNITED ARAB EMIRATES                                                                                                                       MODE BYSEA
+<<8>>     Contact Person :MR PETER DSOUZA
+<<9>>     Contact Phone : 04-8094409
+<<10>>       No. of pcs           Gross Weights                                   Description                                 Value in AED             HS Code              Country of Origin
+<<11>>               2796                         821.60   Knitted Pillow Cover                                                          24,531.93         63049190                    China
+<<12>>                8484                       7619.50   Mattress Protector                                                           200,152.03         94049090                    China
+<<13>>              11280                                                                       TOTAL CIF Dubai, AED             224,683.96
+<<14>>    (AED TWO HUNDRED TWENTY-FOUR THOUSAND SIX HUNDRED EIGHTY-THREE AND FIL NINETY-SIX ONLY)
+<<15>>     Trailer No/ Container No              FBLU0207053[1x40]
+<<16>>     Total No. of Pallets
+<<17>>     Total No. of Packages                 1713                                 Pkgs.
+<<18>>     Gross Weight                           8441.10                             Kgs.
+<<19>>      Shipping Marks                         AEHB
+<<20>>      Port Of Discharge                      DUBAI
+<<21>>     Final Destination                       UNITED ARAB EMIRATES
+<<22>>     The Country Of Origin :- CHINA
+<<23>>     For LANDMARK TRADING FZE
+<<24>>     Operating as "LANDMARK TRADING FZE"
+<<25>>                       AyLL
+<<26>>                                   vy
+<<27>>                                        #
+<<28>>                        .FZJOB2101
+
+<<29>>               Office No.
+<<30>>                             U.A.E.
+<<31>>                      DUBAI
+<<32>>                  AND
+<<33>>                       OMARK
+
+
+
+
+
+
+
+
+
+<<34>>                                                       Office No.FZJOB2101,Jebel Ali Free Zone,Dubai,United Arab Emirates
+<<35>>                                                           A Limited Liability Company with Share Capital of AED 100,000/-
+<<36>>                                                                              License No.7424208, Reg. No. 1932689
+<<37>> 30-07-2024 11:05:48                                                                                                                                                            Page 1 Of 1           INV-01
+
+
+
+<<38>>                                                                                                                                                                                                                           1
+<<39>>                                                                                                                                                                                                                                   E
+<<40>>                                                                                                                                                                                                       FOREI
+<<41>>                                                                                                                       AECI30072024AXJL
+<<42>>                                                                                                             Visit https://mofa.gov.ae/qrcodeverify for details.
+
+---PAGE END---

@@ -1,0 +1,81 @@
+{
+    "uploadFilePath":"/home/anil/HDD/www/msme42-fs/msme42-dev/",
+    "uploadFilePath2":"/home/anil/HDD/python-server/msme42-dev-python/app/test/",
+    "chatDbLink": "mongodb://goagile:goagile321@server.gibots.com:2700/goagile-DB",
+    "chatDb": "goagile-DB",
+    "devDbLink": "mongodb://DEV-ADMIN:DEV111@172.168.1.199:27017/aiqod-dev",
+    "devDb": "aiqod-dev",
+    "stageDbLink": "mongodb://staging:stage789@172.168.1.19:27017/aiqod-staging",
+    "stageDb": "aiqod-staging",
+    "debugDbLink":"mongodb://debug-nodelete:ThsnYU@172.168.1.232:27017/debug-db",
+    "debugDb": "debug-db",
+    "demoDbLink":"mongodb://domo-1:domonodel@172.168.1.199:27017/demo",
+    "demoDb": "demo",
+    "pub_url" : "http://msme42-dev.gibots.com:743/",
+    "scriptPath":"./imagecrop.sh",
+    "scriptPathOrignal":"./imageorignal.sh",
+    "scriptPathCrop":"./crop.sh",
+    "lx":0.625,
+    "ty":0.598130841,
+    "Wbox":0.359589041,
+    "Hbox":0.130841121,
+    "oracleConnectionString":"admin/admingibots123@oracle.c9tmsbfh059d.ap-south-1.rds.amazonaws.com:1521/ORCL",
+    "serverURL":"http://scan-dev.gibots.com",
+    "url":"http://scan-dev.gibots.com/",
+    "isServerUrl":"true",
+    "signatureLibPath":"/home/administrator/signature-matching/sigver_wiwd/",
+    "homeDir":"/home/anil/HDD/python-server/msme-prod-python/app/test",
+    "db":"gibots-uat",
+    "dbConnection":"mongodb://gibotsdev:gibotsdev112233@server.gibots.com:2700/gibots-uat",
+    "SECRET_KEY": "98u12134hiu97324",
+    "filepath":"/home/anil/HDD/www/msme42-fs/msme42-dev/",
+    "requestURL":"http://msme42-dev.gibots.com:743/gibots-orch/orchestrator/botsiowrite",
+    "acknowledgeURL":"http://msme42-dev.gibots.com:743/gibots-orch/orchestrator/acknowledge",
+    "apiURL":"/gibots-pyimg/",
+    "tesseract_Directory":"/home/ubuntu/tesseract_training_files/tesstrain/",
+    "tessdata_path":"/usr/share/tesseract-ocr/4.00/tessdata",
+    "tesstrain_path":"/home/ubuntu/tesseract_training_files/tesstrain", 
+    "propertyPath" : "/var/www/msme42-fs/",
+    "python-port" : "4015", 
+    "image-processing-port":"4017",
+    "torejectIdentifiers":["dummy"],
+    "invoiceStartIdentifiers":[],
+    "invoiceEndIdentifiers":[],
+    "stamo_logo_model_path":"/home/anil/HDD/python-server/msme-prod-python/app/test/stamp_logo_model/best.pt",
+    "stc_res_path":"/home/anil/HDD/python-server/msme-prod-python/app/test/stc_results",
+    "signature_model_path":"/home/anil/HDD/python-server/msme-prod-python/app/test/signature_model/best.pt",
+    "options": ["Invoices","Others","Tasks"],
+    "bgv_document_type": {
+      "Candidate_Doc": {
+        "options":["Aadhaar","Permanent Account Number","GAS_Bill","Passport","PAN Card"],
+        "Aadhaar": [14,1,4,5,7,12],
+        "Permanent Account Number": [1,5,6,15],
+        "GAS_Bill": [1,7,12,17],
+        "Passport": [1,4,5,6,12,16],
+        "PAN Card": [1,5,6,15]
+      },
+      "Employee_Doc": {
+        "options": ["Service_Certificate","Joining_Letter","Salary Slip","Relieving Letter","Service Letter","Leaving Certificate"],
+        "Service_Certificate": [1,2,3,5,7,8,15,20],
+        "Joining_Letter": [1,2,5,6,7,13,14,15],
+        "Relieving Letter": [1,2,3,5,7,8,19,17],
+        "Salary Slip": [1,2,3,5,6,9,10,11],
+        "Service Letter": [1,2,3,5,7,8,15,20],
+        "Leaving Certificate": [1,2,3,5,7,8,19,17]
+      },
+      "Education_Doc": {
+        "options": ["Degree Certificate","Mark Sheet", "Consolidated Mark Statement"],
+        "Degree Certificate": [1,5,6,9,10,11,12,15],
+        "Mark Sheet": [1,2,5,6,9,10,11,12,13,14,15],
+        "Consolidated Mark Statement": [1,2,5,6,9,10,11,12,13,14,15]
+      }
+    },
+    "copilot": {
+      "Smart AP": "Invoice_Document",
+      "Smart AP Extraction": "Invoice_Document"
+    },
+     "creditUsageMetrics": {
+      "virtualAssistant":4
+    },
+    "jwtSecret":"AXRWJNqr9SjEYXdJFaFXqADq8ipb1vbf"
+}

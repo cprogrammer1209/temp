@@ -1,0 +1,81 @@
+[Page 0, Line 0]                                    #M(#ARA
+<<1>>                          NANLIN (FUJIAN) INDUSTRIES CO.,LTD
+<<2>> LAIDIAN INDUSTRIAL ZONE,XIANYOU,FUJIAN,CHINA                          Invoice No: FZ5390
+<<3>>                                                                                                       Date:        JUN.11,2024
+<<4>>                                                               Commercial Invoice      Contract NoHC24NS004
+<<5>>                                                                                                       Payment:T/T
+<<6>> To Messers:RNA RESOURCES GROUP LIMITED, OPERATING AS "LANDMARK"
+<<7>>                 JAFZA LICENSE NUMBER 103288, PO BOX 17155, JEBEL ALI FREE ZONE, DUBAI, UAE
+
+<<8>> FROM FUZHOU CHINA TO AJMAN BY SEA
+<<9>> Marks & Numbers         Descriptions                            Quantities   Packages       Unit Price   Amount
+<<10>>                                                                                                     FOB FUZHOU
+<<11>>                                  HOUSEHOLD ITEMS
+<<12>> HCAE/52575                Brookline 3 Tier Bathroom Storage Shelf 33.8x33x79cm-Natural/White
+<<13>>                                   NL14166-156789297                150PCS     150CTNS       USD9.59    USD1438.50
+<<14>>                                  Brookline 5 Tier Bathroom Storage Shelf 33.8x33x140cm-Natural/White
+<<15>>                                   NL14168-156789298                209PCS     209CTNS       USD13.43   USD2806.87
+<<16>>                                  Brookline 4 Tier Bath Rack 45x35x76cm-White/Natural
+<<17>>                                   NL120602-157609617               140PCS     140CTNS        USD15.49  USD2168.60
+<<18>>                                  Brookline 3 Tier Bathroom Storage Stand 18x30x81cm-White/Natural
+<<19>>                                   NL553804-157609618               144PCS     36CTNS         USD9.12    USD1313.28
+<<20>>                                  Brookline 3 tier shelf with mirror 43x36x163cm - White/Natural
+<<21>>                                   NL2018123-162649927             150PCS     150CTNS        USD18.68  USD2802.00
+<<22>>                                  Brookline 3 Tier trolley 42x35x80cm - Natural
+<<23>>                                   NL2020912-163126492             200PCS     200CTNS        USD12.04  USD2408.00
+<<24>>                                  Brookline 4 tier shelf 34.5x36x98cm - Natural/White
+<<25>>                                   NL2020914-163126493             381PCS     381CTNS       USD12.04  USD4587.24
+<<26>>                                  Brookline Tall rack 40x30x170cm - Natural
+<<27>>                                   NL2020915-163126494             120PCS      120CTNS       USD26.85  USD3222.00
+<<28>>                                  Linda Square Storage Box with Lid 30x30x30cm Black
+<<29>>                                   NL140304SL-BLK-163681817260PCS     26CTNS         USD1.53    USD397.80
+<<30>>                                  Linda Square Storage Box with Lid 30x30x30cm Ivory
+<<31>>                                   NL140304SL-IVR-163681820     230PCS     23CTNS         USD1.53    USD351.90
+<<32>>                                  Darron Bamboo Cloth Rail with Shelf 84x56x170cm Natural
+<<33>>                                   NL1505001-163681821             126PCS      126CTNS        USD17.87  USD2251.62
+<<34>>                                  Kelly Multi Utility Rail 110x150x40cm Black
+<<35>>                                   NL2131201-164078580             230PCS     230CTNS        USD10.82  USD2488.60
+<<36>>                                  E-Linda Storage Box w/Lid 80x30x30cm Ivory
+<<37>>                                   NL230222-165700878              70PCS       7CTNS           USD4.50    USD315.00
+<<38>>                                  Linda Storage Box w/Lid 90x40x40cm Ivory
+<<39>>                                   NL230223-165700879              70PCS       7CTNS           USD6.10    USD427.00
+<<40>>  Page 1 Continue 2      TOTAL:                                  2480PCS    1805CTNS                       USD26978.41
+<<41>>                                                                                                      MHGH#)IARAn
+<<42>>                                                                                                      NANLIN(FUJIAN)
+<<43>>                                                                                                      INDUSTRIES CO.,LTD
+<<44>>                                                                                                                3K 36 t3
+
+---PAGE END---
+[Page 1, Line 0]                                  MM(GEIARA
+<<1>>                         NANLIN (FUJIAN) INDUSTRIES CO.,LTD
+<<2>> LAIDIAN INDUSTRIAL ZONE,XIANYOU,FUJIAN,CHINA                         Invoice No: FZ5390
+<<3>>                                                                                                Date:        JUN.11,2024
+<<4>>                                                           Commercial Invoice      Contract NoHC24NS004
+<<5>>                                                                                                Payment: T/T
+<<6>> To Messers:RNA RESOURCES GROUP LIMITED, OPERATING AS "LANDMARK"
+<<7>>                JAFZA LICENSE NUMBER 103288, PO BOX 17155, JEBEL ALI FREE ZONE, DUBAI, UAE
+
+<<8>> FROM FUZHOU CHINA TO AJMAN BY SEA
+<<9>> Marks & Numbers        Descriptions                           Quantities  Packages       Unit PriceAmount
+<<10>>                                                                                               FOB FUZHOU
+<<11>>                                HOUSEHOLD ITEMS
+
+
+<<12>>                                HS CODE:9403,6307
+<<13>>                                ASN NO.:RI1HC2403576-HCAE
+<<14>>                                PURCHASE ORDER :1668801
+<<15>>                                COUNTRY OF ORIGIN AS CHINA
+<<16>>                                PLS T/T THE FOLLOWING
+<<17>>                                ACCOUNT: BANK OF CHINA XIANYOU SUB-BRANCH, FUJIAN
+<<18>>                                SWIFT: BKCHCNBJ73C
+<<19>>                                ADD: XIANYOU FUJIAN CHINA
+<<20>>                                BENEFICIARY: NANLIN (FUJIAN) INDUSTRIES CO., LTD
+<<21>>                                ADD: LAIDIAN XIANYOU FUJIAN CHINA
+<<22>>                                A/C: 4221 5839 4722
+<<23>>                                REMARKS:MUST WRITE INVOICE NUMBER IN MESSAGE WHEN TT
+<<24>>                                                                                               PM(EsNBA
+<<25>>                                                                                               NANLIN(FUJIAN)
+<<26>>                                                                                               INDUSTRIES CO.,LTD
+<<27>>                                                                                                        3K 36 t3
+
+---PAGE END---

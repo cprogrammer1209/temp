@@ -1,0 +1,85 @@
+[Page 0, Line 0]                                                        HOME BEST INTERNATIONAL CO.,LIMITED
+<<1>>                                                   LEVEL 54 HOPEWELL CENTRE 183, QUEEN'S ROAD EAST HK,HONG KONG
+<<2>>                                                  TEL:0086 13422520139 .Contact:Ben.Leung Mail: Ben@homebest.biz
+<<3>>                                                                                COMMERCIALINVOICE
+<<4>>                                                                                                         ORIGINAL
+<<5>>  TO CONSIGNEE :                                                                                                            PI No: 52746UAE01
+<<6>>  RNA RESOURCES GROUP LIMITED                                                                                       PI Date : 05/04/2024
+<<7>>  OPERATING AS"LANDMARK"
+<<8>>                                                                                                                                    CI NO: 52746UAE01
+<<9>>  JAFZA LICENSE NUMBER 103288
+<<10>>                                                                                                                                    CI Date: 18/06/2024
+<<11>>  P.O.BOX 17155
+<<12>>                                                                                                                                    PO # 1688261
+<<13>>  JEBEL ALI FREE ZONE, DUBAI, U.A.E
+<<14>>                                                                                                                                    PO Date: 05/04/2024
+<<15>>  TELEPHONE. +971 4 8231515/+974 8157600
+<<16>>                                                                                                                                    B/L No.: 240940135
+<<17>> EMAIL: RAMESH.BADARLA@LANDMARKGROUP.COM
+<<18>>                                                                                                                                    Port Of Loading: QINGDAO
+<<19>>  ATTN: MR. RAMESH
+<<20>>                                                                                                                                    Port of Discharge: AJMAN,UAE
+<<21>>  NOTIFY PARTY:                                                                                                              PLACE OF DELIVERY: AJMAN,UAE
+<<22>>                                                                                                                                    PAYMENT TERM: T/T
+<<23>>  LANDMARK TRADING FZE
+<<24>>  OFFICE NO FZJOB2101, JEBEL ALI FREE ZONE, DUBAI, UNITED ARAB EMIRATES
+<<25>>  CONTACT PERSON: MR. VIJAY KUMAR RAMDOSS
+<<26>>  CONTACT PHONE: +971 4 8157730
+
+
+
+<<27>>  MANUFACTURERS / PRODUCERS: HOME BEST INTERNATIONAL CO.,LIMITED
+<<28>>  EXPORTER: HOME BEST INTERNATIONAL CO.,LIMITED
+
+<<29>> 1. PO NUM /PI NUM :1688261 /52746UAE01
+<<30>> 2. APPLICANT'S ORDER REFERENCE: HCAE/52746
+<<31>> 3. WE ARE CERTIFYING THAT :
+<<32>>  A) COUNTRY OF ORIGIN AS MADE IN CHINA .
+<<33>>  B) ALL CARTONS AND EACH ITEMS ARE MARKED WITH THE WORDS MADE IN CHINA.
+<<34>>  C) COUNTRY OF ORIGIN IS CHINA IS PRINTED ON EACH ITEM.
+<<35>> DESCRIPTION OF GOODS :TWO SEATER SOFA, ONE SEATER SOFA, THREE SEATER SOFA AS INVOICE DETAILS PO NUM /PI NUM : 1688261 /52746UAE01
+<<36>> TRADE TERMS : FOB QINGDAO, SHANDONG.
+<<37>> Container No.: MSKU0606204, Seal: CN8587540
+<<38>> Container No.:MRKU3646235, Seal:ML-CN8582285                                                                                  Shipping mark no : HCAE/52746
+<<39>>                                                                                                                           Per    No Of
+<<40>>                                   ASN                                                                      QTY                            T.N.W.     T.G.W.   U.price   Amount
+<<41>>  Item No   EAN No                        Picture     DescriptionHS Code Colour           Carton Cartons                                                                 Remarks
+<<42>>                                NUMBER                                                                  (PCS)                             (KGS)     (KGS)    (USD)     (USD)
+<<43>>                                                                                                                         (CTNS  (CTNS)
+
+
+
+<<44>>                                                                   Ursa Single                                                                                                                               CTN SIZE:
+<<45>>  16683864 6292488514                                      recliner with
+<<46>>                                                                   Cup Holder-    940161    BEIGE  184     1        184       5890.80    6624.00    $63.00   $11,592.00
+<<47>>      0          313                                                                                                                                                                                    L 1010 X W 760 X
+<<48>>                                                                   Grey                                                                                                                                        650 MM
+
+
+<<49>>                               RI1HC24034
+<<50>>                                79-HCAE
+
+
+<<51>>                                                                   Whitney
+<<52>>                                                                   single                                                                                                                                     CTN SIZE:
+<<53>> 16683864 6292488514
+<<54>>                                                                   electric          940161    BEIGE  155 1       155       6470.00    7068.00    $108.00   $16,740.00
+<<55>>      1           306                                                                                                                                                                                    L 1010 X W 760 X
+<<56>>                                                                   Recliner -
+<<57>>                                                                                                                                                                                                                  650 MM
+<<58>>                                                                   Beige
+
+
+
+<<59>>                                          Total Amount :2X40HC                                           339                 339      12360.80    13692.00                $28,332.00
+<<60>> Total Amount 2x40HC USD TWELVE EIGHT THOUSAND THREE HUNDRED AND THIRTY TWO ONLY.
+<<61>>                                                              BENEFICIARY NAME AND BENEFICIARY BANK DETAILS
+<<62>> Beneficiary:HOME BEST INTERNATIONAL CO.,LIMITED
+<<63>> Payee's Bank:HANG SENG BANK LIMITED
+<<64>> Bank Address: 83 DES VOEUX ROAD CENTRAL,HONG KONG
+<<65>> Account Number.: 933-078958-883;
+<<66>> Swift Code:HASEHKHH                                                                                                                                                            1
+
+<<67>>                                                                                                                                                                                       A
+
+---PAGE END---

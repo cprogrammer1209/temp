@@ -1,0 +1,72 @@
+[Page 0, Line 0]                                                      ZHEJIANG GOODWILL TEXTILE CO., LTD
+<<1>>                    LIANSHENG SALT DISTRICT ZHANQI TOWN YINZHOU DISTRICT NINGBO ZHEJIANG CHINA
+
+<<2>>                                                                                    ANA
+<<3>>                                                                       COMMERCIAL INVOICE
+<<4>> TO:
+<<5>> RNA RESOURCES GROUP LIMITED                                                                                             INV.NO.:GW5-24090
+<<6>> OPERATING AS LANDMARK HOME BOX DIVISION                                                                    DATE:JUN 27 2024
+<<7>>  JAFZA LICENSE NUMBER 103288                                                                                                Purchase Order:1697785
+<<8>> P.O. BOX 17155, DUBAI, UNITED ARAB EMIRATES
+<<9>> TEL:+971 4 8231515/+974 8157600
+
+<<10>> FROM: NINGBO, CHINA                                                                                            TO: AJMAN,UNITED ARAB EMIRATES
+<<11>>     MARKS                                  ITEM NO. & DESCRIPTION                                QUANTITY  UNIT PRICE   AMOUNT
+<<12>>                                                                                                                                    (PCS)            (USD)           (USD)
+<<13>>                                                                                                                                                              FCA NINGBO
+
+<<14>>                      MATTRESS PROTECTOR
+<<15>>                      70gsm Jersey fabric (100% polyester) with TPU backing , Skirt 70gsmknitted fabric
+<<16>>                      Packaging: Pvc bag with zipper                                                                                                                              H S CODE
+<<17>>                      P-Atlanta-Waterproof Toodler Mattress Protector-70X130+25 cm-White              456            US$1.69       US$770.64    94049090
+<<18>>                      P-Atlanta-Waterproof Single Mattress Protector-90X200+33cm-White                1842           US$2.34      US$4,310.28    94049090
+<<19>>                      P-Atlanta-Waterproof Twin Mattress Protector-120X200+33 cm-White                816            US$2.72      US$2,219.52    94049090
+<<20>>                      EC- P-Atlanta Waterproof Double Mattress Protector-140X200+33 cm-White       120            US$3.00       US$360.00     94049090
+<<21>>                      P-Atlanta-Waterproof Queen Mattress Protector-150X200+33cm-White               240            US$3.11       US$746.40     94049090
+<<22>>                      EC- P-Atlanta Waterproof Mattress Protector-160X200+33cm-White                  102            US$3.23       US$329.46     94049090
+<<23>>                      P-Atlanta-Waterproof King Mattress Protector-180X200+33 cm-White               1116           US$3.51      US$3,917.16   94049090
+<<24>>                      130 GSM Terry (70% cotton, 30% polyester) with TPU backing, Skirt : 70 GSM knitted fabric.
+<<25>>                      Packaging: Pvc bag with zipper
+<<26>>                      EC- P-Terry-Waterproof Mattress Protector-90X200+33 cm-White                     216            US$3.69       US$797.04    94049090
+<<27>>                      Terry-Waterproof Twin Mattress Protector-120X200+33 cm-White                     474            US$4.46      US$2,114.04   94049090
+<<28>>                      EC- P- Terry-WaterproofDouble Mattress Protector-140X200+33 cm-White          72            US$4.99       US$359.28     94049090
+<<29>>                      Terry-Waterproof Queen Mattress Protector-150X200+33cm-White                    270            US$5.25      US$1,417.50    94049090
+<<30>>                      EC- P - Terry Waterproof Mattress Protector-160X200+33 cm-White                  138            US$5.50       US$759.00    94049090
+<<31>>                      Terry-Waterproof King Mattress Protector-180X200+33 cm-White                     726            US$6.07      US$4,406.82   94049090
+<<32>>                      250 GSM bamboo (30% bamboo, 70% polyester) with TPU backing. Skirt: 70 GSM knitted fabric.
+<<33>>                      Packaging: Gift box
+<<34>>                      Bamboo-Waterproof Twin Mattress Protector-120X200+33 cm-White                 132            US$5.65       US$745.80    94049090
+<<35>>                      EC BambooWaterproof Queen Mattress Protector150X200+33 cmWhite              126            US$6.52       US$821.52     94049090
+<<36>>                      EC BambooWaterproof Olympic Queen MattressProtector160X200+33 cmW.        150            US$6.70      US$1,005.00    94049090
+<<37>>                      Bamboo-Waterproof King Mattress Protector-180X200+33 cm-White                 372            US$7.41      US$2,756.52   94049090
+<<38>>                      Bamboo-Waterproof Super King Mattress Protector-200X200+33cm-White          168            US$7.99      US$1,342.32   94049090
+<<39>>                      250 GSM Aloe Vera (100%polyester) with PU backing, Skirt 70 GSM knitted fabric.
+<<40>>                      AleoveraWaterproof Twin Mattress Protector120X200+33 cmWhite                    132            US$5.65       US$745.80    94049090
+<<41>>                      ECAleoveraWaterproof Queen Mattress Protector150X200+33 cmWhite              126            US$6.52       US$821.52     94049090
+<<42>>                      ECAleoveraWaterproof Olympic Queen MattressProtector160X200+33 cmW.       150            US$6.70      US$1,005.00    94049090
+<<43>>                      AleoveraWaterproof King Mattress Protector180X200+33 cmWhite                    372            US$7.41      US$2,756.52   94049090
+
+<<44>>                      AleoveraWaterproof Super King Mattress Protector200X200+33 cmWhite            168            US$7.99      US$1,342.32   94049090
+<<45>>                      PILLOW PROTECTOR
+<<46>>                      70gsm Jersey fabric (100% polyester) with TPU backing , Skirt 70gsmknitted fabric
+<<47>>                      Packaging: Pvc bag with zipper
+<<48>>                      P-Atlanta-Waterproof Pillow Protector-50X75cm-White                                   1344           US$1.17      US$1,572.48   63049940
+<<49>>                      130 GSM Terry (70% cotton, 30% polyester) with TPU backing, Skirt : 70 GSM knitted fabric.
+<<50>>                      Packaging: Pvc bag with zipper
+<<51>>                      Terry-Waterproof Pillow Protector-50X75 cm-White                                        660            US$1.66      US$1,095.60   63049940
+<<52>>                      250 GSM bamboo (30% bamboo, 70% polyester) with TPU backing. Skirt: 70 GSM knitted fabric.
+<<53>>                      Packaging: Gift box
+<<54>>                      Bamboo-Waterproof Pillow Protector-50X75cm-White                                     396            US$2.10       US$831.60     63049940
+<<55>>                      250 GSM Aloe Vera (100%polyester) with PU backing, Skirt 70 GSM knitted fabric.
+<<56>>                      AleoveraWaterproof Pillow Protector50X75 cmWhite                                       396            US$2.10       US$831.60     63049940
+
+<<57>>                                                                   TOTAL:                                                11280PCS                         US$40,180.74
+<<58>>                                                                                                                                                                         US$40,180.74
+
+---PAGE END---
+[Page 1, Line 0] I*XMa
+<<1>> ZHEJIANG GOOWILLTEXTLE CO.LTD
+<<2>>               AAn
+<<3>>                  f5
+
+---PAGE END---

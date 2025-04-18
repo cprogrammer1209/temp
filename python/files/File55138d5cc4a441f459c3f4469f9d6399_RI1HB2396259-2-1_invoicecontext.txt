@@ -1,0 +1,55 @@
+[Page 0, Line 0]                                                                                                                                                                                        CN:2995549
+<<1>>                                                                            Landmark Trading FZE
+<<2>>                                                                                LPPELY
+<<3>>                                                                                          Commercial Invoice
+<<4>>     LANDMARK RETAIL INVESTMENT CO. L.L.C
+<<5>>     P.O.BOX.113630,,                                                                                                                               Invoice No: DIRLTAE24-000939
+<<6>>     DUBAI,                                                                                                                                           Invoice Date: 13-Jul-24
+<<7>>     UNITED ARAB EMIRATES                                                                                                                    MODE BYSEA
+<<8>>     Contact Person :MR PETER DSOUZA
+<<9>>     Contact Phone : 04-8094409
+<<10>>       No. of pcs           Gross Weights                                  Description                                Value in AED             HS Code             Country of Origin
+<<11>>                  55                       2421.00  Three Seater Sofa                                                           52,584.78        94016100                    China
+<<12>>                  68                       2648.00  Two Seater Sofa                                                             49,802.21         94016100                    China
+<<13>>                   49                       1215.00  One Seater Sofa                                                             26,314.05        94016100                    China
+<<14>>                172                                                                     TOTAL CIF Dubai, AED             128,701.04
+<<15>>    (AED ONE HUNDRED TWENTY-EIGHT THOUSAND SEVEN HUNDRED ONE AND FIL FOUR ONLY)
+<<16>>     Trailer No/ Container No              BEAU4148020[1x40HQ],CMAU4353968[1x40HQ]
+<<17>>     Total No. of Pallets
+<<18>>     Total No. of Packages                172                                  Pkgs.
+<<19>>     Gross Weight                          6284.00                            Kgs.
+<<20>>     Shipping Marks                        AEHB
+<<21>>     Port Of Discharge                     DUBAI
+<<22>>     Final Destination                       UNITED ARAB EMIRATES
+<<23>>     The Country Of Origin :- CHINA
+<<24>>     For LANDMARK TRADING FZE
+<<25>>     Operating as "LANDMARK TRADING FZE"
+<<26>>                       TyLaL
+<<27>>                                  vy
+<<28>>                       .FZJO82101
+<<29>>            L
+<<30>>                            U.A.E.
+<<31>>                     DUBAI
+
+
+
+
+
+
+
+
+
+<<32>>                                                      Office No.FZJOB2101,Jebel Ali Free Zone,Dubai,United Arab Emirates
+<<33>>                                                          A Limited Liability Company with Share Capital of AED 100,000/-
+<<34>>                                                                            License No.7424208, Reg. No. 1932689
+<<35>> 13-07-2024 06:36:26                                                                                                                                                         Page 1 Of 1           INV-01
+
+
+<<36>>                                                                                                                                                                                                                      1
+<<37>>                                                                                                                                                                                        N                                 E
+
+
+<<38>>                                                                                                                    AECI13072024OHHZ
+<<39>>                                                                                                           Visit https://mofa.gov.ae/qrcodeverify for details.
+
+---PAGE END---

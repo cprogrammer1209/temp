@@ -1,0 +1,47 @@
+[Page 0, Line 0]                                                             JIANGSU LIYANG SMART HOME CO., LTD
+<<1>>                                                         NO.330,INDUSTRIAL CONCENTRATION ZONE,
+<<2>>                                               QIUJI TOWN,SUINING COUNTY,JIANGSU PROVINCE,CHINA
+
+<<3>>                                                                         COMMERCIAL INVOICE
+<<4>> CONSIGNEE:                                                                                                                     INVOICE NO:            LYHBX1015UAE
+<<5>>                                                                                                                                     PO NO:                  1689746
+<<6>> RNA RESOURCES GROUP LIMITED
+<<7>> OPERATING AS LANDMARK HOME BOX DIVISION
+<<8>> JAFZA LICENSE NUMBER 103288
+<<9>> P.O. BOX 17155, DUBAI, UNITED ARAB EMIRATES TEL:+971 4 8231515/+974 8157600                      DATE:                  2024/7/2
+<<10>> BUYER:
+<<11>> LANDMARK TRADING FZE
+<<12>> HOME BOX DIVISION OFFICE NO FZJOB2101,
+<<13>> JEBEL ALI FREE ZONE,
+<<14>> DUBAI, UNITED ARAB EMIRATES,
+<<15>> CONTACT PERSON: MR.SUNIL /VASISHTU GOPAL TEL : +971 4 517 2387
+<<16>>                   MEANS OF TRANSPORTATION                                    PORT OF LOADING                                 PORT OF DISCHARGE
+<<17>>                                By SEA                                                   SHANGHAI,CHINA                                          AJMAN
+<<18>>                                                 Shipping Mark                                                                            HBAE/70442
+<<19>>                                                                                                                         Quantity                                      AMOUNT
+<<20>> No.:      Item No.      SKU            code        colour                Description of Goods                                 Unit Price
+<<21>>                                                                                                                         (SETS)
+<<22>> Goods category, hs code  chair 94016190
+<<23>>                                                                           Cementino New Dining Chair -Natural
+<<24>>          1022-NAT  165334085   6299182665662     Beige                                                     680           US$17.200             US$11,696.00
+<<25>>                                                                                     Legs & Beige Fabric
+<<26>>                                                                Grey    P-Bali New Dining Chair-Natural Legs &
+<<27>>    2   AS1128-40 165545587   6299183535896                                                                 800           US$12.300              US$9,840.00
+<<28>>                                                                                         Grey Fabric
+<<29>>                                                               Beige    P-Bali New Dining Chair- Black Legs &
+<<30>>    3     1015/N    165785429   6299184595387                                                                 120           US$12.300             US$1,476.00
+<<31>>                                                                                         Beige Fabric
+<<32>>                                                                           P-Bali NXT Dining Chair-Black Legs &
+<<33>>    4      1015.1    166851446   6299188570779      Tan                                                      120           US$12.300             US$1,476.00
+<<34>>                                                                                          Tan Fabric
+<<35>>                                                                Grey    P-Bali NXT Dining Chair-White Legs &
+<<36>>    5      1015.2    166851447   6299188570786                                                                 100                                      US$1,230.00
+<<37>>                                                                                         Grey Fabric
+<<38>>                                                                                                                                      EXAD
+<<39>>                                                                                                                           1820                                     US$25,718.00
+<<40>>                                                                                                                                      An
+<<41>>                                                                                                                                *
+<<42>>                                                                                                                                             X
+<<43>>                                                                                                                                     I
+
+---PAGE END---

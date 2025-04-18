@@ -1,0 +1,60 @@
+[Page 0, Line 0]                                                                                                                                                                                                                            CN:2995549
+<<1>>                                                                                           Landmark Trading FZE
+<<2>>                                                                                               CPPELY
+
+<<3>>                                                                                                           Commercial Invoice
+<<4>>      LANDMARK RETAIL INVESTMENT CO. L.L.C
+<<5>>      P.O.BOX.113630,                                                                                                                                                        Invoice No: DIRLTAE24-003208
+<<6>>     DUBAI,                                                                                                                                                                      Invoice Date: 16-Aug-24
+<<7>>      UNITED ARAB EMIRATES                                                                                                                                           MODE BYSEA
+<<8>>      Contact Person :MR PETER DSOUZA
+<<9>>      Contact Phone : 04-8094409
+<<10>>        No. of pcs             Gross Weights                                         Description                                      Value in AED                HS Code                 Country of Origin
+<<11>>                    630                             356.04   Storage Boxes Cases Of Textile Materials                                       10,156.71           63079030                        China
+<<12>>                   230                            1299.84    Cloth Rack                                                                                16,321.17           94032090                        China
+<<13>>                  1090                            6160.14   Wooden Shelf                                                                            91,939.25           94036090                        China
+<<14>>                    120                             678.18   Wooden Cloth Rack                                                                    20,996.46          94036090                        China
+<<15>>                   410                           1706.80   Bamboo Bathroom Rack                                                              37,511.69           94038200                        China
+<<16>>                 2480                                                                                   TOTAL CIF Dubai, AED                176,925.27
+<<17>>     (AED ONE HUNDRED SEVENTY-SIX THOUSAND NINE HUNDRED TWENTY-FIVE AND FIL TWENTY-SEVEN ONLY)
+<<18>>      Trailer No/ Container No                 MRKU0665606[1x40]
+<<19>>      Total No. of Pallets
+<<20>>      Total No. of Packages                    1805                                      Pkgs.
+<<21>>      Gross Weight                                10201.00                                Kgs.
+<<22>>      Shipping Marks                             AEHC
+<<23>>      Port Of Discharge                          DUBAI
+<<24>>      Final Destination                            UNITED ARAB EMIRATES
+<<25>>      The Country Of Origin :- CHINA
+<<26>>      For LANDMARK TRADING FZE
+<<27>>      Operating as "LANDMARK TRADING FZE"
+
+<<28>>                                           Y
+<<29>>               K                          *
+<<30>>              3                           1
+<<31>>              a
+<<32>>                  Ofice No.FZJOB2101
+
+<<33>>              U
+<<34>>                                U.A.E.
+<<35>>                      Jebel Ali Free Zone
+
+<<36>>                          DUBAI
+<<37>>                *
+<<38>>                                                    &
+
+
+
+
+
+
+
+
+
+
+<<39>>                                                                Office No.FZJOB2101, Jebel Ali Free Zone,Dubai, United Arab Emirates
+<<40>>                                                                     A Limited Liability Company with Share Capital of AED 100,000/-
+<<41>>                                                                                           License No. 7424208, Reg. No. 1932689
+<<42>> 16-08-2024 12:17:54                                                                                                                                                                                       Page 1 Of 1             INV-01
+<<43>> 16-08-2024 12:17:54
+
+---PAGE END---

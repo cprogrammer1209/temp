@@ -1,0 +1,540 @@
+		     MAERSK												   DELIVERY			      ORDER
+Transport	   Document	   No .:										Print     Date   :	2024-08-20       10:51
+						  240940135
+Business       Unit   :    Maersk     Qatar     ( Doha  )								    Order      Number      : 221177958/001
+Customs	Ref   . No  :									  Release       To  :    LANDMARK	 RETAIL      INVESTMENT	    CO   LLC
+									     Equipment	    count     :  2
+ Equipment      No	   Size   / Type	  Tare  Weight	   Cargo   Weight       Measurement	 Seal   no .	  Package     Type    Quantity
+ MSKU0606204		  40   DRY  9'6	3880.000       KGS      7320.00      KGS      69.450     CBM       ML - CN8587540       CARTONS	    162
+ MRKU3646235		  40   DRY  9'6	3880.000       KGS      6372.00      KGS      72.570     CBM       ML - CN8582285			  177
+										 Transport	   Plan
+ From			       To				 Mode	  Vessel				 Voy  No.     ETD			ETA
+ QINGDAO	QIANWAN	     PELABUHAN	 TANJUNG	   MVS	    X - PRESS    ODYSSEY		 427W       2024-07-12		 2024-07-23
+ CONTAINER	 CO   LTD	 PELEPAS      TERMINAL									      23.30.00		   14.00.00
+ PELABUHAN	 TANJUNG	  JEBEL    ALI  TERMINAL	2     MVS	    ZHONG      GU   NAN   JING	   430W       2024-08-05		 2024-08-16
+ PELEPAS       TERMINAL														15.00.00		   23.00.00
+ JEBEL    ALI  TERMINAL	2     AJMAN     PORT    TERMINAL	 FEF	   DUBAI    ALLIANCE      ( CY )	 667A       2024-08-20		 2024-08-20
+																	16.00.00		  18.00.00
+						  Merchant		     Haulage	      Delivery	     Itinerary
+ Type			Name		       Release    Date       Time     Valid   to Date	 Time      Est . Del . Date  &   Time     Reference
+ Full Delivery   Pickup      AJMAN      PORT	    2024-08-20	    18:00   2024-09-09	       00:00
+ Terminal		    TERMINAL
+			    AJMAN       PORT   TERMINAL
+			    Maktoum      St
+			    Ajman    ,
+Cargo      Description
+  ONE    SEATER       SOFA
+  HS    CODE   : 940161
+  PI  NO  : 52746UAE01
+  PI  DATE    : 5 / APR / 2024
+  PO    # 1688261
+  PO   DATE    : 5 / APR / 2024
+  SHIPMENT	TERM    : FOB
+  PORT     OF   DISCHARGE       : AJMAN    , UAE
+  PLACE      OF  DELIVERY      : AJMAN   , UAE
+  PAYMENT	TERM   : T / T
+  APPLICANT'S	 ORDER      REFERENCE	:
+  HCAE    / 52746
+ ' FREIGHT      COLLECT      '
+AGENT  AT DESTINATION   :
+MAERSK   KANOO   ( UAE ) LLC ( HEAD OFFICE )
+AL MOOSA  TOWER    2 , 12TH FLOOR
+SHAIKH ZAYED   ROAD
+PO  BOX : 50720
+DUBAI
+U.A.E
+PHONE  : 971 4 3326200
+FAX : 971 4 3326700
+ Haulage   Instructions	:
+									     Page      1/1
+									     Page
+
+---PAGE NO: 1. END OF PAGE---																						    CN   : 2995549
+									  Landmark		       Trading	     FZE
+									      ح      م    م    تريدنج	  لاندمارك
+										       Commercial	     Invoice
+    LANDMARK       RETAIL    INVESTMENT	 CO  . L.L.C
+    P.O.BOX.113630      ,,															    Invoice    No : DIRLTAE24-003190
+    DUBAI   ,,																	Invoice   Date   : 16 - Aug - 24
+    UNITED     ARAB    EMIRATES															 MODE       BY  SEA
+    Contact  Person     : MR PETER     DSOUZA
+    Contact   Phone    : 04-8094409
+      No.  of pcs	    Gross  Weights				   Description				     Value   in  AED		HS  Code	       Country     of Origin
+	       339		      13692.01	 One Seater  Sofa							  201,463.83	      94016100			China
+	       339									TOTAL    CIF  Dubai   ,  AED	     201,463.83
+   ( AED   TWO    HUNDRED       ONE   THOUSAND	FOUR    HUNDRED      SIXTY   - THREE    AND   FIL EIGHTY     - THREE   ONLY   )
+    Trailer  No / Container   No	      MSKU0606204	 [ 1x40HQ  ] , MRKU3646235     [ 1x40HQ  ]
+    Total  No.  of Pallets
+    Total  No.  of Packages		    339				    Pkgs  .
+    Gross  Weight			     13692.01				Kgs  .
+    Shipping   Marks			    AEHC
+    Port  Of Discharge			 DUBAI
+    Final Destination			  UNITED      ARAB   EMIRATES
+    The Country     Of Origin   - CHINA
+    For   LANDMARK       TRADING      FZE
+    Operating    as " LANDMARK      TRADING       FZE "
+		       مارك
+				 لان
+	  تريدنج
+		       FZJOB2101
+			     Zone
+		   No.
+			 Free
+				      FZE
+		      Ali
+	      Office
+			    U.A.E.
+		 Jebel
+		     DUBAI
+	      LANDMARK
+			     TRADING
+			  AK
+				 Red
+			       .
+						    Office   No.  FZJOB2101       , Jebel  Ali  Free   Zone   , Dubai   , United    Arab  Emirates
+							A Limited    Liability      Company      with   Share   Capital     of  AED  100,000      / -
+									  License     No.  7424208      , Reg . No.  1932689
+16-08-2024 11:16:16																			  Page  1 of 1	    INV  - 01
+	     11:16:16
+
+---PAGE NO: 2. END OF PAGE---																									      CN   : 2995549
+										   Landmark			      Trading	       FZE
+											ح	م   م      تريدنج	     لاندمارك
+													Packing	     List
+LANDMARK	 RETAIL     INVESTMENT	  CO  . L.L.C											      Invoice     No. DIRLTAE24-003190
+P.O.BOX.113630	 ,																 Invoice     Date  . 16 - Aug - 24
+DUBAI     ,																		 MODE	BY  SEA
+UNITED       ARAB    EMIRATES
+Mr.    MR   PETER      DSOUZA
+GRN     # : RI1HC2403479
+Packages      ( Nos  ) : 339					       Weight    ( Kg ) 13692.01
+																							Country      of
+   Item   Code		   Style    No.					   Description						UOM	       No  of  Pcs	   Origin		   Made     up  of
+			URSA     / # 21DARKGREY
+166838640		/ 1S			       One  Seater    Sofa									   EA		   184     China		 Fabric     & Wood
+			WHITNEY	/ VE8127-
+166838641		05 / 1S			    One  Seater    Sofa									   EA		   155     China		 Fabric     & Wood
+																       TOTAL				   339
+				  دمارك    لاند
+		    تريدنج
+				 FZJOB2101
+					Zone
+			      No.
+				    Free
+						   FZE
+				Ali
+			Office
+				       U.A.E.
+			   Jebel
+			       DUBAI
+		      LANDMARK
+					 TRADING
+					     Ryde
+				       K.
+							      Office    No. FZJOB2101	, Jebel Ali  Free   Zone   , Dubai   , United    Arab  Emirates
+								  A  Limited   Liability      Company      with   Share   Capital     of  AED  100,000      / -
+										    License     No.  7424208      , Reg  . No. 1932689
+	    Date   : 16 - Aug - 2024  11:15:53																					   Page    1 of  1
+				       11:15:53
+
+---PAGE NO: 3. END OF PAGE---						      HOME		    BEST		   INTERNATIONAL			  CO    . ,     LIMITED
+						 LEVEL	54     HOPEWELL	   CENTRE	183   ,    QUEEN'S	  ROAD      EAST      HK  ,  HONG       KONG
+						TEL     : 0086       13422520139		Contact       : Ben.Leung	    Mail   :   Ben@homebest.biz
+									     COMMERCIAL					  INVOICE
+												       ORIGINAL
+ TO  CONSIGNEE	:
+																 PI   No : 52746UAE01
+ RNA   RESOURCES	GROUP    LIMITED
+																 PI Date   : 05/04/2024
+ OPERATING       AS " LANDMARK     "
+																 CI   NO : 52746UAE01
+ JAFZA   LICENSE      NUMBER    103288
+																 CI  Date  : 18/06/2024
+ P.O.BOX    17155
+																 PO    # 1688261
+JEBEL    ALI  FREE    ZONE   , DUBAI  , U.A.E
+																 PO   Date  : 05/04/2024
+ TELEPHONE       . +971  4 8231515  / + 974 8157600
+																 B  / L No .: 240940135
+ EMAIL   : RAMESH    . BADARLA@LANDMARKGROUP.COM
+																 Port   Of Loading   : QINGDAO
+ATTN    : MR . RAMESH
+																 Port   of Discharge   : AJMAN   , UAE
+																 PLACE     OF DELIVERY      : AJMAN   , UAE
+NOTIFY     PARTY    :
+																 PAYMENT       TERM   : T / T
+LANDMARK       TRADING      FZE
+OFFICE      NO FZJOB2101     , JEBEL   ALI  FREE   ZONE   , DUBAI  , UNITED    ARAB  EMIRATES
+CONTACT       PERSON     : MR . VIJAY   KUMAR    RAMDOSS
+CONTACT       PHONE    : +971  4 8157730
+MANUFACTURERS	    / PRODUCERS      : HOME    BEST INTERNATIONAL	   CO . , LIMITED
+EXPORTER       : HOME    BEST INTERNATIONAL	   CO . , LIMITED
+1.    PO   NUM    / PI   NUM    : 1688261    / 52746UAE01
+2.  APPLICANT'S	    ORDER       REFERENCE	 :  HCAE   / 52746
+3.    WE   ARE    CERTIFYING	   THAT    :
+A  )  COUNTRY	 OF   ORIGIN       AS   MADE     IN  CHINA      .
+B  )  ALL    CARTONS	 AND     EACH     ITEMS      ARE     MARKED       WITH     THE     WORDS	MADE     IN  CHINA    .
+C  )   COUNTRY	OF   ORIGIN      IS   CHINA     IS  PRINTED	ON    EACH     ITEM   .
+DESCRIPTION	   OF   GOODS     : TWO    SEATER      SOFA   , ONE    SEATER      SOFA    , THREE     SEATER      SOFA    AS  INVOICE      DETAILS      PO   NUM    / PI NUM    : 1688261    / 52746UAE01
+TRADE       TERMS     :  FOB    QINGDAO      , SHANDONG	.
+Container      No .: MSKU0606204	 , Seal   : CN8587540
+																			  Shipping      mark    no  : HCAE   / 52746
+Container      No .: MRKU3646235	 , Seal   :   ML  - CN8582285
+															 Per	 No  Of
+				  ASN									  QTY			       T.N.W.	 T.G.W.       U.price	Amount
+ Item    No      EAN   NO			 Picture       Description	  HS  Code     Colour	       Carton     Cartons								     Remarks
+			       NUMBER									 ( PCS  )			     ( KGS  )       ( KGS )      ( USD  )       ( USD )
+														       ( CTNS       ( CTNS  )
+								  Ursa  Single
+																									      CTN   SIZE  :
+ 16683864   6292488514					  recliner   with
+										     940161	BEIGE	184	 1	 184       5890.80	6624.00	 $ 63.00     $ 11,592.00
+     0	     313					    Cup Holder-															      L 1010  X  W 760  X
+								 Grey																	   650   MM
+			      RI1HC24034
+			       79  - HCAE
+								 Whitney
+																									      CTN   SIZE  :
+								 single
+16683864    6292488514
+								 electric	    940161	BEIGE       155	 1	  155       6470.00	7068.00	 $ 108.00    $ 16,740.00
+     1	     306																						     L 1010  X  W 760  X
+								 Recliner-
+																									       650   MM
+								 Beige
+					Total  Amount     : 2X40HC					     339		    339      12360.80       13692.00		     $ 28,332.00
+Total       Amount	2x40HC	  USD     TWELVE	 EIGHT       THOUSAND	    THREE	HUNDRED	  AND     THIRTY	TWO      ONLY    .
+							     BENEFICIARY		  NAME	AND      BENEFICIARY	       BANK	DETAILS
+Beneficiary     : HOME      BEST    INTERNATIONAL	      CO  . , LIMITED
+Payee's      Bank   : HANG     SENG      BANK    LIMITED
+Bank    Address     :   83  DES     VOEUX       ROAD     CENTRAL       , HONG      KONG
+																							     AL
+Account      Number    .:    933-078958-883	   ;																	 CO
+																								  .
+Swift    Code   : HASEHKHH																				  家
+																						    美好       LIMITED
+																					     INTERNATION
+																						      國際
+																						    有限公司
+																						  BEST
+																							    *
+																						       HOME
+
+---PAGE NO: 4. END OF PAGE---						   HOME		   BEST		  INTERNATIONAL			 CO    . ,    LIMITED
+					      LEVEL	54    HOPEWELL	   CENTRE	183  ,    QUEEN'S	  ROAD      EAST      HK ,  HONG       KONG
+					     TEL     : 0086      13422520139		Contact      : Ben.Leung	   Mail   :   Ben@homebest.biz
+										     PACKING			   LIST
+												  ORIGINAL
+TO   CONSIGNEE	 :															 PI No : 52746UAE01
+RNA     RESOURCES	 GROUP    LIMITED												       PI Date  : 05/04/2024
+OPERATING	 AS " LANDMARK      "
+																		CI  NO  : 52746UAE01
+JAFZA    LICENSE       NUMBER     103288
+																	       OCI Date  : 18/06/2024
+P.O.BOX     17155
+																		PO   # 1688261
+JEBEL     ALI  FREE    ZONE   , DUBAI   , U.A.E
+																		PO  Date  : 05/04/2024
+TELEPHONE	. +971   4 8231515    / + 974 8157600
+																		B / L No .: 240940135
+EMAIL    : RAMESH.BADARLA@LANDMARKGROUP.COM
+																		Port  Of Loading   : QINGDAO
+ATTN    : MR .  RAMESH
+																		Port  of Discharge   : AJMAN   , UAE
+																		PLACE     OF DELIVERY     : AJMAN   , UAE
+NOTIFY      PARTY   :
+																		PAYMENT      TERM   : T / T
+LANDMARK	TRADING       FZE
+OFFICE      NO FZJOB2101       , JEBEL   ALI   FREE    ZONE   , DUBAI   , UNITED     ARAB   EMIRATES
+CONTACT	PERSON     : MR  . VIJAY   KUMAR      RAMDOSS
+CONTACT	PHONE    : +971   4 8157730
+MANUFACTURERS	     / PRODUCERS	: HOME     BEST  INTERNATIONAL	    CO . , LIMITED
+EXPORTER	: HOME    BEST   INTERNATIONAL	   CO . , LIMITED
+1.   PO   NUM    / PI  NUM    : 1688261    / 52746UAE01
+2. APPLICANT'S	   ORDER       REFERENCE	 : HCAE    / 52746
+3.   WE   ARE    CERTIFYING	  THAT    :
+A  )  COUNTRY	OF  ORIGIN       AS   MADE     IN  CHINA     .
+B  ) ALL    CARTONS	 AND    EACH     ITEMS     ARE     MARKED       WITH     THE     WORDS       MADE     IN  CHINA    .
+C  )  COUNTRY	OF   ORIGIN     IS   CHINA     IS  PRINTED	ON   EACH     ITEM   .
+DESCRIPTION	 OF   GOODS      : TWO   SEATER      SOFA   , ONE   SEATER      SOFA   , THREE     SEATER      SOFA    AS INVOICE      DETAILS      PO   NUM   / PI  NUM   : 1688261    / 52746UAE01
+TRADE      TERMS     :  FOB   QINGDAO      , SHANDONG       .
+Container      No .: MSKU0606204       , Seal   : CN8587540
+																		   Shipping     mark    no  : HCAE  / 52746
+Container      No .: MRKU3646235       , Seal   :   ML - CN8582285
+																		   No  Of
+											 Per					    Per
+			    ASN								     T.CBM		    QTY		  Total			  T.N.W.	 T.G.W.
+Item    No    EAN   NO		   Picture      Description	  HS  CODE     CMB  ( M	       Colour		Carton   (	     Carton   Series				Remarks
+			 NUMBER								       ( M3 )		( PCS )	     Cartons			    ( KGS  )       ( KGS )
+											  3  )					 CTNS   )
+																		  ( CTNS  )
+																			      23HC16431
+																			     450002686
+																									      CTN
+																			      23HC16431				       SIZE  :
+							Ursa  Single
+							recliner  with											450002692
+16683864   62924885
+									   940161	 0.4       73.60       BEIGE	184	  1	 184			 5890.80	6624.00	L 1010
+    0	 14313				      Cup Holder-
+																									    XW    760
+							Grey
+																			      23HC16431					X 650
+																									       MM
+																			      450002685
+																			      23HC16431
+			RI1HC2403
+			 479  - HCAE															  450002509
+																			     23HC16431450
+																									      CTN
+																				 002693-
+							Whitney
+																									      SIZE  :
+																			     23HC16431450
+							single
+16683864   62924885																	     002840   ;
+							electric	  940161	 0.43       66.65       BEIGE	155	  1	 155			 6470.00	7068.00	L 1010
+    1	14306																	 23HC16431450
+							Recliner-																	     XW  760
+																				 002016-
+																									     X  650
+							Beige
+																			     23HC16431450
+																									       MM
+																				002022   ;
+		      Total  Amount     : 2X40Hc						   140.02		    339		    339			12360.80       13692.00
+																						     ONAL		M
+																					    美好      家 CITED
+																				       INTERN
+																					     「  國際
+																				       BEST
+																						 *
+																					     HOME
+
+---PAGE NO: 5. END OF PAGE---									     ORIGINAL
+ 1.Exporter									  Serial   No. CCPIT7002450000411
+ SHENZHEN     TRADE  ALLIANCE     IMPORT     & EXPORT    CO . , LTD
+										       Certificate No. 24C700000907    / 50012
+ SHENZHEN     CHINA   VIA  HOME   BEST INTERNATIONAL	 CO . , LIMITED
+ LEVEL   54 HOPEWELL     CENTRE     183
+ QUEEN'S    ROAD   EAST   HK , HONG   KONG
+											       Chamber
+													   Commerce
+												 ICC
+															   CERTIFICATE	   OF  ORIGIN
+											   World Chambers
+										      International
+											       Federation
+ 2.Consignee																 OF
+											    Certificate
+ RNA  RESOURCES       GROUP  LIMITED
+ OPERATING      AS " LANDMARK    "							    of Origin
+														   THE     PEOPLE'S       REPUBLIC	OF   CHINA
+ JAFZA  LICENSE    NUMBER    103288   PO.BOX    17155
+											   Accredited Chamber
+JEBEL    ALI FREE   ZONE  , DUBAI  , UNITED  ARAB  EMIRATES
+											       CN1300101
+ TELEPHONE      +971   4 8231515 / + 974 8157600
+ EMAIL  : RAMESH BADARLA@LANDMARKGROUP.COM
+ATTN   : MR . RAMESH
+ 3.Means   of transport and route						     5.For certifying authority use only
+ FROM   QINGDAO     CHINA   TO AJMAN   UNITED    ARAB  EMIRATES      BY  SEA
+										       CHINA	   COUNCIL	  FOR      THE
+										       PROMOTION	   OF INTERNATIONAL
+										       TRADE       IS   CHINA      CHAMBER	 OF
+										       INTERNATIONAL		  COMMERCE
+ 4.Country/region   of destination
+UNITED    ARAB  EMIRATES
+										       VERIFY   URL  : HTTP : //CHECK.ECOCCPIT.NET/
+ 6.Marks  and numbers		7.Number    and kind  of packages  ; description of goods	8.H.S.Code	   9.Quantity	       10.Number
+																		      and date  of
+																		      invoices
+HCAE   / 52746		   ONE  SEATER     SOFA						       940161	  13692   KGS	  52746UAE01
+				 HS  CODE   : 940161											    JUL.07,2024
+				PI  NO : 52746UAE01
+				PI  DATE    5 / ARP / 2024
+				 PO  # 1688261
+				 PO  DATE  : 5 / ARP / 2024
+				SHIPMENT      TERM  : FOB
+				PORT    OF DISCHARGE      : AJMAN , UAE
+				PLACE     OF DELIVERYAJMAN      , UAE
+				PAYMENT      TERM   : T / T
+				APPLICANT'S     ORDER   REFERENCE       :
+									  A
+				HCAE    / 52746
+				WE   ARE CERTIFYING      THE SPECIFIC    COUNTRY      OF ORIGIN
+				OF   THE  GOODS    IS CHINA
+				TOTAL    THREE   HUNDRED      AND THIRTY    NINE  ( 339 ) CTNS ONLY
+				NOTIFY    PARTY   :
+				LANDMARK     TRADING     FZE
+				OFFICE    NO FZJOB2101     , JEBEL ALI FREE   ZONE   , DUBAI ,
+				UNITED    ARAB  EMIRATES
+				CONTACT     PERSON     : MR . VIJAY KUMAR   RAMDOSS
+				CONTACT      PHONE   : +971 4 8157730
+				***
+11.Declaration   by the exporter					       12.Certification
+    The undersigned  hereby declares  that the above details  and statements  are	It is hereby certified that the declaration by the exporter is correct .
+correct , that all the goods were produced in China and that they comply with  the
+Rules  of Origin of the People's Republic of China .
+			ALLIANCE      IMPORT
+												      国际     贸易    促进
+						  &								     委员会
+												中国
+			深圳	   市	      EX EXPORT					  单据    证明    专用    意
+					贸       盟
+		TRADE
+													    (  深  )
+		       进出口	     有限公司       ,
+											    CHINA COUNCIL    FOR THE PROMOTION
+							   胡	      熱		       OF INTERNATIONAL   TRADE
+				  *						  ADDRESS     : 4F , BLOCK  A , BUILDING  OF INTERNATIONAL      CHAMBER      OF
+										     COMMERCE	1ST  FUHUA   ROAD   , FUTIAN DISTRICT    , SHENZHEN    , P.R.C
+										     FAX  : 86-755-33358500	       TEL : 86-755-88100028
+		      SHENZHEN     , CHINA JUL.17,2024						    SHENZHEN     , CHINA JUL.17,2024
+Place and date  , signature and stamp of authorized signatory		       Place   and date , signature and stamp of certifying authority
+																       authority
+
+---PAGE NO: 6. END OF PAGE---		    *					MAERSK
+															       BILL       OF     LADING	  FOR      OCEAN	  TRANSPORT
+																										       SCAC	MAEU
+															       OR	 MULTIMODAL		TRANSPORT
+																										      B  / L No.   240940135
+  Shipper   ( As principal , where " care of " , " clo " , or other variants used . )
+															      Booking  No.
+  HOME	 BEST      INTERNATIONAL	       CO  . , LIMITED
+															      240940135
+  LEVEL	54    HOPEWELL	   CENTRE	183
+  QUEEN'S	   ROAD      EAST      HK  ,   HONG       KONG							      Export references
+																												    Svc Contract
+  TEL    : 13422520139																										 297923671
+  RADE	REGISTER	   NUMBER
+															      Onward inland routing    ( Not part of Carriage as defined in clause 1. For account and risk of Merchant )
+  +666056080008199
+  Consignee   ( negotiable only if consigned " to order " , " to order of " a named Person or " to order of bearer " )
+															      Notify Party  ( see clause 22 )
+  RNA	RESOURCES	    GROUP       LIMITED									    LANDMARK	   TRADING	 FZE
+  OPERATING	     AS   "  LANDMARK	 "									      OFFICE       NO    FZJOB2101	 , JEBEL      ALI    FREE
+																								 ZONE      ,
+  JAFZA	LICENSE	 NUMBER	103288
+															      DUBAI       ,  UNITED	ARAB      EMIRATES
+  P.O.BOX	 17155       JEBEL      ALI    FREE      ZONE    ,  DUBAI     ,
+															      CONTACT	    PERSON      :   MR  . VIJAY
+  U.A.E	TELEPHONE	  .  +971     4   8231515       /  +974      8157600	  EMAIL    :
+															      KUMAR	   RAMDOSS
+  RAMESH.BADARLA		   @     LANDMARKGROUP.COM		     ATTN    :   MR  .  RAMESH			CONTACT	  PHONE      :  +971
+																				      4     8157730
+  Vessel  ( see clause 1 + 19 )			    Voyage    No.
+															      Place  of Receipt . Applicable only when document  used  as Multimodal Transport   B / L . ( see clause 1 )
+  X  -  PRESS       ODYSSEY				   427W
+ Port  of Loading					   Port  of Discharge
+															      Place  of Delivery . Applicable only when document used  as Multimodal Transport   B / L . ( see clause 1 )
+ QINGDAO						      AJMAN     , U.A.E
+										       PARTICULARS		    FURNISHED	     BY     SHIPPER
+ Kind  of Packages  ; Description of goods ; Marks and Numbers  ; Container No./Seal  No.
+																						 Weight				Measurement
+																						  13692.000	       KGS		142.0200	   CBM
+   2    containers	   said    to   contain	 339       CARTONS
+   ONE	 SEATER	  SOFA
+   HS       CODE     :    940161
+   PI     NO   :    52746UAE01
+   PI     DATE	  5 / APR    / 2024
+   PO      #    1688261
+   SHIPMENT PO DATE :   5 TERM / APR / : 2024 FOB									       RIGINAL
+   PORT	 OF      DISCHARGE	   :    AJMAN      , UAE
+   PLACE	  OF     DELIVERY	    AJMAN	UAE
+   PAYMENT	      TERM     :  T / T
+  APPLICANT'S		  ORDER	  REFERENCE	   :
+  HCAE	/  52746
+  '   FREIGHT	   COLLECT
+  HCAE	/  52746
+  MSKU0606204		      ML  -  CN8587540	      40     DRY     9'6      162       CARTONS	    7320.000	    KGS       69.4500
+																				  CBM
+  MRKU3646235		      ML  -  CN8582285	      40     DRY     9'6      177       CARTONS	    6372.000	    KGS       72.5700	  CBM
+  SHIPPER'S	       LOAD     ,   STOW     ,    WEIGHT	  AND       COUNT
+  The	Merchant	( s )  warrant	 and     represent	 that     this     shipment	   and   / or    Goods      will     comply	at  all
+Above particulars  as declared by Shipper , but without responsibility of or representation by Carrier ( see clause 14 )
+    Freight  & Charges
+											    Rate			      Unit					Currency
+																							  Prepaid			Collect
+Carrier's Receipt ( see clause 1 and 14 ) . Total number     Place  of Issue of B / L
+															    SHIPPED , as far as ascertained by reasonable means of checking , in apparent good order and condition unless otherwise stated herein , the total number
+of containers or packages received   by Carrier .	       Qingdao						     or quantity of Containers or other packages or units indicated in the box entitled " Carrier's Receipt for carriage from the Port of Loading ( or the Place
+															    of Receipt , if mentioned above ) to the Port of Discharge ( or the Place of Delivery , if mentioned above ) , such carriage being always subject
+																													    to the terms ,
+ 2    containers
+															    rights , defences , provisions , conditions , exceptions , limitations , and liberties hereof ( INCLUDING ALL THOSE TERMS AND CONDITIONS ON THE
+																													      REVERSE
+															    HEREOF NUMBERED  1-26 AND THOSE TERMS  AND CONDITIONS CONTAINED  IN THE CARRIER'S
+																									     APPLICABLE TARIFF ) and the Merchant's attention
+ Number    & Sequence  of Original B ( s ) / L	       Date  of Issue of  B / L				       is drawn in particular to the Carrier's liberties in respect of on deck stowage ( see clause 18 ) and the carrying
+																										     vessel ( see clause 19 ) . Where the bill of
+															    ading is non - negotiable the Carrier may give delivery of the Goods to the named consignee upon reasonable proof of identity
+																												    and without requiring
+							     2024-07-17						 surrender   of an original bill
+																		  of lading . Where the bill of lading is negotiable , the Merchant is obliged to surrender one original , duly endorsed , in exchange
+2   /   THREE													      for the Goods . The Carrier accepts a duty of reasonable care to check that any such document which the Merchant surrenders as a bill of lading is
+															    genuine and original . If the Carrier complies with this duty , it will be entitled to deliver the Goods against what it reasonably believes
+																													 to be a genuine
+															    and original bill of lading , such delivery discharging the Carrier's delivery obligations . In accepting this bill of lading ,
+																											   any local customs or privileges to
+Declared Value   ( see clause 7.3 )			Shipped     on Board Date  ( Local Time  }
+															   the contrary notwithstanding , the Merchant agrees to be bound by all Terms and Conditions stated herein whether written , printed ,
+																													     stamped or
+															   incorporated on the face or reverse side hereof , as fully as if they were all signed by the Merchant .
+							     2024-07-12
+															    IN WITNESS WHEREOF the number of original Bills of Lading stated on this side have
+																								   been signed and wherever one original Bill of Lading has been
+															   surrendered any others shall be void .
+																						Signed  for the Carrier Maersk  A / S
+																													     CALID
+																		   Cand
+																											  VERS
+This     transport	 document	has    one    or   more      numbered	 pages
+																						      As Agent  ( s )
+																					    2023		Msk       -   A1		    004916640
+																											   004916640
+
+---PAGE NO: 7. END OF PAGE---					    CY FAX PHONE U.A.E DUBAI PO SHAIKH AL MAERSK AGENT FREIGHT compliance transit clause indemnify returned Sanctions [ and Security similar Control such whether control times
+				   Freight & Charges / CY : 971 4 3326700 : 971 4 3326200 BOX : 50720 ZAYED ROAD MOOSA TOWER 2 , 12TH FLOOR ( HEAD KANOO ( UAE ) LLC : AT DESTINATION COLLECT with this clause by the Merchant or withhold release of the shipment . The Merchant ( s ) agree that and hold harmless the Carrier to the origin at Carriers sole Laws or involves any Designated https://www.maersk.com/news/articles/2022/02/24/russia-ukraine-situation-update / or Goods are in violation of the Council ( Designated Person list maintained by the European ( OFAC ) list of Specially Designated entity or person identified , on directly or indirectly , any entity laws ( Sanctions Laws ) , and with European Union , United States MAERSK *
+						    OFFICE the Carriers ) the that
+								.
+							    and If
+							   Carrier , , Union U.S. or this
+							   its in
+						    )  and unfettered Person Nationals person and
+							 (
+							 s ) . / may servants policy the , or Treasury shipment United
+				   Rate		 or Carriers
+							     ,  as
+							  Goods stop the on promulgated identified
+							   and discretion and Departments and Nations
+							     shipment Russia
+							  pending the shipment agents reasonable Blocked , / or
+								    or Goods
+							   , , and and owned sanctions
+				   Unit		any for  by Persons
+							   any the / opinion the Office do
+							  investigation or
+							   and     or not
+							    Merchant Goods United and
+								  ,
+							   breach of controlled
+							   /
+							   or    or involve
+								,     /
+							   Goods this any Foreign or B /
+							   of will shipment Nations export L : 240940135
+							  into this ( s ) be other ,
+							   in shall ] Asset by
+							      ,
+								    any
+2023			Currency
+				   Prepaid
+Msk
+-
+A1
+									   Page
+004916639		    Collect
+									   2
+
+---PAGE NO: 8. END OF PAGE---

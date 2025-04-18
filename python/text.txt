@@ -1,0 +1,567 @@
+																													      BILL    FROM
+																			   www			  .						       ARROW	ELECTRONICS	      ASIA       ( S )   PTE   .    LTD   . SupplierName
+ SHIPPED      FROM
+ ARROW	  ELECTRONICS	      ASIA      ( S )    PTE   .   LTD    .																				  1   Tai      Seng      Avenue      ,    # 07-11     /  12    &   13  ,	 SupplierAdd1
+ Arrow	  Components	     ( M )   Sdn      Bhd																						     Tai      Seng      Exchange	   ( Tower       A )    SupplierAdd2
+ D28-2       ,    Jalan       DPB   / 3 ,    PTP      ( FCZ   )											COMMERCIAL		      INVOICE								       SG  , New      Territories	  .
+																													      Singapore	    ,					   SupplierAdd3
+ 81560	  Gelang	Patah     ,    Johor     ,    MY																						  536464	 Singapore
+																										   SupplierAdd4
+																			    PAGE	  1      OF      3
+																																     PortOfDischarge
+																	  TOTAL	 #    OF    ITEMS	SHIPPED       :   00001
+ SOLD     TO													     SHIP    TO
+ SIEMENS	    LTD												    SIEMENS	 LIMITED	   ImporterName
+ PLOT	NO   .   L6  ,   VERNA	INDUSTRIAL	     ESTATE       ,					   Receiving	    Department
+ OPP       GOA   -  MUMBAI	 HIGHWAY										PLOT       NO  .   L6  ,    VERNA	INDUSTRIAL	     ESTATE      ,  ImporterAdd1
+ VERNA														    OPP      GOA   - MUMBAI	 HIGHWAY
+																					    ImporterAdd2
+ South	 Goa   ,  Goa												VERNA		  ImporterAdd3
+ 403722	   India												    South       Goa   ,  Goa
+															 403722	   India	 ImporterAdd4
+  INVOICE     NUMBER	  InvoiceNo	     DELIVERY      NUMBER
+		  13931398					  017908580
+  SALES     ORDER     NO .			   CUSTOMER       ORDER      NO .						  CUSTOMER	NO .			DATE    OF  ORDER	   BUYER								SPECIAL    INSTRUCTIONS
+	   Date2943493						       4201150489							    1016601			28  -  DEC   - 2024													TermsOfPayment		Currency       :
+Invoice
+  SHIP   DATE		 SHIPPED      VIA						    SALESPERSON	 - INSIDE  / OUTSIDE												 INCO    TERMS	  Terms				PAYMENT      TERMS			   CUR
+    01   -  MAR   - 2025			CUSTFWDR	- AIR    - STD					Tanaji	 Khandagale	  ,    Pragati	  /   Deshpande	  ,   Mandar						     FCA					      90    NET		     USD
+      ITEM	       QUANTITY      SHIPPED												      PRODUCT     DESCRIPTION													  UNIT   PRICE			 EXTENDED      PRICE
+																		  ItemDesc
+      002			1000      EA		   PN  :   GBU605-19																				TAIWANSEMI			     0.24080					240.80
+     001							DESCRIPTION	    :   Diode	Rectifier	    Bridge	 Single	 600V      6A    4 -  PinCase	 GBU
+		       Quantity
+     000						       CUST       PN  :    109679536
+														     PONumber
+							      CUST	PO     NUM   :   4201150489
+																																			  Rate
+							      CUST	PO    LI   :   20																													       Amount
+ THIS DOCUMENT   IS COMPUTER GENERATED    . NO SIGNATURE IS REQUIRED  . THIS SHIPMENT IS MADE SUBJECT TO ARROW'S TERMS  AND CONDITIONS   OF SALE .
+ THESE ITEMS  ARE CONTROLLED    BY THE U.S. GOVERNMENT    AND AUTHORIZED   FOR EXPORT   ONLY  TO THE COUNTRY   OF ULTIMATE DESTINATION   FOR USE  BY THE ULTIMATE CONSIGNEE    OR END  - USER ( S ) HEREIN
+ IDENTIFIED . THEY MAY NOT BE RESOLD , TRANSFERRED  , OR OTHERWISE DISPOSED   OF , TO ANY OTHER COUNTRY  OF TO ANY PERSON  OTHER  THAN THE AUTHORIZED ULTIMATE CONSIGNEE     OR END - USER ( S ) . EITHER IN
+ THEIR ORIGINAL FORM   OR AFTER BEING INCORPORATED   INTO OTHER ITEMS WITHOUT  FIRST OBTAINING APPROVAL    FROM  THE U.S. GOVERNMENT   OR AS OTHERWISE AUTHORIZED    BY U.S. LAW AND REGULATIONS  .
+ CERTIFICATE  OF COMPLIANCE
+ IT IS HEREBY CERTIFIED  THAT  THE PRODUCTS     WE SHIP ARE  ALL IN ACCORDANCE   WITH MANUFACTURER'S SPECIFICATION       . TEST DATA AND OTHER MANUFACTURER'S  DOCUMENTATION	 TO SUPPORT  THIS
+ CERTIFICATION   ARE AVAILABLE  IN OUR FILES  OR CAN   BE OBTAINED  FROM MANUFACTURERS      UPON REQUEST    .
+ TERMS  AND CONDITIONS   OF SALES
+ ALL SALES AND SHIPMENTS  ARE SUBJECT   TO ARROW'S TERMS  AND CONDITIONS   OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales ) .
+ ( APAC - STD 05/11 )
+	       )
+
+---PAGE NO: 1. END OF PAGE---																    www								    BILL  FROM
+ SHIPPED   FROM																	      .					      ARROW     ELECTRONICS	    ASIA     ( S )  PTE   .  LTD   .
+ ARROW      ELECTRONICS	   ASIA     ( S )  PTE   .  LTD   .																	   1  Tai    Seng     Avenue     ,   # 07-11    / 12   &   13 ,
+ Arrow      Components	   ( M )  Sdn    Bhd																			  Tai     Seng    Exchange	 ( Tower      A )
+ D28-2     ,  Jalan      DPB   / 3 ,  PTP    ( FCZ  )									  COMMERCIAL		   INVOICE					 Singapore	, SG , New   Territories
+ 81560      Gelang       Patah    ,   Johor    ,   MY																		       536464       Singapore
+																     PAGE	2    OF      3
+														      TOTAL       #  OF    ITEMS     SHIPPED       : 00001
+ SOLD   TO											     SHIP  TO
+ SIEMENS	LTD										     SIEMENS       LIMITED
+ PLOT      NO  .  L6  ,  VERNA     INDUSTRIAL	   ESTATE     ,				   Receiving	 Department
+ OPP     GOA  - MUMBAI      HIGHWAY								     PLOT     NO  .  L6  ,  VERNA      INDUSTRIAL	  ESTATE     ,
+ VERNA												  OPP    GOA   - MUMBAI      HIGHWAY
+ South      Goa   , Goa										 VERNA
+																									:
+ 403722       India										     South      Goa  , Goa
+												       403722       India
+ INVOICE   NUMBER			  DELIVERY     NUMBER
+	       13931398				  017908580
+ SALES   ORDER    NO .		      CUSTOMER     ORDER     NO .					  CUSTOMER      NO .		   DATE   OF ORDER	 BUYER						      SPECIAL INSTRUCTIONS
+	       22943493					 4201150489						   1016601		    28  - DEC  - 2024
+ SHIP  DATE	      SHIPPED    VIA					  SALESPERSON	 - INSIDE / OUTSIDE										INCO  TERMS					PAYMENT     TERMS		      CUR
+   01   - MAR  - 2025		  CUSTFWDR       - AIR   - STD				 Tanaji      Khandagale	 ,  Pragati	/  Deshpande	,  Mandar					     FCA				      90   NET		  USD
+    ITEM	    QUANTITY    SHIPPED										      PRODUCT   DESCRIPTION											  UNIT  PRICE		    EXTENDED     PRICE
+						    AP01002562Your	      vendor       number       with     us  : 0050071707Created		 By :   ROHIT     DESSAIYour	  ven
+						    dor     number       with     us  :  0050071707	 Place      of   Supply     :  30  ( Goa  ) Created	By :  ROHIT      DESSAIPA
+						    yment       terms     :  60   Days     after      GRN    dateplease	  refer      the    below      link     for    terms      &   condi
+						    ECCN       ( Local   )   :   NLR
+						    License	 ( Local    ) :  NO   LICENSE	REQUIRED
+						    License	 Auth     ( Local    ) :  MITI
+						    ECCN       ( US   Re  - Export    ) :  EAR99
+						    License	 Decision	 ( US   Re - Export     ) : NO  LICENSE	REQUIRED
+						    License	Authority	  ( US   Re  - Export     ) :  BIS
+							    Code    :  8541100080	 HSCODE
+						    HTS
+						    HTS    - Export      Description	  :  Diodes     ,  transistors	   and   similarsemiconductor		   devices      :
+						    photosensitive	      semiconductor	     devices      ,  including	photovoltaic	    cells      whether	or
+						    not     assembled	  in   modules	or   made     up    into    panels     ;   light    - emitting	diodes     ;
+						    mountedpiezoelectric		   crystals       ;  parts
+						    CPN    :  109679536	;  MPN   :  GBU605-19	;  Quantity       :  1000    ;  Price     :  0.2408     ;  CRD   :  20250320       ;  Cu
+						    rrency      :   USD
+						    These       items      may    be   controlled	   by   the    U.S.     Government	  and     may    be   authorized	  for
+						    export	only     to   the     country	of  ultimate	destination	    for    use    by    the   ultimate
+						    consignee	   or   end   - user   ( s )  herein      identified	 .  Any    items      subject	to   the    U.S.     export
+						    laws       may    not    be   resold     ,  transferred	  ,   or  otherwise	 disposed	 of  ,   to   any    other
+						    country	 or    to   any    person       other      than     the   authorized	  ultimate	consignee	  or
+						    end    - user   ( s ) ,  either       in   their      original	form     or    after     being      incorporated	    into
+						    other       items      without	first     obtaining	 approval	 from     the    U.S.     Government	  or   as
+						    otherwise	  authorized	   by   U.S.     law    and    regulations	  .
+						    100
+						    GBU605-19
+THIS DOCUMENT IS COMPUTER GENERATED . NO SIGNATURE IS REQUIRED . THIS SHIPMENT IS MADE SUBJECT TO ARROW'S TERMS AND CONDITIONS OF SALE .
+THESE ITEMS ARE CONTROLLED BY THE U.S. GOVERNMENT AND AUTHORIZED FOR EXPORT ONLY TO THE COUNTRY OF ULTIMATE DESTINATION FOR USE BY THE ULTIMATE CONSIGNEE OR END - USER ( S ) HEREIN
+IDENTIFIED . THEY MAY NOT BE RESOLD , TRANSFERRED , OR OTHERWISE DISPOSED OF , TO ANY OTHER COUNTRY OF TO ANY PERSON OTHER THAN THE AUTHORIZED ULTIMATE CONSIGNEE OR END - USER ( S ) . EITHER IN
+THEIR ORIGINAL FORM OR AFTER BEING INCORPORATED INTO OTHER ITEMS WITHOUT FIRST OBTAINING APPROVAL FROM THE U.S. GOVERNMENT OR AS OTHERWISE AUTHORIZED BY U.S. LAW AND REGULATIONS .
+CERTIFICATE OF COMPLIANCE
+IT IS HEREBY CERTIFIED THAT THE PRODUCTS WE SHIP ARE ALL IN ACCORDANCE WITH MANUFACTURER'S SPECIFICATION . TEST DATA AND OTHER MANUFACTURER'S DOCUMENTATION TO SUPPORT THIS
+CERTIFICATION ARE AVAILABLE IN OUR FILES OR CAN BE OBTAINED FROM MANUFACTURERS UPON REQUEST .
+TERMS AND CONDITIONS OF SALES
+ALL SALES AND SHIPMENTS ARE SUBJECT TO ARROW'S TERMS AND CONDITIONS OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales ) .
+( APAC - STD 05/11 )
+	    )
+
+---PAGE NO: 2. END OF PAGE---																														   BILL    FROM
+																			     www			    .							ARROW	ELECTRONICS	       ASIA       ( S )   PTE    .   LTD   .
+SHIPPED       FROM
+ARROW	  ELECTRONICS	       ASIA       ( S )   PTE   .    LTD   .																				       1   Tai      Seng       Avenue      ,    # 07-11      / 12    &    13  ,
+Arrow	  Components	     (  M )   Sdn      Bhd																							  Tai      Seng       Exchange	   ( Tower	A )
+D28-2       ,    Jalan	DPB   / 3  ,   PTP      ( FCZ   )											   COMMERCIAL		       INVOICE						   Singapore	  , SG  ,  New      Territories
+ 81560	 Gelang	 Patah      ,   Johor      ,   MY																						       536464	 Singapore
+																			       PAGE	  3      OF      3
+																	     TOTAL	 #    OF    ITEMS	SHIPPED	:   00001
+SOLD     TO														SHIP    TO
+SIEMENS	    LTD												       SIEMENS	  LIMITED
+PLOT	 NO  .   L6  ,    VERNA	 INDUSTRIAL	     ESTATE      ,					     Receiving	     Department
+OPP	GOA   - MUMBAI	  HIGHWAY										   PLOT      NO  .    L6  ,    VERNA	INDUSTRIAL	      ESTATE      ,
+VERNA														       OPP      GOA   -  MUMBAI	 HIGHWAY
+South	  Goa   , Goa												   VERNA
+403722	   India												       South       Goa    , Goa
+															   403722	   India
+ INVOICE      NUMBER				DELIVERY       NUMBER
+		 13931398					    017908580
+ SALES     ORDER      NO .			   CUSTOMER	ORDER     NO  .						    CUSTOMER	NO .			DATE    OF  ORDER	    BUYER								  SPECIAL    INSTRUCTIONS
+		 22943493						      4201150489							     1016601			 28  - DEC   -  2024
+ SHIP    DATE		 SHIPPED      VIA						     SALESPERSON	  - INSIDE  / OUTSIDE												    INCO    TERMS						PAYMENT       TERMS			   CUR
+   01    - MAR   -  2025			CUSTFWDR	 - AIR   -  STD					 Tanaji	  Khandagale	  ,    Pragati	  /    Deshpande	 ,    Mandar						       FCA					      90     NET		     USD
+     ITEM		QUANTITY       SHIPPED													PRODUCT     DESCRIPTION													     UNIT   PRICE			  EXTENDED      PRICE
+							       DC     /    BN  :	   COO				  QUANTITY
+							      2503			 CN				    1000       EA       QtyCode
+									      CountryOfOrigin
+THIS DOCUMENT   IS COMPUTER GENERATED     . NO SIGNATURE  IS REQUIRED . THIS SHIPMENT IS MADE SUBJECT  TO ARROW'S  TERMS  AND CONDITIONS   OF SALE .
+THESE ITEMS   ARE CONTROLLED    BY THE U.S. GOVERNMENT    AND AUTHORIZED    FOR EXPORT   ONLY  TO THE COUNTRY    OF ULTIMATE DESTINATION   FOR  USE  BY THE ULTIMATE CONSIGNEE     OR END - USER ( S ) HEREIN									       SUBTOTAL					  240.80
+IDENTIFIED . THEY MAY NOT BE RESOLD  , TRANSFERRED  , OR OTHERWISE DISPOSED    OF , TO ANY OTHER COUNTRY   OF TO ANY PERSON  OTHER  THAN  THE AUTHORIZED ULTIMATE CONSIGNEE      OR END - USER ( S ) . EITHER IN
+THEIR ORIGINAL  FORM  OR AFTER BEING INCORPORATED    INTO OTHER  ITEMS WITHOUT  FIRST OBTAINING APPROVAL    FROM   THE U.S. GOVERNMENT   OR AS OTHERWISE AUTHORIZED     BY U.S. LAW AND REGULATIONS  .
+CERTIFICATE  OF COMPLIANCE
+																																		  TAX	(   0.000      %   )				 0.00
+IT IS HEREBY CERTIFIED   THAT  THE PRODUCTS     WE SHIP ARE  ALL IN ACCORDANCE    WITH MANUFACTURER'S  SPECIFICATION       . TEST DATA AND OTHER MANUFACTURER'S    DOCUMENTATION	TO SUPPORT   THIS
+CERTIFICATION   ARE AVAILABLE   IN OUR FILES   OR CAN  BE OBTAINED   FROM MANUFACTURERS      UPON  REQUEST   .
+TERMS  AND CONDITIONS   OF SALES
+ALL SALES AND SHIPMENTS   ARE SUBJECT   TO ARROW'S TERMS   AND CONDITIONS   OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales ) .																		       TOTAL					   240.80
+( APAC - STD 05/11 )
+																																									 InvoiceValue
+
+---PAGE NO: 3. END OF PAGE---																					 .						   BILL   FROM
+  SHIPPED     FROM																	  wow								ARROW      ELECTRONICS
+																																ASIA	( S )   PTE  .   LTD   .
+  ARROW	ELECTRONICS	    ASIA      ( S )   PTE   .   LTD  .																		       1   Tai     Seng     Avenue      ,   # 307-11    / 12    &  13  ,
+  Arrow	Components	    ( M )  Sdn     Bhd
+																											     Tai       Seng     Exchange	  ( Tower       A ) .
+  D28-2      ,   Jalan       DPB   / 3 ,  PTP     ( FCZ   )										 COMMERCIAL		    INVOICE
+																											     Singapore	  , SG  , New     Territories
+  81560	Gelang	Patah    ,   Johor     ,   MY
+																											      536464	Singapore
+																		 PAGE	 1     OF      3
+																 TOTAL	#   OF    ITEMS      SHIPPED       :  00003
+  SOLD    TO
+														SHIP    TO
+  SIEMENS	  LTD											    SIEMENS
+																LIMITED
+  PLOT       NO  .   L6 ,   VERNA       INDUSTRIAL	    ESTATE     ,				       Receiving	   Department
+  OPP      GOA   - MUMBAI       HIGHWAY
+														PLOT	NO .   L6  ,   VERNA       INDUSTRIAL	   ESTATE      ,
+  VERNA
+														OPP       GOA  - MUMBAI	HIGHWAY
+  South	Goa  , Goa
+														VERNA
+  403722	 India
+														South	Goa   , Goa
+														403722	 India
+  INVOICE    NUMBER			     DELIVERY
+							     NUMBER
+		 13931399				      017908581
+  SALES    ORDER     NO .			CUSTOMER      ORDER     NO .
+															   CUSTOMER       NO .		      DATE   OF  ORDER	  BUYER							   SPECIAL  INSTRUCTIONS
+		 19837766					      4201049307						       1016601
+																				    08   - AUG   - 2023
+  SHIP   DATE	       SHIPPED     VIA					       SALESPERSON
+													     - INSIDE  / OUTSIDE											 INCO   TERMS					   PAYMENT      TERMS
+																																							 CUR
+    28   - FEB   - 2025		     CUSTFWDR	- AIR  -  STD
+													    Tanaji	 Khandagale	 ,   Pragati	 /   Deshpande	,   Mandar						 FCA					  90    NET		   USD
+     ITEM	      QUANTITY     SHIPPED
+																	 PRODUCT   DESCRIPTION												   UNIT  PRICE		       EXTENDED     PRICE
+     007		      7200      EA		 PN  :  HX1188NLT
+																													PULSE		      0.24960				  1797.12
+     003
+							  DESCRIPTION	   :   Telecom	 Transformer	    2  ( 1CT  : 1CT   )   1.50hm	Prim    .  DCR     1.50hm	Sec  .   DCR     16    Terminal	  Gull
+     000
+							 CUST	PN :   105264736
+							 CUST	PO   NUM   :   4201049307
+							 CUST	PO   LI  :   00070
+							 ECCN	( Local    )   :   NLR
+							 License	   ( Local    ) :   NO    LICENSE	REQUIRED
+							 License	  Auth      ( Local     ) :   MITI
+							 ECCN	( US   Re  - Export      ) :   EAR99
+							 License	  Decision	  ( US    Re  - Export     ) : NO    LICENSE	 REQUIRED
+							 License	  Authority	   ( US    Re  - Export     ) :   BIS
+							 HTS      Code    :   8536.90.10
+							 resale       value	   29.39       requested	Date	  2024.Jul.20
+							 DC     /   BN  :	  COO			      QUANTITY
+							 2501		      CN				7200      EA
+     008		     28200       EA
+							 PN   :   HX1188NLT																			      PULSE		     0.24960				  7038.72
+     001						  DESCRIPTION	   :   Telecom	 Transformer	    2 ( 1CT   : 1CT   )   1.50hm	Prim   .   DCR     1.50hm       Sec   .   DCR     16    Terminal	  Gull
+    000						   CUST      PN  :   105264736
+							 CUST       PO    NUM   :   4201049307
+							 CUST       PO    LI  :   00080
+THIS DOCUMENT  IS COMPUTER GENERATED  . NO SIGNATURE IS REQUIRED . THIS SHIPMENT IS MADE SUBJECT
+											     TO ARROW'S TERMS  AND CONDITIONS OF SALE .
+THESE ITEMS ARE CONTROLLED   BY THE U.S. GOVERNMENT  AND AUTHORIZED  FOR EXPORT ONLY  TO THE COUNTRY   OF ULTIMATE DESTINATION FOR USE
+																      BY THE ULTIMATE CONSIGNEE   OR END - USER ( S ) HEREIN
+IDENTIFIED . THEY MAY NOT BE RESOLD , TRANSFERRED , OR OTHERWISE DISPOSED OF , TO ANY OTHER COUNTRY OF TO ANY PERSON OTHER THAN THE AUTHORIZED ULTIMATE CONSIGNEE
+																				OR END - USER ( S ) . EITHER IN
+THEIR ORIGINAL FORM OR AFTER BEING INCORPORATED INTO OTHER ITEMS WITHOUT FIRST OBTAINING APPROVAL FROM  THE U.S. GOVERNMENT
+															    OR AS OTHERWISE AUTHORIZED  BY U.S. LAW AND REGULATIONS .
+CERTIFICATE OF COMPLIANCE
+IT IS HEREBY CERTIFIED THAT THE PRODUCTS   WE SHIP ARE ALL IN ACCORDANCE  WITH MANUFACTURER'S SPECIFICATION
+													       . TEST DATA AND OTHER MANUFACTURER'S DOCUMENTATION      TO SUPPORT THIS
+CERTIFICATION ARE AVAILABLE  IN OUR FILES OR CAN  BE OBTAINED FROM MANUFACTURERS    UPON
+											  REQUEST  .
+TERMS AND CONDITIONS  OF SALES
+ALL SALES AND SHIPMENTS ARE SUBJECT TO ARROW'S TERMS AND CONDITIONS
+								    OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales ) .
+( APAC - STD 05/11 )
+	     )
+
+---PAGE NO: 4. END OF PAGE---																												  BILL   FROM
+																		   www			 .						    ARROW       ELECTRONICS	     ASIA      ( S )   PTE   .   LTD   .
+ SHIPPED     FROM
+ ARROW	ELECTRONICS	     ASIA      ( S )   PTE   .   LTD   .																			   1   Tai     Seng      Avenue      ,   307-11 #    / 12    &   13  ,
+ Arrow	Components	    ( M )   Sdn     Bhd																					     Tai     Seng      Exchange	  ( Tower       A )
+ D28-2      ,   Jalan       DPB   / 3 ,   PTP     ( FCZ   )										    COMMERCIAL		     INVOICE					       Singapore	,  SG  , New     Territories
+ 81560	Gelang	Patah     ,   Johor     ,   MY																					  536464
+																														Singapore
+																		    PAGE	 2     OF      3
+																   TOTAL	#    OF    ITEMS       SHIPPED       :  00003
+ SOLD    TO													SHIP   TO
+ SIEMENS	  LTD											       SIEMENS	 LIMITED
+ PLOT       NO  .   L6  ,   VERNA       INDUSTRIAL	    ESTATE      ,					 Receiving	   Department
+ OPP      GOA   - MUMBAI	HIGHWAY									     PLOT      NO  .   L6  ,   VERNA       INDUSTRIAL	    ESTATE      ,
+ VERNA													      OPP     GOA   - MUMBAI	HIGHWAY
+ South	Goa   , Goa											   VERNA
+ 403722	 India											       South       Goa   , Goa
+														  403722	  India
+ INVOICE     NUMBER			     DELIVERY      NUMBER
+		13931399					017908581
+ SALES     ORDER     NO .			CUSTOMER       ORDER     NO .						CUSTOMER       NO .		       DATE   OF  ORDER	  BUYER							     SPECIAL   INSTRUCTIONS
+		19837766						 4201049307							1016601		       08  - AUG   - 2023
+ SHIP   DATE		SHIPPED     VIA						 SALESPERSON	 - INSIDE / OUTSIDE											    INCO   TERMS					     PAYMENT      TERMS			 CUR
+   28      FEB   - 2025		      CUSTFWDR       -  AIR   - STD				      Tanaji	Khandagale	 ,    Pragati	 /   Deshpande	 ,   Mandar						  FCA					   90    NET		    USD
+     ITEM	      QUANTITY      SHIPPED												PRODUCT    DESCRIPTION												     UNIT  PRICE			EXTENDED      PRICE
+							  ECCN	( Local     )   :   NLR
+							  License	   ( Local     ) :   NO    LICENSE	 REQUIRED
+							  License	   Auth      ( Local     ) :   MITI
+							  ECCN	( US    Re  - Export      ) :   EAR99
+							  License	   Decision	  ( US    Re  - Export      ) : NO    LICENSE	 REQUIRED
+							  License	   Authority	   ( US    Re  - Export      ) :   BIS
+							  HTS       Code    :   8536.90.10
+							  resaleValue		   29.39       requestedDate		   2024.Aug.20
+										  -
+							  DC      /   BN  :	  COO			      QUANTITY
+							  2452		       CN				 3000      EA
+							  2501		       CN			       25200       EA
+    009		      20400	EA		PN  :   HX1188NLT																				  PULSE		     0.24960				    5091.84
+    001						     DESCRIPTION	   :   Telecom	 Transformer	     2 ( 1CT   : 1CT   )   1.50hm	 Prim   .   DCR     1.50hm	Sec   .   DCR     16    Terminal	   Gull
+    000						     CUST      PN  :   105264736
+							  CUST	PO    NUM   :   4201049307
+							  CUST	PO    LI  :   00090
+							  ECCN	( Local     )   :   NLR
+							  License	   ( Local     ) :   NO    LICENSE	 REQUIRED
+							  License	   Auth      ( Local     ) :   MITI
+							  ECCN	( US    Re  - Export      ) :   EAR99
+							  License	   Decision	  ( US    Re  - Export      ) : NO    LICENSE	 REQUIRED
+							  License	   Authority	   ( US    Re  - Export      ) :   BIS
+							  HTS       Code    :   8536.90.10
+							  resaleValue		   29.39       requestedDate		   2024.Sep.20
+							  DC      /   BN  :	  COO			      QUANTITY
+							  2452		       CN			       18000       EA
+THIS DOCUMENT  IS COMPUTER GENERATED   . NO SIGNATURE IS REQUIRED . THIS SHIPMENT IS MADE SUBJECT TO ARROW'S TERMS AND CONDITIONS OF SALE .
+THESE ITEMS  ARE CONTROLLED   BY THE U.S. GOVERNMENT  AND AUTHORIZED   FOR EXPORT ONLY  TO THE COUNTRY   OF ULTIMATE DESTINATION  FOR USE  BY THE ULTIMATE CONSIGNEE  OR END - USER ( S ) HEREIN
+IDENTIFIED . THEY MAY NOT BE RESOLD , TRANSFERRED , OR OTHERWISE DISPOSED OF , TO ANY OTHER COUNTRY OF TO ANY PERSON OTHER THAN THE AUTHORIZED ULTIMATE CONSIGNEE   OR END - USER ( S ) . EITHER IN
+THEIR ORIGINAL FORM  OR AFTER BEING INCORPORATED INTO OTHER ITEMS WITHOUT FIRST OBTAINING APPROVAL   FROM  THE U.S. GOVERNMENT  OR AS OTHERWISE AUTHORIZED  BY U.S. LAW AND REGULATIONS .
+CERTIFICATE OF COMPLIANCE
+IT IS HEREBY CERTIFIED THAT  THE PRODUCTS   WE SHIP ARE  ALL IN ACCORDANCE  WITH MANUFACTURER'S SPECIFICATION     . TEST DATA AND OTHER MANUFACTURER'S DOCUMENTATION	TO SUPPORT THIS
+CERTIFICATION  ARE AVAILABLE  IN OUR FILES OR CAN  BE OBTAINED  FROM MANUFACTURERS    UPON REQUEST    .
+TERMS  AND CONDITIONS OF SALES
+ALL SALES AND SHIPMENTS ARE SUBJECT  TO ARROW'S TERMS  AND CONDITIONS  OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales ) .
+( APAC - STD 05/11 )
+	      )
+
+---PAGE NO: 5. END OF PAGE---																														BILL    FROM
+  SHIPPED      FROM																		      www	     .							ARROW	ELECTRONICS	      ASIA       ( S )   PTE    .   LTD   .
+ ARROW	  ELECTRONICS	      ASIA       ( S )   PTE    .   LTD   .																				    1   Tai      Seng      Avenue       ,  2307-11 #     / 12    &    13  ,
+ Arrow	  Components	     ( M )    Sdn     Bhd																						       Tai      Seng      Exchange	   ( Tower	A )
+  D28-2      ,    Jalan       DPB    / 3 ,    PTP     ( FCZ   )											 COMMERCIAL		       INVOICE
+																														Singapore	    , SG  , New      Territories
+  81560	 Gelang	 Patah     ,    Johor     ,   MY
+																														536464	   Singapore
+ 4
+																			     PAGE	  3      OF      3
+																	   TOTAL	 #    OF    ITEMS	SHIPPED	:   00003
+ SOLD     TO													      SHIP   TO
+  SIEMENS	   LTD												     SIEMENS	  LIMITED
+  PLOT	NO  .   L6  ,    VERNA	INDUSTRIAL	     ESTATE      ,					    Receiving	    Department
+ OPP	GOA   - MUMBAI	 HIGHWAY										  PLOT      NO  .   L6  ,    VERNA	INDUSTRIAL	     ESTATE       ,
+ VERNA														     OPP      GOA   - MUMBAI	 HIGHWAY
+ South	  Goa   , Goa
+															  VERNA
+ 403722	   India												     South       Goa
+																	     ,   Goa
+															  403722	  India
+  INVOICE     NUMBER
+						    DELIVERY       NUMBER
+		  13931399					   017908581
+  SALES     ORDER     NO  .			  CUSTOMER	ORDER     NO .											       DATE    OF  ORDER										 SPECIAL    INSTRUCTIONS
+																      CUSTOMER	NO .						    BUYER
+		  19837766						    4201049307							     1016601			08  - AUG   -  2023
+  SHIP    DATE		 SHIPPED     VIA						    SALESPERSON	  - INSIDE  / OUTSIDE												  INCO   TERMS						PAYMENT       TERMS			   CUR
+    28    - FEB   - 2025			CUSTFWDR	 - AIR   - STD					 Tanaji	 Khandagale	   ,   Pragati	  /    Deshpande	 ,    Mandar						     FCA					      90     NET		     USD
+     ITEM		 QUANTITY     SHIPPED												       PRODUCT     DESCRIPTION													   UNIT   PRICE			 EXTENDED       PRICE
+							      DC      /   BN   :	  COO				 QUANTITY
+							      2501			CN				    2400       EA
+THIS DOCUMENT   IS COMPUTER GENERATED     . NO SIGNATURE IS REQUIRED  . THIS SHIPMENT IS MADE SUBJECT TO ARROW'S TERMS   AND CONDITIONS   OF SALE .
+THESE ITEMS   ARE CONTROLLED    BY THE U.S. GOVERNMENT    AND AUTHORIZED   FOR EXPORT   ONLY  TO THE COUNTRY    OF ULTIMATE DESTINATION   FOR USE  BY THE ULTIMATE CONSIGNEE     OR END - USER ( S ) HEREIN									     SUBTOTAL				      13927.68
+IDENTIFIED . THEY MAY NOT BE RESOLD  , TRANSFERRED  , OR OTHERWISE DISPOSED   OF , TO ANY OTHER COUNTRY   OF TO ANY PERSON OTHER   THAN THE AUTHORIZED ULTIMATE CONSIGNEE      OR END - USER ( S ) . EITHER IN
+THEIR ORIGINAL FORM   OR AFTER BEING INCORPORATED    INTO OTHER ITEMS WITHOUT  FIRST OBTAINING APPROVAL    FROM  THE U.S. GOVERNMENT    OR AS OTHERWISE AUTHORIZED    BY U.S. LAW AND REGULATIONS  .
+CERTIFICATE  OF COMPLIANCE
+																																	       TAX       (    0.000     %   )				 0.00
+IT IS HEREBY CERTIFIED  THAT   THE PRODUCTS    WE SHIP  ARE ALL  IN ACCORDANCE   WITH MANUFACTURER'S  SPECIFICATION      . TEST DATA  AND OTHER MANUFACTURER'S   DOCUMENTATION	TO SUPPORT  THIS
+CERTIFICATION   ARE AVAILABLE   IN OUR FILES  OR CAN  BE OBTAINED   FROM MANUFACTURERS      UPON REQUEST    .
+TERMS  AND CONDITIONS   OF SALES
+ALL SALES AND SHIPMENTS   ARE SUBJECT  TO ARROW'S  TERMS  AND CONDITIONS   OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales ) .																		     TOTAL				      13927.68
+( APAC - STD 05/11 )
+	       )
+
+---PAGE NO: 6. END OF PAGE---																     Mnow		     .					     BILL  FROM
+ SHIPPED    FROM																							     ARROW     ELECTRONICS	    ASIA     ( S )  PTE   .  LTD   .
+ ARROW      ELECTRONICS	    ASIA     ( S )  PTE   .  LTD   .																	   1  Tai    Seng     Avenue     ,   # 2307-11  / 12   &  13  ,
+ Arrow      Components	   ( M )  Sdn    Bhd																			   Tai    Seng     Exchange	 ( Tower      A )
+ D28-2     ,   Jalan      DPB  / 3 ,  PTP     ( FCZ  )									  COMMERCIAL		  INVOICE					  Singapore       , SG  , New   Territories
+ 81560       Gelang       Patah    ,  Johor    ,   MY
+																									    536464       Singapore
+																      PAGE	1    OF     2
+														       TOTAL       #  OF   ITEMS      SHIPPED      :  00001
+ SOLD   TO											     SHIP   TO
+ SIEMENS	 LTD										    SIEMENS	LIMITED
+ PLOT      NO  .   L6 ,  VERNA      INDUSTRIAL	  ESTATE     ,				    Receiving	 Department
+ OPP     GOA   - MUMBAI      HIGHWAY								    PLOT      NO .   L6 ,   VERNA     INDUSTRIAL	   ESTATE     ,
+ VERNA												  OPP     GOA  - MUMBAI      HIGHWAY
+ South       Goa  , Goa
+												       VERNA
+ 403722	India										    South      Goa   , Goa
+												       403722	India
+  INVOICE  NUMBER			  DELIVERY     NUMBER
+	       13935945				  017914477
+ SALES    ORDER    NO .		     CUSTOMER      ORDER    NO .					  CUSTOMER       NO .		   DATE   OF ORDER	 BUYER						      SPECIAL INSTRUCTIONS
+	       21524644					  4201110888						  1016601		    22  - MAY   - 2024
+ SHIP   DATE	     SHIPPED    VIA					   SALESPERSON	- INSIDE / OUTSIDE										 INCO  TERMS					PAYMENT    TERMS		       CUR
+   03   - MAR  - 2025		   CUSTFWDR       - AIR  - STD				 Tanaji       Khandagale	,  Pragati	 / Deshpande	,  Mandar										       90   NET
+																											      FCA								  USD
+     ITEM	    QUANTITY    SHIPPED										      PRODUCT  DESCRIPTION											   UNIT PRICE		     EXTENDED     PRICE
+    003		     389     EA		PN  :  ADSP    - BF536BBCZ       - 3B																		   8.34510				3246.24
+																											 ADI
+    001					      DESCRIPTION	  :  DSP    Fixed     - Point     16bit      300MHZ       208  - Pin    CSP   - BGA    Tray
+    000					       CUST     PN  :  105812847
+						     CUST      PO   NUM   :  4201110888
+						     CUST      PO   LI  :   30
+						    AP01002562Your	       vendor      number       with     us  : 0050071707Created		 By  :  DIVYA      NAIKYour	vendo
+						     r   number       with     us  : 0050071707Place		of   Supply     :  30  ( Goa  ) Created	By :  DIVYA      NAIKPaymen
+						     t   terms     :  60   Days     after      GRN    dateplease	   refer     the     below     link      for    terms      &  condition
+						    ECCN       ( Local    )  :   NLR
+						    License	  ( Local   ) :   NO   LICENSE       REQUIRED
+						    License	 Auth      ( Local   ) :  MITI
+						    ECCN       ( US   Re  - Export    ) :  3A991a.2	.
+						    License	 Decision	 ( US   Re - Export     ) : NO   LICENSE       REQUIRED
+						    License	 Authority	  ( US   Re - Export     ) :  BIS
+						    HTS      Code   :  8542310001
+						    CPN    :  105812847	;   MPN  : W73038F3536B208	      ;  Quantity       :   704  ;   Price    :  8.266    ;   CRD   :  20250220
+						    ;    Currency       :  USD
+						    These       items      may     be   controlled	  by    the    U.S.    Government	   and    may    be   authorized	  for
+						    export	only      to   the    country	of   ultimate	destination	   for    use     by   the    ultimate
+						    consignee	   or   end   - user   ( s )  herein      identified	 .  Any    items      subject	to   the    U.S.     export
+						    laws       may    not    be   resold      ,  transferred	 ,   or   otherwise	 disposed	 of ,   to   any    other
+						    country	 or    to   any    person       other      than     the    authorized	  ultimate	consignee	  or
+						    end    - user    ( s ) , either       in   their      original	 form     or   after      being     incorporated	    into
+						    other       items      without	first     obtaining	 approval	 from     the    U.S.     Government	  or    as
+						    otherwise	  authorized	   by   U.S.     law     and   regulations	  .
+						    10000
+						    W73038F3536B208
+THIS DOCUMENT IS COMPUTER GENERATED . NO SIGNATURE IS REQUIRED . THIS SHIPMENT IS MADE SUBJECT TO ARROW'S TERMS AND CONDITIONS OF SALE .
+THESE ITEMS ARE CONTROLLED BY THE U.S. GOVERNMENT AND AUTHORIZED FOR EXPORT ONLY TO THE COUNTRY OF ULTIMATE DESTINATION FOR USE BY THE ULTIMATE CONSIGNEE OR END - USER ( S ) HEREIN
+IDENTIFIED . THEY MAY NOT BE RESOLD , TRANSFERRED , OR OTHERWISE DISPOSED OF , TO ANY OTHER COUNTRY OF TO ANY PERSON OTHER THAN THE AUTHORIZED ULTIMATE CONSIGNEE OR END - USER ( S ) . EITHER IN
+THEIR ORIGINAL FORM OR AFTER BEING INCORPORATED INTO OTHER ITEMS WITHOUT FIRST OBTAINING APPROVAL FROM THE U.S. GOVERNMENT OR AS OTHERWISE AUTHORIZED BY U.S. LAW AND REGULATIONS .
+CERTIFICATE OF COMPLIANCE
+IT IS HEREBY CERTIFIED THAT THE PRODUCTS WE SHIP ARE ALL IN ACCORDANCE WITH MANUFACTURER'S SPECIFICATION . TEST DATA AND OTHER MANUFACTURER'S DOCUMENTATION TO SUPPORT THIS
+CERTIFICATION ARE AVAILABLE IN OUR FILES OR CAN BE OBTAINED FROM MANUFACTURERS UPON
+										   REQUEST  .
+TERMS AND CONDITIONS OF SALES
+ALL SALES AND SHIPMENTS ARE SUBJECT TO ARROWS TERMS AND CONDITIONS OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales
+												      ) .
+( APAC - STD 05/11 )
+	    )
+
+---PAGE NO: 7. END OF PAGE---																		     www									     BILL   FROM
+ SHIPPED      FROM																			       .						     ARROW       ELECTRONICS	     ASIA      ( S )   PTE   .   LTD   .
+ ARROW	 ELECTRONICS	     ASIA       ( S )  PTE   .    LTD   .																			    1  Tai      Seng      Avenue      ,   # 307-11    / 12    &   13  ,
+ Arrow	 Components	    ( M )   Sdn     Bhd																					      Tai      Seng      Exchange	  ( Tower       A )
+ D28-2       ,   Jalan       DPB   / 3 ,   PTP     ( FCZ   )										     COMMERCIAL		     INVOICE								 ,  SG  , New     Territories
+																												     Singapore
+ 81560	 Gelang	Patah     ,   Johor     ,   MY
+																												     536464	  Singapore
+																		      PAGE	  2     OF      2
+																     TOTAL	 #   OF    ITEMS       SHIPPED       :  00001
+ SOLD     TO													SHIP   TO
+ SIEMENS	   LTD												SIEMENS	 LIMITED
+ PLOT	NO  .   L6  ,   VERNA       INDUSTRIAL	    ESTATE       ,					 Receiving	   Department
+ OPP       GOA   - MUMBAI	HIGHWAY									      PLOT      NO  .   L6  ,   VERNA       INDUSTRIAL	    ESTATE      ,
+ VERNA													       OPP      GOA   - MUMBAI	HIGHWAY
+ South	 Goa   , Goa
+														    VERNA
+ 403722	  India												South       Goa   , Goa
+														    403722	  India
+  INVOICE    NUMBER			      DELIVERY      NUMBER
+		 13935945					017914477
+  SALES    ORDER     NO .			 CUSTOMER       ORDER     NO  .						CUSTOMER       NO .		      DATE    OF  ORDER									     SPECIAL   INSTRUCTIONS
+																								    BUYER
+		 21524644						 4201110888							 1016601		       22  - MAY   -  2024
+  SHIP   DATE		SHIPPED     VIA						 SALESPERSON	 - INSIDE  / OUTSIDE											     INCO   TERMS					     PAYMENT      TERMS			  CUR
+    03   - MAR   -  2025		     CUSTFWDR	-  AIR   - STD				      Tanaji	Khandagale	  ,    Pragati	 /   Deshpande	 ,   Mandar												 90    NET
+																															 FCA									   USD
+     ITEM	       QUANTITY     SHIPPED												  PRODUCT    DESCRIPTION												      UNIT   PRICE		       EXTENDED      PRICE
+							   DC      /   BN  :	  COO			       QUANTITY
+							   2501		       KR				    389     EA
+THIS DOCUMENT  IS COMPUTER GENERATED    . NO SIGNATURE IS REQUIRED . THIS SHIPMENT IS MADE SUBJECT TO ARROW'S TERMS AND CONDITIONS OF SALE .
+THESE ITEMS  ARE CONTROLLED    BY THE U.S. GOVERNMENT  AND AUTHORIZED  FOR EXPORT  ONLY   TO THE COUNTRY  OF ULTIMATE DESTINATION  FOR USE  BY THE ULTIMATE CONSIGNEE   OR END - USER ( S ) HEREIN									SUBTOTAL				      3246.24
+IDENTIFIED . THEY MAY NOT BE RESOLD , TRANSFERRED , OR OTHERWISE DISPOSED OF , TO ANY OTHER COUNTRY OF TO ANY PERSON OTHER  THAN  THE AUTHORIZED ULTIMATE CONSIGNEE   OR END - USER ( S ) . EITHER IN
+THEIR ORIGINAL FORM  OR AFTER BEING INCORPORATED  INTO OTHER ITEMS WITHOUT FIRST OBTAINING APPROVAL   FROM  THE U.S. GOVERNMENT  OR AS OTHERWISE AUTHORIZED   BY U.S. LAW AND REGULATIONS .
+CERTIFICATE OF COMPLIANCE
+																																  TAX       (   0.000     %   )			       0.00
+IT IS HEREBY CERTIFIED THAT  THE PRODUCTS    WE SHIP ARE ALL IN ACCORDANCE   WITH MANUFACTURER'S SPECIFICATION     . TEST DATA AND OTHER MANUFACTURER'S DOCUMENTATION	TO SUPPORT  THIS
+CERTIFICATION  ARE AVAILABLE  IN OUR FILES  OR CAN  BE OBTAINED FROM MANUFACTURERS      UPON REQUEST   .
+TERMS  AND CONDITIONS  OF SALES
+ALL SALES AND SHIPMENTS  ARE SUBJECT  TO ARROWS TERMS  AND CONDITIONS  OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales																	       TOTAL				      3246.24
+														   ) .
+( APAC - STD 05/11 )
+	      )
+
+---PAGE NO: 8. END OF PAGE---																										BILL   FROM
+																	www		      .					       ARROW      ELECTRONICS	    ASIA     ( S )  PTE   .   LTD  .
+ SHIPPED    FROM
+ ARROW       ELECTRONICS	   ASIA      ( S )  PTE   .  LTD   .																	      1  Tai     Seng    Avenue      ,  # 2307-11   / 12   &   13 ,
+ Arrow       Components	   ( M )  Sdn    Bhd																			       Tai    Seng     Exchange	 ( Tower      A )
+ D28-2     ,   Jalan      DPB   / 3 ,  PTP     ( FCZ  )									    COMMERCIAL		   INVOICE					  Singapore	, SG  , New   Territories
+ 81560       Gelang       Patah     ,  Johor    ,   MY
+																										 536464       Singapore
+																	PAGE	1.    OF     2
+															 TOTAL       #   OF   ITEMS      SHIPPED       : 00001
+ SOLD    TO											       SHIP  TO
+ SIEMENS	 LTD										      SIEMENS	LIMITED
+ PLOT      NO  .   L6 ,   VERNA      INDUSTRIAL	  ESTATE      ,				    Receiving	  Department
+ OPP      GOA  - MUMBAI       HIGHWAY								      PLOT     NO  .  L6  ,   VERNA     INDUSTRIAL	   ESTATE     ,
+ VERNA												     OPP    GOA   - MUMBAI      HIGHWAY
+ South       Goa   , Goa										   VERNA
+ 403722	India										       South      Goa  , Goa
+													  403722       India
+  INVOICE   NUMBER			  DELIVERY     NUMBER
+	       13935947				    017917482
+ SALES    ORDER    NO .		      CUSTOMER      ORDER    NO .					    CUSTOMER      NO .		    DATE   OF ORDER	 BUYER							SPECIAL INSTRUCTIONS
+	       21524644					   4201110888						    1016601		     22 - MAY   - 2024
+ SHIP   DATE	      SHIPPED    VIA					    SALESPERSON	- INSIDE / OUTSIDE										   INCO   TERMS					PAYMENT     TERMS		       CUR
+   03   - MAR   - 2025		   CUSTFWDR       - AIR  - STD				  Tanaji       Khandagale	 ,  Pragati	 /  Deshpande	,  Mandar					      FCA					90   NET		  USD
+     ITEM	    QUANTITY     SHIPPED										       PRODUCT   DESCRIPTION											     UNIT  PRICE		     EXTENDED     PRICE
+    002		       96    EA		 PN  :  ADSP    - BF536BBCZ       - 3B																			8.34510				  801.13
+																											      ADI
+    001					       DESCRIPTION	  :   DSP    Fixed     - Point      16bit      300MHz       208  - Pin     CSP  - BGA    Tray
+    000						CUST     PN  :  105812847
+						      CUST      PO    NUM  :  4201110888
+						      CUST      PO    LI  :  20
+						      AP01002562Your	       vendor      number       with      us  : 0050071707Created		  By :   DIVYA     NAIKYour	 vendo
+						      r   number	with     us  : 0050071707Place		of   Supply      :  30  ( Goa  ) Created	By  :  DIVYA      NAIKPaymen
+						      t   terms     :   60   Days     after      GRN    dateplease	   refer      the     below      link     for    terms      &   condition
+						      ECCN      ( Local    )       NLR
+									      :
+						      License	 ( Local    ) :  NO    LICENSE       REQUIRED
+						      License	Auth      ( Local    ) :   MITI
+						      ECCN      ( US   Re  - Export     ) :   3A991a.2       .
+						      License	Decision	  ( US   Re  - Export    ) : NO   LICENSE	REQUIRED
+						      License	Authority	   ( US   Re - Export     ) :   BIS
+						      HTS     Code    :  8542310001
+						      CPN   :   105812847	;  MPN   :  W73038F3536B208	      ;  Quantity       :   704  ;   Price    :   8.266    ;   CRD   :  20250120
+						      ;   Currency       :   USD
+						      These       items      may    be    controlled	   by   the    U.S.     Government	   and    may     be   authorized	   for
+						      export	only     to    the    country	of   ultimate	 destination	    for    use    by    the   ultimate
+						      consignee	  or    end   - user   ( s )  herein       identified	 .  Any     items      subject	to   the    U.S.     export
+						      laws      may    not     be   resold      ,  transferred	  ,  or    otherwise	 disposed	 of  ,   to   any    other
+						      country	 or   to    any    person       other      than      the    authorized	  ultimate	consignee	  or
+						      end   - user    ( s ) ,  either       in   their      original	 form      or   after      being      incorporated	    into
+						      other       items      without	first      obtaining	 approval	 from      the    U.S.     Government	  or    as
+						      otherwise	  authorized	   by   U.S.      law    and    regulations	  .
+						      10000
+						     W73038F3536B208
+THIS DOCUMENT IS COMPUTER GENERATED . NO SIGNATURE IS REQUIRED . THIS SHIPMENT IS MADE SUBJECT TO ARROW'S TERMS AND CONDITIONS OF SALE .
+THESE ITEMS ARE CONTROLLED  BY THE U.S. GOVERNMENT AND AUTHORIZED FOR EXPORT ONLY TO THE COUNTRY OF ULTIMATE DESTINATION FOR USE BY THE ULTIMATE CONSIGNEE OR END - USER ( S ) HEREIN
+IDENTIFIED . THEY MAY NOT BE RESOLD , TRANSFERRED , OR OTHERWISE DISPOSED OF , TO ANY OTHER COUNTRY OF TO ANY PERSON OTHER THAN THE AUTHORIZED ULTIMATE CONSIGNEE OR END - USER ( S ) . EITHER IN
+THEIR ORIGINAL FORM OR AFTER BEING INCORPORATED INTO OTHER ITEMS WITHOUT FIRST OBTAINING APPROVAL FROM THE U.S. GOVERNMENT OR AS OTHERWISE AUTHORIZED BY U.S. LAW AND REGULATIONS .
+CERTIFICATE OF COMPLIANCE
+IT IS HEREBY CERTIFIED THAT THE PRODUCTS WE SHIP ARE ALL IN ACCORDANCE WITH MANUFACTURER'S SPECIFICATION . TEST DATA AND OTHER MANUFACTURER'S DOCUMENTATION   TO SUPPORT THIS
+CERTIFICATION ARE AVAILABLE IN OUR FILES OR CAN BE OBTAINED FROM MANUFACTURERS UPON REQUEST   .
+TERMS AND CONDITIONS OF SALES
+ALL SALES AND SHIPMENTS ARE SUBJECT TO ARROW'S TERMS AND CONDITIONS OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales ) .
+( APAC - STD 05/11 )
+	    )
+
+---PAGE NO: 9. END OF PAGE---																			www			  .						    BILL   FROM
+ SHIPPED      FROM																											  ARROW       ELECTRONICS	      ASIA      ( S )    PTE   .   LTD   .
+ ARROW	  ELECTRONICS	     ASIA       ( S )   PTE   .   LTD   .																				1   Tai     Seng      Avenue      ,    # 07-11     / 12     &   13  ,
+ Arrow	 Components	     ( M )    Sdn     Bhd  .																					       Tai     Seng      Exchange	   ( Tower       A )
+ D28-2       ,    Jalan       DPB   / 3 ,   PTP      ( FCZ   )										      COMMERCIAL		      INVOICE						 Singapore	 , SG  , New      Territories
+  81560	Gelang	 Patah     ,    Johor    ,    MY
+																													  536464	  Singapore
+																			 PAGE	  2     OF       2
+																	TOTAL	 #   OF    ITEMS	SHIPPED       :   00001
+ SOLD     TO													   SHIP   TO
+ SIEMENS	   LTD												  SIEMENS	  LIMITED
+ PLOT	NO  .   L6  ,    VERNA	INDUSTRIAL	    ESTATE      ,					  Receiving	    Department
+ OPP       GOA   - MUMBAI	 HIGHWAY									       PLOT      NO   .   L6  ,   VERNA	INDUSTRIAL	    ESTATE      ,
+ VERNA														  OPP      GOA  -  MUMBAI	HIGHWAY
+ South	 Goa   , Goa
+														       VERNA
+ 403722	  India												  South	Goa  ,  Goa
+														       403722	  India
+  INVOICE     NUMBER			       DELIVERY      NUMBER
+		 13935947					  017917482
+  SALES     ORDER     NO .			  CUSTOMER       ORDER     NO .						  CUSTOMER       NO .		       DATE    OF  ORDER	   BUYER							       SPECIAL   INSTRUCTIONS
+		 21524644						   4201110888							  1016601			22  - MAY   -  2024
+  SHIP   DATE		 SHIPPED     VIA						  SALESPERSON	  - INSIDE  / OUTSIDE											       INCO   TERMS					      PAYMENT      TERMS			   CUR
+    03   - MAR    - 2025		       CUSTFWDR	- AIR   - STD					Tanaji	Khandagale	  ,    Pragati	 /    Deshpande	 ,   Mandar												    90    NET
+																															       FCA									   USD
+     ITEM		QUANTITY     SHIPPED												    PRODUCT    DESCRIPTION																	     EXTENDED      PRICE
+																																		UNIT  PRICE
+							     DC     /   BN  :	   COO				QUANTITY
+							     2501		       KR				       96    EA
+THIS DOCUMENT  IS COMPUTER GENERATED    . NO SIGNATURE  IS REQUIRED . THIS SHIPMENT IS MADE SUBJECT TO ARROW'S TERMS AND CONDITIONS   OF SALE .
+THESE ITEMS  ARE CONTROLLED    BY THE U.S. GOVERNMENT   AND AUTHORIZED   FOR EXPORT  ONLY  TO THE COUNTRY    OF ULTIMATE DESTINATION  FOR USE  BY THE ULTIMATE CONSIGNEE   OR END  - USER ( S ) HEREIN									  SUBTOTAL					801.13
+IDENTIFIED . THEY MAY NOT BE RESOLD , TRANSFERRED , OR OTHERWISE DISPOSED   OF , TO ANY OTHER COUNTRY OF TO ANY PERSON  OTHER  THAN THE AUTHORIZED ULTIMATE CONSIGNEE     OR END - USER ( S ) . Ã‰ITHER IN
+THEIR ORIGINAL FORM  OR AFTER BEING INCORPORATED   INTO OTHER ITEMS WITHOUT  FIRST OBTAINING APPROVAL   FROM  THE U.S. GOVERNMENT   OR AS OTHERWISE AUTHORIZED   BY U.S. LAW AND REGULATIONS .
+CERTIFICATE  OF COMPLIANCE
+																																       TAX	(  0.000      %  )				0.00
+IT IS HEREBY CERTIFIED  THAT  THE PRODUCTS    WE SHIP ARE ALL  IN ACCORDANCE   WITH MANUFACTURER'S SPECIFICATION      . TEST DATA AND OTHER MANUFACTURER'S  DOCUMENTATION	TO SUPPORT  THIS
+CERTIFICATION  ARE AVAILABLE   IN OUR FILES  OR CAN  BE OBTAINED  FROM MANUFACTURERS     UPON REQUEST    .
+TERMS  AND CONDITIONS  OF SALES
+ALL SALES AND SHIPMENTS  ARE SUBJECT  TO ARROW'S TERMS  AND CONDITIONS   OF SALE ( https://www.arrow.com/en/legal/apac-toc-sales																		   TOTAL					801.13
+														     ) .
+( APAC - STD 05/11 )
+	      )
+
+---PAGE NO: 10. END OF PAGE---

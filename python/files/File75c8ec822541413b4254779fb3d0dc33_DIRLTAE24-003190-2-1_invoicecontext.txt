@@ -1,0 +1,57 @@
+[Page 0, Line 0]                                                                                                                                                                                                                                               CN:2995549
+<<1>>                                                                                                  Landmark Trading FZE
+<<2>>                                                                                                       LPrELY
+
+<<3>>                                                                                                                     Commercial Invoice
+<<4>>      LANDMARK RETAIL INVESTMENT CO. L.L.C
+<<5>>      P.O.BOX.113630,                                                                                                                                                                     Invoice No: DIRLTAE24-003190
+<<6>>      DUBAI,                                                                                                                                                                                     Invoice Date: 16-Aug-24
+<<7>>      UNITED ARAB EMIRATES                                                                                                                                                       MODE BYSEA
+<<8>>      Contact Person :MR PETER DSOUZA
+<<9>>      Contact Phone : 04-8094409
+<<10>>        No. of pcs              Gross Weights                                            Description                                          Value in AED                 HS Code                  Country of Origin
+<<11>>                     339                             13692.01    One Seater Sofa                                                                             201,463.83            94016100                           China
+<<12>>                     339                                                                                          TOTAL CIF Dubai, AED                 201,463.83
+<<13>>     (AED TWO HUNDRED ONE THOUSAND FOUR HUNDRED SIXTY-THREE AND FIL EIGHTY-THREE ONLY)
+<<14>>      Trailer No/ Container No                   MSKU0606204[1x40HQ],MRKU3646235[1x40HQ]
+<<15>>      Total No. of Pallets
+<<16>>      Total No. of Packages                     339                                            Pkgs.
+<<17>>      Gross Weight                                   13692.01                                    Kgs.
+<<18>>      Shipping Marks                                AEHC
+<<19>>      Port Of Discharge                             DUBAI
+<<20>>      Final Destination                              UNITED ARAB EMIRATES
+<<21>>      The Country Of Origin :- CHINA
+<<22>>      For LANDMARK TRADING FZE
+<<23>>      Operating as "LANDMARK TRADING FZE"
+
+<<24>>                                            vy
+<<25>>                1                            *
+<<26>>                a
+<<27>>               a
+<<28>>                   Oftice No.FZJOB2101
+
+<<29>>               U
+<<30>>                       Jebel Ali Free Zone
+
+<<31>>                           DUBAI U.A.E.
+<<32>>                  *
+<<33>>                                                        &
+
+
+
+
+
+
+
+
+
+
+
+
+<<34>>                                                                     Office No.FZJOB2101,Jebel Ali Free Zone,Dubai, United Arab Emirates
+<<35>>                                                                           A Limited Liability Company with Share Capital of AED 100,000/-
+<<36>>                                                                                                  License No.7424208, Reg. No. 1932689
+<<37>> 16-08-2024 11:16:16                                                                                                                                                                                                       Page 1 Of 1               INV-01
+<<38>> 16-08-2024 11:16:16
+
+---PAGE END---

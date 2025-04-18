@@ -1,0 +1,53 @@
+[Page 0, Line 0]  #T
+<<1>> LINDEN INTERNATIONAL LTD
+<<2>> ROOM 907,9/F HONG KONG PLAZA 188 CONNAUGHT ROAD WEST HONG KONG
+
+<<3>>                                                                                                                                                 COMMERCIAL INVOICE
+<<4>> TO:                                                                                                                                                                                                                                                 ASN#
+<<5>> RNA RESOURCES GROUP LIMITED                                                                                                                                                                                                 INVOICE NO.: UA87524202-1
+<<6>> OPERATING AS 'LANDMARK'                                                                                                                                                                                                            DATE: 2024-06-28
+<<7>> P.O. BOX 17155                                                                                                                                                                                                                               PURCHASE ORDER NO: 1705337
+<<8>> JEBEL ALI FREE ZONE, DUBAI,
+<<9>> UNITED ARAB EMIRATES
+
+<<10>> HOUSEHOLD FURNITURE                                                                                                                                                                                                                COUNTRY OF ORIGIN:CHINA
+<<11>> TRADE TERMS:FOB SHENZHEN,CHINA                                                                                                                                                                                            CONTAINER NUMBER AND TYPE: 1*4OHQ
+<<12>> SHIPPING MARK NUMBER: HBAE/60480                                                                                                                                                                                         VESSEL/VOY: APL MIAMI OMDB9W1MA
+<<13>> PI NO.: UA87524202-1                                                                                                                                                                                                                      B/L NO.: SHZ6277893
+<<14>> PI DATE: 2024-4-23
+
+<<15>>                                                                                                                                                                                                                                                         FROM:SHEKOU, SHENZHEN,CHINA
+<<16>>                                                                                                                                                                                                                                                        TO: AJMAN,UNITED ARAB EMIRATES
+<<17>> CONTAINER NO: SEGU4137182
+<<18>> SEAL NO: R5695520
+<<19>>  NO      ITEM     H.S CODE  BARCODE NO.                  DESCRIPTION                  SPECIFICATION                          COLOR                         QTY     CBM      TOTAL         G.W           TOTAL         TOTAL        PRICE        TOTAL
+<<20>>              NO.           NO                                                                                             MM                                                                       PCS      M3         CBM          KGS            G.W         CARTONS   USD(FOB)    AMOUNT
+<<21>>                                                                                                                                                                 ALL DOORS IN White /
+<<22>>   1      A2038-1       9403     6299189278315            Patara 5 Door Wardrobe             2266*596*2160                                                                 21      0.3890      8.1690        206.50         4336.50            84           142.90       3000.90
+<<23>>                                                                                                                                                             REST ALL IN 808 &Cement
+<<24>>                                                                                                                                                             ALL DOORS IN WHITE#808
+<<25>>   2      A2038-1       9403     6299189278360            Fiesta 5 Door Wardrobe              2266*596*2160                                                                 21      0.3890      8.1690        206.50         4336.50            84           142.90       3000.90
+<<26>>                                                                                                                                                            REST ALL IN LIGHT OAK#168
+<<27>>                                                                                                                                                          ALL THE DOORS IN WHITE#808
+<<28>>   3     A2038-1       9403     6299189278414   Milan 5 Door Wardrobe with full Mirror     2266*596*2160          REST ALL IN NATURAL OAK#7055         14     0.3890      5.4460        206.50         2891.00            56           145.90       2042.60
+<<29>>                                                                                                                                                                   WHITE HANDLES
+<<30>>                                                                                                                                                               ALL THE DRAWERS : 808
+<<31>>   4     A2038-R       9403      6299189278520           Fiesta Chest of 5 Drawers             800*390*1115             REST ALL IN LIGHT OAK #168           119     0.0980     11.6620        37.50          4462.50           119           42.30        5033.70
+<<32>>                                                                                                                                                         WHITE METAL LEGS & HANDLES
+<<33>>                                                                                                                                                                TOP BOARD: CEMENT
+<<34>>   5   JL-05003-5A    9403     6299189278537         EC-Alina Chest of 5 Drawers            800*390*1115             REST ALL IN LIGHT OAK #168           39      0.0980      3.8220         39.50          1540.50            39            45.00        1755.00
+<<35>>                                                                                                                                                         SILVER METAL LEGS & HANDLES
+<<36>>                                                                                                                                                               NATURAL OAK#371101/                                                                                                                      61.00
+<<37>>   6     A2013-F5      9403     6299189278544           Urban Chest of 5 Drawers             590*396*1180                                                                  40      0.1230      4.9200         36.00          1440.00            40                            2440.00
+<<38>>                                                                                                                                                                       BLACK LEGS
+<<39>>                                                                                                                                                               TOP :CEMENT#1107-11/
+<<40>>   7      NS7035        9403     6299189278469  Cambridge 5D CHEST-Black & Cement     645*390*1115                                                                  19     0.1250      2.3750         46.00          874.00            38            61.00        1159.00
+<<41>>                                                                                                                                                             REST :BLACK OAK#398101
+<<42>>   8      NS2096       9403      6299189278490          Solitaire Chest of 5 Drawers            800*390*1135                         WHITE#808                        32      0.1290      4.1280         52.00          1664.00            64            59.00        1888.00
+<<43>>   9     A1053-R       9403     6299186531765                Frankfurt 160 Bed                     1600*2000                        FULL WHITE#808                    29      0.2650      7.6850         92.00          2668.00            58            71.00        2059.00
+<<44>>  10     A1053-R       9403     6299186531796                Frankfurt 140 Bed                     1400*2000                       FULL WHITE#808                    34      0.2200      7.4800         82.00          2788.00            68            67.00        2278.00
+<<45>>                                                                                        TOTAL                                                                                                             368                    63.8560                           27001            650                           24657.10
+<<46>>           TOTAL:USD 24,657.10
+<<47>>         SAY IN US DOLLARS: TWENTY FOUR THOUSAND SIX HUNDRED AND FIFTY SEVEN AND CENTS TEN ONLY.
+
+---PAGE END---

@@ -1,0 +1,60 @@
+[Page 0, Line 0]                                                                                                                                                                                    CN:2995549
+<<1>>                                                                           Landmark Trading FZE
+<<2>>                                                                              CPrELy
+
+<<3>>                                                                                        Commercial Invoice
+<<4>>     LANDMARK RETAIL INVESTMENT CO. L.L.C
+<<5>>    P.O.BOX.113630.                                                                                                                             Invoice No: DIRLTAE23-011651
+<<6>>    DUBAI..                                                                                                                                         Invoice Date:28-Dec-23
+<<7>>     UNITED ARAB EMIRATES                                                                                                                  MODE BY SEA
+<<8>>    Contact Person :MR PETER DSOUZA
+<<9>>    Contact Phone : 04-8094409
+<<10>>      No. of pcs          Gross Weights                                 Description                               Value in AED            HS Code             Country of Origin
+<<11>>                301                     10502.00  One Seater Recliner                                                      146,180,27        94016100                   China
+<<12>>                301                                                                     TOTAL CIF Dubai, AED             146,180.27
+<<13>>   (AED ONE HUNDRED FORTY-SIX THOUSAND ONE HUNDRED EIGHTY AND FIL TWENTY-SEVEN ONLY)
+<<14>>     Trailer No/ Container No              HJMU1918776[1x40HQ],MSKU1958576[1x40HQ]
+<<15>>     Total No. of Pallets
+<<16>>    Total No. of Packages                301                                 Pkgs.
+<<17>>     Gross Weight                          10502,00                          Kgs.
+<<18>>     Shipping Marks                        AEHC
+<<19>>     Port Of Discharge                     DUBAI
+<<20>>     Final Destination                       UNITED ARAB EMIRATES
+<<21>>     The Country Of Origin :- CHINA
+<<22>>     For LANDMARK TRADING FZE
+<<23>>     Operating as "LANDMARK TRADING FZE"
+<<24>>                       TLap
+<<25>>             AB
+<<26>>            1                      E
+<<27>>                      .FZ.J082101
+<<28>>                             e Zone
+<<29>>                         Free
+<<30>>                           U.A.E.  E
+<<31>>                     DUBAI
+
+
+
+
+
+
+
+
+
+
+
+<<32>>                                                     Office No.FZJOB2101,Jebel Ali Free Zone,Dubai,United Arab Emirates
+<<33>>                                                         A Limited Liability Company with Share Capital of AED 100,000/-
+<<34>>                                                                           License No. 7424208, Reg. No. 1932689
+<<35>> 28-12-2023 09:35:10                                                                                                                                                     Page 1Of 1          INV-01
+
+
+<<36>>                                                                                                                                                                                                     HXI
+<<37>>                                                                                                                                                                                                                  Ay
+<<38>>                                                                                                                                                                                           .                     .
+<<39>>                                                                                                                                                                                                                   2
+
+
+<<40>>                                                                                                                  AECI28122023KZTS
+<<41>>                                                                                                         Visit https://mofa.gov.ae/qrcodeverify for details.
+
+---PAGE END---

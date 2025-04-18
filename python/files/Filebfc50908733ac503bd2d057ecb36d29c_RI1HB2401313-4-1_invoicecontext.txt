@@ -1,0 +1,47 @@
+[Page 0, Line 0]                                                                                                   HK Home Fashion International Co. Limited
+
+<<1>>                                                                                                             ROOM 1501-B2, GRAND MILLENNIUM PLAZA (LOWER BLOCK), 181 QUEEN'S ROAD CENTRAL ,HK
+<<2>>                                                                                                                               TEL: 86-757-81021067                     FAX: 86-757-81021077
+<<3>>                                                                                                                                 COMMERCIAL INVOICE
+<<4>>     SUPPLIER: FOSHAN RELAX TECHNOLOGY CO.,LTD                                                                                                                                                                INVOICE DATE:        2024/7/4
+<<5>>                   2nd workshop in 1st floor of building A and 2nd floor,Qinqijun factory,No.3,Meizhen                                                                                                      INVOICE No.:          GS2024027
+<<6>>                  Zone,Zhuerhuan road,Jiujiang Town,Nanhai,Foshan,Guangdong,China                                                                                                                        PO:                      1684649
+<<7>>   EXPORTER: FOSHAN RELAX TECHNOLOGY CO.,LTD                                                                                                                                                               SHIPPING TERM:      FOB shenzhen
+<<8>>                   2nd workshop in 1st floor of building A and 2nd floor,Qinqijun factory,No.3,Meizhen                                                                                                      PAYMENT TERM:     100% TT at sight
+<<9>>                  Zone,Zhuerhuan road,Jiujiang Town,Nanhai,Foshan,Guangdong,China                                                                                                                        SHIPPINGMARK No.: HBAE/65755
+<<10>>                   O/B Hk Home Fashion International Co. Limited                                                                                                                                                   HS CODE:              94016100
+<<11>>                                                                                                                                                                                                                                  BL NUMBER:          SHZ6385784
+<<12>>  CONSIGNEE: LANDMARK ARABIA CO                                                                                                                                                                                   CONTAINER NO.:     CMAU7989634
+<<13>>                   P.O. BOX - 4979, ALKHOBAR - 31952                                                                                                                                                                     SEAL NO.:              R7236169
+<<14>>                   KINGDOM OF SAUDI ARABIA                                                                                                                                                                             ETD:                    2024/7/4
+<<15>>                   CONTACT PERSON: MR. MANIKANTAN                                                                                                                                                                  ETA:                     2024/7/21
+<<16>>                   TEL : 00966 542561373, EMAIL: MANIKANTAN.PRABHAKARAN@LANDMARKGROUP.COM                                                                                                         COUNTRY OF ORIGIN: CHINA
+<<17>>                                                                                                                                                                                                                                  VESSEL/VOYAGE:    CSCL URANUS
+<<18>>   Notify part: RNA RESOURCES GROUP LIMITED,                                                                                                                                                                     PORT OF DISCHARGR: AJMAN
+<<19>>                   OPERATING AS LANDMARK HOME BOX DIVISION,                                                                                                                                                     FINAL DESTINATION: AJMAN
+<<20>>                   JAFZA LICENSE NUMBER 103288,                                                                                                                                                                        SHIPMENT :           From Guangzhou, CHINA
+<<21>>                  P.O.BOX 17155,                                                                                                                                                                                             ASN NUMBER:        RI1HB2401313-HBAE
+<<22>>                   JEBEL ALI FREE ZONE, DUBAI,
+<<23>>                   UNITED ARAB EMIRATES, CONTACT PERSON: SUNIL MENON /VASISHTU GOPAL TEL : +971 4 517 2387
+<<24>>                                                                                                                                            Commodities and Specifications
+<<25>>                                                                Packing                                                                                                                                                                                                                                       Amount     FOB
+<<26>>    Item #                   Description                                       Fabric#               SOFA SIZE(CM)          CTN SIZE(CM)          From Carton ID               To Carton ID         m3/pc   QTY(PCS)             M3               Unite Price
+<<27>>                                                                                                                                                                                                                                                                                                                      Shenzhen
+<<28>>                      Marcos 3-Seater Fabric Sofa
+<<29>> 166265351                                               ONE BOX   Corsica Light Grey 40    196*98/121*39/90      198*122.5*26     23HB13124730001013    23HB13124730001062     0.63        50                31.50               US$99.00         US$4,950.00
+<<30>>                                 Bed-Grey
+<<31>>                      Marcos 3-Seater Fabric Sofa
+<<32>> 166265352                                                ONE BOX       Malmo sand 8        196*98/121*39/90      198*122.5*26     23HB13124730001063    23HB13124730001102    0.63        40                25.20               US$98.00         US$3,920.00
+<<33>>                               Bed- Brown
+<<34>>                   Gamer Folding single chair cum
+<<35>> 166341234                                               ONE BOX          Wind 100           93*85/214*73/18         217*91*17       23HB13124730001103    23HB13124730001117     0.37        15                 6.30                US$87.00         US$1,305.00
+<<36>>                             sofa bed - Rust
+<<37>>                                                                                                                                                              For and on behalf of
+<<38>>                                                                                                 GRAND TOTAL:1X40HQ                                                                                                           105ctns                  62.997                         US$10,175.00
+<<39>>                                                                                                                                                               HK HOME FASHION INTERNATIONAL CO., LIMITED
+<<40>>                                                                                                                                                                   2
+
+
+<<41>>                                                                                                                                                                                            Authorized Signature(s)
+
+---PAGE END---

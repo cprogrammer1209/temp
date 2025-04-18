@@ -1,0 +1,62 @@
+[Page 0, Line 0]                                                                                                                                                                                   CN:2995549
+<<1>>                                                                           Landmark Trading FZE
+<<2>>                                                                              CPrECLY
+
+<<3>>                                                                                        Commercial Invoice
+<<4>>     LANDMARK RETAIL INVESTMENT CO. L.L.C
+<<5>>     P.O.BOX.113630.                                                                                                                            Invoice No: DIRLTAE23-012341
+<<6>>     DUBAI,                                                                                                                                        Invoice Date: 08-Jan-24
+<<7>>     UNITED ARAB EMIRATES                                                                                                                MODE BYSEA
+<<8>>     Contact Person :MR PETER DSOUZA
+<<9>>     Contact Phone : 04-8094409
+<<10>>       No, of pcs          Gross Weights                                Description                               Value in AED            HS Code             Country of Origin
+<<11>>                   2                       161.39  Tea Coffee Table                                                              80.01        94032090                   China
+<<12>>                181                      9656.67   Television Cabinet Units                                                  194,700.81        94036090                   China
+<<13>>                  54                      5568.05  Console Table                                                             64,759.10        94036090                   China
+<<14>>                   7                       188.29  Tea Coffee Table                                                             136.16        94036090                   China
+<<15>>                   2                       107.60  Cabinet                                                                         16.28        94036090                   China
+<<16>>                246                                                                   TOTAL CIF Dubai,_AED            259,692.36
+<<17>>    (AED TWO HUNDRED FIFTY-NINE THOUSAND SIX HUNDRED NINETY-TWO AND FIL THIRTY-SIX ONLY)
+<<18>>     Trailer No/ Container No             MSKU9579671[1x40HQ]
+<<19>>     Total No. of Pallets
+<<20>>     Total No. of Packages                583                                 Pkgs.
+<<21>>     Gross Weight                         15682.00                          Kgs.
+<<22>>      Shipping Marks                       AEHC
+<<23>>     Port Of Discharge                     DUBAI
+<<24>>     Final Destination                      UNITED ARAB EMIRATES
+<<25>>     The Country Of Origin - CHINA
+<<26>>     For LANDMARK TRADING FZE
+<<27>>     Operating as "LANDMARK TRADING FZE"
+
+
+<<28>>             4
+<<29>>                      .FZ.J082101
+<<30>>            a     eNO.
+<<31>>               Ofice                E
+<<32>>                           U.A..
+<<33>>                     DUBAI
+
+
+
+
+
+
+
+
+
+<<34>>                                                     Office No.FZJOB2101,Jebel Ali Free Zone,Dubai,United Arab Emirates
+<<35>>                                                         A Limited Liability Company with Share Capital of AED 100,000/-
+<<36>>                                                                          License No. 7424208, Reg. No. 1932689
+<<37>> 08-01-2024 10:48:35                                                                                                                                                    Page 1 Of 1           INV-01
+
+
+<<38>>                                                                                                                                                                                                    HAI
+
+<<39>>                                                                                                                                                                                          .                     .
+<<40>>                                                                                                                                                                                                                15
+<<41>>                                                                                                                                                                                       TRY    ITED
+
+<<42>>                                                                                                                 AECI08012024GSYT
+<<43>>                                                                                                        Visit https://mofa.gov.ae/qrcodeverify for details.
+
+---PAGE END---

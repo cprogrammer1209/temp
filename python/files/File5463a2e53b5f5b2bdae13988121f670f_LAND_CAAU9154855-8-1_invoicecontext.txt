@@ -1,0 +1,54 @@
+[Page 0, Line 0]                                                 GUANGZHOU CITY BEILEIMAO TRADE CO.LTD.
+<<1>>                                                                    ROOM203 NO.167,DONGPING NORTH ROAD
+<<2>>                                                          YONGPING STREET,BAIYUN DISTRICT GUANGZHOU,CHINA
+
+<<3>>                                                                                                Invoice
+<<4>>                                                                                                                              Invoice                   278579671
+<<5>> Shipper:                                                                                                                  Inv Date                  27-Nov-24
+<<6>> GUANGZHOU CITY BEILEIMAO TRADE CO.LTO.                                                                        Mode                     BYSEA
+<<7>> ROOM A710.NO.8.HEZHAN 2ND STREET,                                                                              Shioment Type          FQB
+<<8>> HELONG STREET,BAIYUN DISTRICT.                                                                                    Container No.            CAAU9154855
+<<9>> GUANGZHOU.CHINA                                                                                                    Total No of Packages 1450
+<<10>>                                                                                                                              Gross Weight            9127.11
+<<11>>                                                                                                                              Port of Loading         NINGBO
+<<12>> Consignee:                                                                                                               Portof Discharge       AJMAN
+<<13>> LANDMARK RETAILINVESTMENT CO.LLC.                                                                             ASN#                    SI1CS2441342
+<<14>> HOME CENTRE Division.
+<<15>> P.O.Box113630,                                                                                                          Ship Mark               IHCAE
+<<16>> Dubai United Arab Emirates
+<<17>>                                                                                                                 C.O.0     No of PCS.  Cartons       WEIGHT-KGS    Value in USD
+<<18>>    SL NO             HS Code                                                                                                                              212.2             860.14
+<<19>>                                                                                                                 China.         332         29
+<<20>>                          39249090         Plastic Non Food Contact Serving Trays
+<<21>>                                                                                                                 China         6336        975             5184.66            9822.6
+<<22>>                          39269099         Photo Frames of Plastic                                                                                                           1139.2
+<<23>>                                                                                                                 China          160         16              222.6
+<<24>>                          44201900         Wooden Wall Decorative Item
+<<25>>                                                                                                                 China         1023        430            3507.65           9097.44
+<<26>>                          49119190         Framed Mounted Photos
+<<27>>                                                                                                                                  7851       1450           9127.11           20919.38
+<<28>> Total:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<<29>>                                                                                                                                   CIT
+<<30>>                                                                                                                                         TNiAA
+<<31>>                                                                                                                                         i     rm
+<<32>>                                                                                                                                   CCCUAY
+<<33>>                                                                                                                                                  *
+
+---PAGE END---

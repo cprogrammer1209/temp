@@ -1,0 +1,59 @@
+[Page 0, Line 0]                                                                                                                                                                                              CN:2995549
+<<1>>                                                                               Landmark Trading FZE
+<<2>>                                                                                   LPPELY
+<<3>>                                                                                             Commercial Invoice
+<<4>>     LANDMARK RETAIL INVESTMENT CO. L.L.C
+<<5>>     P.O.BOX.113630,,                                                                                                                                   Invoice No: DIRLTAE24-002042
+<<6>>     DUBAI,                                                                                                                                                Invoice Date: 30-Jul-24
+<<7>>     UNITED ARAB EMIRATES                                                                                                                        MODE BYSEA
+<<8>>     Contact Person :MR PETER DSOUZA
+<<9>>     Contact Phone : 04-8094409
+<<10>>       No. of pcs           Gross Weights                                   Description                                 Value in AED             HS Code              Country of Origin
+<<11>>                   90                       4410.00   Three Seater Sofa                                                             61,362.21         94016100                     China
+<<12>>                   15                         328.50   Armchair Sofa                                                                   9,055.39         94016100                     China
+<<13>>                 105                                                                        TOTAL CIF Dubai, AED               70,417.60
+<<14>>    (AED SEVENTY THOUSAND FOUR HUNDRED SEVENTEEN AND FIL SIXTY ONLY)
+<<15>>     Trailer No/ Container No              CMAU7989634[1x40HQ]
+<<16>>     Total No. of Pallets
+<<17>>     Total No. of Packages                 105                                   Pkgs.
+<<18>>     Gross Weight                           4738.50                             Kgs.
+<<19>>      Shipping Marks                         AEHB
+<<20>>      Port Of Discharge                      DUBAI
+<<21>>     Final Destination                        UNITED ARAB EMIRATES
+<<22>>     The Country Of Origin :- CHINA
+<<23>>     For LANDMARK TRADING FZE
+<<24>>     Operating as "LANDMARK TRADING FZE"
+<<25>>                       AyLL
+<<26>>                                    vy
+<<27>>                                        #
+<<28>>                        .FZJOB2101
+
+<<29>>                Office No.
+<<30>>                             U.A.E.
+<<31>>                      DUBAI
+<<32>>                  AND
+<<33>>                       OMARK
+
+
+
+
+
+
+
+
+
+<<34>>                                                        Office No.FZJOB2101,Jebel Ali Free Zone,Dubai,United Arab Emirates
+<<35>>                                                            A Limited Liability Company with Share Capital of AED 100,000/-
+<<36>>                                                                              License No.7424208, Reg. No. 1932689
+<<37>> 30-07-2024 10:24:52                                                                                                                                                             Page 1 Of 1           INV-01
+
+
+
+
+<<38>>                                                                                                                                                                                              N                                  E
+
+
+<<39>>                                                                                                                        AECI30072024TW1U
+<<40>>                                                                                                              Visit https://mofa.gov.ae/qrcodeverify for details.
+
+---PAGE END---

@@ -1,0 +1,67 @@
+[Page 0, Line 0]                                                                                                                                                                                         FM-SM-41-A/0
+<<1>> ZOY                                                             ZOY HOME FURNISHING CO LTD
+<<2>>     +                                                       BUILDING 2-5 TANGPU INDUSTRIAL PARK DIPU ,SUB DISTRICT ANJI,ZHEJIANG
+<<3>>                                                                                                             CHINA
+
+<<4>>                                                                                    COMMERCIAL INVOICE
+<<5>> Shipper/Exporter                                                                                                                      Invoince No.:               98084389
+<<6>> ZOY HOME FURNISHING CO.LTD                                                                                                                              2023/12/7
+<<7>>                                                                                                                                          Invoince Date:
+<<8>> BUILDING 2-5,TANGPUINDUSTRIAL PARK
+<<9>> DIPU SUBDISTRICT.ANJI COUNTY                                                                                                PONOPINO.:            1635362
+<<10>> ZHEJIANG PROVINCE.CHINA.:313301
+<<11>> TEL:+86 572 5528888 FAX+86 572 5528666                                                                                                                       RI1HC2343832
+<<12>>                                                                                                                                          ASNNO:
+<<13>>                                                                                                                                          ETD:                      2023/12/13
+<<14>> Consiguce:                                                                                                                            ETA:                      2024/1/11
+<<15>> RNA RESOURCES GROUP LIMITED                                                                                                  Pon of Loading:            NINGBQ
+<<16>> OPERATING AS"LANDMARK                                                                                                                                    AIMAN
+<<17>>                                                                                                                                          Pon of Discharge:
+<<18>> JAFZA LICENSE NUMBER 103288
+<<19>> P.O.BOX17155
+<<20>> JEBELALI FREE ZONE,DUBAI,U.AE
+<<21>> TELEPHONE.+971 4 8231515/+974 8157600
+<<22>> EMAIL: RAMESH.BADARLA@LANDMARKGROUP.COM                                                                                                         AJMAN
+<<23>>                                                                                                                                           Destionation:
+<<24>> ATTN MR RAMESH
+<<25>> Notfy Party                                                                                                                         Vessel Name:               MEGALOPOLIS 350W
+<<26>> LANDMARK TRADING FZE
+<<27>> OFFICENOFZJOB2101, JEBEL ALI FREE ZONE, DUBAI, UNITED ARAB EMIRATES                                                Container No.:              MSKU1958576/HJMU1918776
+<<28>> CONTACT PERSON:MR. VIJAY KUMAR RAMDOSS                                                                                 BLNO.                   292184212
+<<29>> CONTACT PHONE:+971 4 8157730
+
+<<30>>                                                                                                                                           Shipping Term:             FOB-NINGBO
+<<31>>  Descrintion of coods
+<<32>> HOUSEHOLD UPHOLSTERY FURNITURE
+<<33>>                                                                                                                                                      Q'TY            UNIT PRICE          AMOUNT  (USD)
+<<34>>         ZOY#                Customer Modei#            HS code                          DESCRIPTION                                                        (USD)
+<<35>>        3602039                  163639548               94016190                   BP-Aaron Seate Recliner Gry                       2          PCS         564.17                     128.34
+<<36>>        36022040                  t63639549               94016190                   BP-Aaron  Seater Reeliner Beige                      30          PCS        $4.17                    1925.10
+<<37>>        365000094                  164131703               94016190                     Brenda 1 Str Reclin-Gry                         106         PCS         574.73                    7921.38
+<<38>>        365001369                  146246               94016190                   Chriin  ciner-Bee                      19         PCS        $66.00                     1235.00
+<<39>>                                          Containcr No/Seat NoHJMU1918776/ML-CN5071836                                              157         PCS                                    11209.82
+<<40>>        36022038                  16639547               94016190                   BP-Aaron 1 Seter Reeiner Ochre                      SK          PCS        564.17                    3721.86
+<<41>>        360022032                  163639548               94016190                   BPAon Seater Reciner Gry                      RG          PCS        SC4.17                     5518.62
+<<42>>                                          Contalncr No./Seal No:MSKU1958576/ML-CN5071845                                             144         PCS                                    9240.48
+<<43>>  TOTAL        CTNS: 301/GROSS WEIGHT:10502.00kp/NET WEIGHT:9172.00kg Volume:130.83chm                                301         PCS                                    20450.30
+<<44>>  TOTAL: SAY U.S.DOLLAR TWENTY THOUSAND FOUR HUNDRED AND FIFTY AND POINT THIRTY ONLY
+<<45>>  Payment Term:       AT SINGHT FOR RULL INVOICE VALUE INDICATING NUMBER AND DATE OF THE CREDIT
+<<46>>  Paynent Due Date:
+<<47>>  BANKINFO.:
+<<48>>                                  BENEFICARY'S BANK:                 China CITIC Bank, HANGZHOU Branch
+<<49>>                                   BENEFICARY'S A/C:                  ZOY Homc Furmishing Co.Ltd.
+<<50>>                         BENEFICARY'S ACCOUNT NO:                 73391114966000071
+<<51>>                                           SWIFT CODE:                 CIBKCNBJ 310
+<<52>>       REMARK:
+<<53>>  L.THE COUNTRY OF ORIGINAL IS CHINA
+<<54>>  2.THIS CONTAINER CONTAINS NO SOLID WOOD PACKAGING MATERIALS.
+<<55>>                                                                                                                                                              PR
+
+
+<<56>>                                                            Pay this invoice on/before the Due date, any later payment may result in any credit change.
+<<57>>                                                               Please always quote the Invoic # when making payemnts and notify payments to sales.
+
+<<58>>  Certified Truc & Correct
+<<59>>                                                                                                                      ZOY HOME
+
+---PAGE END---

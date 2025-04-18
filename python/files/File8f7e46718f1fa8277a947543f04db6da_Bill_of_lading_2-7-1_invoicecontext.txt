@@ -1,0 +1,93 @@
+[Page 0, Line 0]                                           EMEIER INTERNATIONAL CO.,LIMITED
+<<1>>               ROOM D,10/F.,TOWER A,BILLION CENTRE,1 WANG KWONG ROAD,KOWLOON BAY,KOWLOON,KONGKCNG,CHINA
+<<2>>                                                                  COMMERCIALINVOICE
+<<3>> CONSIGNEE:      RNA RESCURCES GROUP LIMITED OPERATING AS LANDMARK"                                       Dat:16-Dec-23
+<<4>>                       JAFZA LICENSE NUMBER 103255 P.O.BOX 17155 JEBEL ALIFREE ZONE,DUBAI,U.A           PI NO.CT-23434
+<<5>> APPLICANTS ORDER REFERENCE:HCAEI4C851                                                                                   PO1636469
+<<6>> SHIPPING MARKS:HCAE/49051
+<<7>> ASN NUMDER:     RI1 HC2349351-HCAE / RI1 HC2349351-HCAEIRI1 HC2349055-HCAE
+<<8>> DRAWEERNA Rcsources Group Lta                                                                                     INVOICE NO.:CT-23434
+<<9>>                                                                                                            QTY                                             TOTAL
+<<10>> S.NO.  Item codo     COMMODITY&SIZE      HS CODE     Ganeric Namg    Currency            CARTONS   RATE(USD)
+<<11>>                                                                                                           PCS)                                         VALUE(USD)
+<<12>> CONTAINER AND SEALMSKU3579371ML-CNS494101 40HC
+<<13>>                               Regina Tv unit                       TELEVISION CABIN   USD      79        153          130.00               14,220.00
+<<14>>          P2303TV02                                    9403
+<<15>>                                1790*420*450                             ETUNITS
+<<16>>                               Regina Conola           9403                              USD      60        150          146.00               7.300.00
+<<17>>    2   P2303ST02                                                 CONSOLE TABLE
+<<18>>                                1400*400-750
+<<19>>                                Reg na Mirror             5403                              USD      50        50          54.00               2.700.00
+<<20>>    3   P2303.MR02                                                 CONSOLE TABLE
+<<21>>                                Dia900*30mm
+<<22>>                            Ralcigh Tv unit-2 doors                   TELEVISION CABIN
+<<23>>    4    P2279TV06                                    9403                              USD      99        198          162.00               16.038.00
+<<24>>                                1795*395*450                             ETUNITS
+<<25>>    5    P2358CT                                      9403           SAMPLE         USD       1          1            5.0o                  5.00
+<<26>>                                1300650400
+<<27>>    6    P2358ET                                     9403          SAMPLE         USD       1          1           5.0O                  5.00
+<<28>>                                G50650500
+<<29>>    7     P235EST                                      9403          SAMPLE        USD       1          2           10.00                 10.00
+<<30>>                                120O*450*760
+<<31>>    s   P2353ST-TP                                    9403           SAMPLE         USD       1          1            5.00                  5.00
+<<32>>                                1200*450*760
+<<33>>    9    P2358CT-1                                     9403           SAMPLE         USD       1          1            5.00                  5.00
+<<34>>                                1300*650*400
+<<35>>   10   P235CCT-2                                    9403          SAMPLE         USD       1                        5.0o                  5.Co
+<<36>>                                1300*650*400
+<<37>>   11  P2358CT-TP                                    9403           SAMPLE         USD       1          1            5.00                  5.00
+<<38>>                                1300*650*400
+<<39>>   12   P2358ET-1                                    9403           SAMPLE         USD       1                        5.00                  5.00
+<<40>>                                650*650*500
+<<41>>    13   P2358ET-2                                    9403           SAMPLE         USD       1           1            5.00                  5.C0
+<<42>>                                650650*600
+<<43>>   14  P235SET-TP                                    9403           SAMPLE         USD       1          1            5.00                  5.00
+<<44>>                                50650600
+<<45>>   15   P2358TV-2                                    9403           SAMPLE         USD       1          1            5.00                  5.00
+<<46>>                                20C*450*550
+<<47>>    16  P2358TV-TP                                    9403           SAMPLE         USD       1          1            50                  5.00
+<<48>>                                2000*450*550
+<<49>>   17   P235SST-1                                    2403           SAMPLE         USD       1          2           10.00                 10.00
+<<50>>                                12CO*450*760
+<<51>>    18   P2358ST-2                                    9403          SAMPLE         USD       1          2           10.00                 10.00
+<<52>>                                1200*450*760
+<<53>>    19       CT                                         9403           SAMPLE         USD       1          3           1000                 10.00
+<<54>>                                1000*1080*300
+<<55>>   20       ET                                         9403           SAMPLE         USD       1          3           10.00                 10.00
+<<56>>                                 Dia550^600
+<<57>>   21      BT-1                                        9403           SAMPLE         USD       1          2           2.00                  2.00
+<<58>>                                1250*600*1200
+<<59>>   22      BT-2                                       9403           SAMPLE         USD       1          2            2.00                  2.00
+<<60>>                                1020*430*1880
+<<61>>                        TOTAL:                                                                           296       683     invoiceValua:        US$40,337.00
+<<62>>                      DISCOUNT:                                                                                                                          US$109.00
+<<63>>                NET TOTALIAMOUNT:                                                                                                                   US$40,25.00
+<<64>>                                        SAY TOTAL U.S. DOLLARS FORTY THOUSAND TWO HUNDRED FIFTY EIGHT ONLY.
+
+<<65>> NAME AND ADDRESS OF THE MANUFACTURERSIPRODUCERSIEXPORTERS:
+<<66>>  DONGGUAN CITTO FURNITURE CO.LTD
+<<67>> Bui!ding 1,No.10,Nange West Road,Daojiao Town
+<<68>>  Dongguan City,Guangdong Province
+<<69>> THE NAME AND ADDRESS OF THE EXPORTERS:                                                                                          TIONAL
+<<70>>  DONGGUAN CITY CHENG RUI TRADING CO.,LTD.
+<<71>> ADDRESSB702,NO.4.PORT ROAD,HUMEN TOWN,DONGGUAN                                                                                                   8
+<<72>> CITY.GUANGDONG PROVINCE CHINA                                                                                                 A
+<<73>>  REMARKS:                                                                                                                              A        H
+<<74>> HOUSEHOLD FURNITURE
+<<75>> PI NO:CT-23434 PO NO:1636469                                                                                                        Nonw
+<<76>>  AMT(USD):40258.00 LOCATION:AJMAN,UAE
+<<77>>  TRADE TERMS:FOB SHEKOU,CHINA           INCOTERMS 2010                                                                      *
+<<78>>  HS CODE:9403                                    SAMPLE PO:1655715
+<<79>>  WE CERTIFY THAT:
+<<80>>  A)COUNTRY OF ORIGIN AS CHINA
+<<81>>  B)ALL CARTONS AND EACH ITEMS ARE MARKED WITH THE WORDS MADE IN CHINA
+<<82>>  C)COUNTRY OF ORIGIN IS PRINTED/STITCHED ON EACHITEM
+<<83>>  GOODSTELEVISION CABINET UNITS,CONSOLE TABLE
+<<84>>  NOTIFY PARTY AS:LANDMARK TRADING FZE
+<<85>>  OFFICE NO FZJOB2101,JEBEL ALI FREE ZONE,DUBAI,UNITED ARAB EMIRATES
+<<86>>  CONTACT PERSON: MR.VNAY KUMAR RAMDOSS
+<<87>>  CONTACT PHONE: +971 4 3157730
+<<88>>                                                                      EMEIER INTERNATIONAL CO.,LIMITED
+<<89>>                                                                                    INVOCE 212
+
+---PAGE END---

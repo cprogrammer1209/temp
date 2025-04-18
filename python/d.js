@@ -1,0 +1,23 @@
+{
+  'brand': 'The brand of the product promoted during the activity (e.g., Sitawok M XR). Similar keywords: product brand, medicine brand, promoted brand, drug brand.',
+  'speciality': 'The medical specialty of the doctor (e.g., GENERAL PRACTITIONER - MBBS). Similar keywords: doctor specialty, field of practice, medical expertise.',
+  'compQuantity': 'The quantity of competitor products involved in the same activity (e.g., 12). Similar keywords: competitor product count, rival brand quantity, alternative drug count.',
+  'employeeName': 'The name of the employee responsible for the recorded activity (e.g., Sourav Kumar). Similar keywords: rep name, sales representative, field officer.',
+  'classification': 'The categorization of the doctor based on business segmentation (e.g., SUPER CORE - A). Similar keywords: doctor category, tier, business segment.',
+  'activityDate': 'The date of the activity or interaction (e.g., 2023-05-20). Similar keywords: interaction date, visit date, engagement date.',
+  'zone': 'The geographical zone where the activity took place (e.g., KOLKATA). Similar keywords: territory, sales zone, marketing region.',
+  'jobTitle': 'The designation or job title of the employee (e.g., TM for Territory Manager). Similar keywords: position, role, designation.',
+  'employeeCode': 'A unique identifier assigned to employees (e.g., 814560). Similar keywords: rep ID, staff ID, salesperson code.',
+  'value': 'The monetary value (RCPA value) of Wockhardt\'s product for the recorded prescriptions (e.g., 0.00). Similar keywords: revenue, prescription value, sales amount.',
+  'compRxn': 'The number of prescriptions generated for competitor products by the doctor (e.g., 2). Similar keywords: competitor prescriptions, alternative medicine prescriptions, rival brand scripts.',
+  'hq': 'The headquarters location overseeing the region (e.g., KOLKATA 3). Similar keywords: head office, main branch, regional HQ.',
+  'product': 'The specific product involved in the activity (e.g., SITAWOK M 500 XR 15T). Similar keywords: drug name, medicine, pharmaceutical product.',
+  'compValue': 'The monetary value (RCPA value) of competitor products for the recorded prescriptions (e.g., 1387.32). Similar keywords: competitor sales, rival drug revenue, alternative brand value.',
+  'productCodes': 'A unique code or identifier for the product (e.g., 504043). Similar keywords: SKU, item code, drug ID.',
+  'doctorName': 'The name of the doctor involved (e.g., Dipak Kapoor). Similar keywords: physician name, healthcare provider, medical professional.',
+  'quantity': 'The quantity of Wockhardt\'s product involved in the activity (e.g., 0). Similar keywords: prescribed amount, drug quantity, medicine count.',
+  'region': 'A more specific geographical sub-division within the zone (e.g., KOLKATA 3). Similar keywords: sales region, territory section, sub-zone.',
+  'rxn': 'The number of prescriptions generated for Wockhardt\'s product by the doctor (e.g., 0). Similar keywords: prescription count, issued scripts, medicine orders.',
+  'doctorUid': 'A unique identifier assigned to a doctor (e.g., X0014485). Similar keywords: doctor ID, medical ID, physician number.',
+  'division': 'The business division or department the data pertains to (e.g., METABOLICS). Similar keywords: business unit, department, sector.'
+}

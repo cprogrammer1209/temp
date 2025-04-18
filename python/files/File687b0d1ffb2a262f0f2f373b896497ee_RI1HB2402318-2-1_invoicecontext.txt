@@ -1,0 +1,55 @@
+[Page 0, Line 0]                                                                                                                                                                                         CN:2995549
+<<1>>                                                                            Landmark Trading FZE
+<<2>>                                                                                CPPELiY
+<<3>>                                                                                          Commercial Invoice
+<<4>>     LANDMARK RETAIL INVESTMENT CO. L.L.C
+<<5>>     P.O.BOX.113630,,                                                                                                                                Invoice No: DIRLTAE24-000878
+<<6>>     DUBAI,                                                                                                                                            Invoice Date: 12-Jul-24
+<<7>>     UNITED ARAB EMIRATES                                                                                                                     MODE BY SEA
+<<8>>     Contact Person :MR PETER DSOUZA
+<<9>>     Contact Phone : 04-8094409
+<<10>>       No. of pcs           Gross Weights                                  Description                                Value in AED             HS Code             Country of Origin
+<<11>>                  56                       9305.14   Five Door Wardrobe                                                         46,276.21         94035020                    China
+<<12>>                  63                       5234.14   Queen Size Bed 150x200 Cm                                               24,962.21         94035090                    China
+<<13>>                249                      12462.24   Chest Of Drawers                                                           70,511.89         94035090                    China
+<<14>>                368                                                                      TOTAL CIF Dubai, AED             141,750.30
+<<15>>    (AED ONE HUNDRED FORTY-ONE THOUSAND SEVEN HUNDRED FIFTY AND FIL THIRTY ONLY)
+<<16>>     Trailer No/ Container No              SEGU4137182[1x40HQ]
+<<17>>     Total No. of Pallets
+<<18>>     Total No. of Packages                650                                  Pkgs.
+<<19>>     Gross Weight                          27001.52                           Kgs.
+<<20>>     Shipping Marks                        AEHB
+<<21>>     Port Of Discharge                      DUBAI
+<<22>>    Final Destination                       UNITED ARAB EMIRATES
+<<23>>     The Country Of Origin :- CHINA
+<<24>>     For LANDMARK TRADING FZE
+<<25>>     Operating as "LANDMARK TRADING FZE"
+<<26>>                       TyLaL
+<<27>>                                   niy
+<<28>>                       .FZJO82101
+<<29>>            L
+<<30>>                            U.A.E.
+<<31>>                     DUBAI
+
+
+
+
+
+
+
+
+
+<<32>>                                                      Office No.FZJOB2101,Jebel Ali Free Zone,Dubai,United Arab Emirates
+<<33>>                                                          A Limited Liability Company with Share Capital of AED 100,000/-
+<<34>>                                                                            License No.7424208, Reg. No. 1932689
+<<35>> 12-07-2024 10:45:16                                                                                                                                                         Page 1 Of 1           INV-01
+
+
+<<36>>                                                                                                                                                                                                                       1
+<<37>>                                                                                                                                                                                                                               E
+
+
+<<38>>                                                                                                                    AECI12072024U7GJ
+<<39>>                                                                                                           Visit https://mofa.gov.ae/qrcodeverify for details.
+
+---PAGE END---
