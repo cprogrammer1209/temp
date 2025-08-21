@@ -1,0 +1,73 @@
+हमारा वीडियो है, यह solid principle of oops, जो कि सबको पता होना ची है, और हमें सबको पता है actually, तो अगर आप देखो कि अपने जो design pattern किये ना, उसमें यह सब applicable हुए है, बट हमें एक तरी से terms जानने हैं, कि अच्छा इसको single responsibility principle बोलते हैं, इसको dependency inversion बोलते हैं, तो let's see those terms, कि क्या है, और �
+hopefully it will help, तो जो solid principles है ना, इसके एक तरीक से advantage क्या होते हैं, अपने application में use करने के, it avoid duplicate code, जितने भी आप benefits सोर सकते हो ना, कि it avoid duplicate code, easy to maintain, understand, flexible software, reduce complexity, वो सब हैं, लेकिन कैसे वो अब यह अपने example से देखते हैं, तो आप देखो कि जो solid है ना, तो यह five principles है, as for single responsibility principle, ठीक है,
+similarly, o, l, id का सब का यह अलग complete name है, तो let's go one by one, और पहला देखते हैं, single responsibility क्या होता है, which stands for s, तो single responsibility क्या बोलता है, a class should have only one reason to change, इसका क्या मतलब है, इसका यह मतलब है, कि एक class के पास एक responsibility होने चाहिए, एक से जादा नहीं, और इसका मैं आपको मतलब समझाता हूँ, one reason to change, �
+
+So invoice has a marker
+and then I have a quantity here
+so I have a constructor and then I will calculate total invoice
+so price into quantity
+so I will give it to my total price
+sorry
+so I have a total price
+okay
+but the other method is that I have a print invoice
+which I have a invoice that I have made
+so I have a landlord
+could check equivalently
+is the single responsibility principle
+it comes up with one reason for change
+क्या इसके पास one reason to change है, मान के चलिए, आज मैं अपना calculation logic change करता हूँ, और मैं मान के चलिए, GST लेकर आता हूँ, कि मेरेको price निकालते वाक, GST भी लगाना है, discount भी लगाना है, तो definitely मेरे calculation logic change हो जाएगी, correct, क्योंकि मेरेको price में से, जो भी है, उसमें से discount करना पड़ेगा, फ
+change in the calculation logic, तो one reason, क्या और भी कोई reason है, इस class के change होने के, अगर आज मैं मान के चलिए, print invoice है, अगर आज मैं printing logic change कर दो, ठीक है, तो भी change हो सकता है, ठीक है, और आज ये दूसरा reason हो गया, पहला reason ये था, तीसरा reason, save to DB, आज मैं DB में save करना हूँ, और मान के चलिए, अब मुझे
+तो मेरे पास कितने reason होगा, इस class को change करने के, three reasons, but single responsibility क्या बोलता है, class should have only one reason to change, और only one responsibility, तो that's why this class is not following the single responsibility principle, ठीक है, तो अब इसको correct कैसे करेंगे, तो यहाँ पे हम क्या कर सकते है, कि class को, हर एक class को ऐसे बनाओ, कि वो खाली एक reason हो, उसके पास change होनेगा, तो मैंने invoice जो class �
+लेकिन जो print invoice और save to DB था ना, उनके लिए मैंने अलग-अलग classes बना दी, तो save to DB के लिए मैंने एक DAW class बना दी, data access layer जो जिसको हम बोलते है, इसका काम है DB में save करना, invoice को save करना, ठीक है, so now it has only one reason to change, save the invoice, कहां पे, save to DB या save to file कहीं पे भी, फिर एक मैंने invoice printer करके बना दिया, �
+
+अगर कुछ भी change होता है, इस calculation logic में, then only this class will change, then it will not impact this classes, ठीक है, तो इससे अपनको पता चल गया, कि solid principle का at least S से, single responsibility से क्या हुआ, easy to maintain हो गया, ठीक है, easy to maintain हो गया, और easy to understand हो गया, कैसे easy to maintain कैसे हुआ, कि अगर मेरे खाली calculation logic में change है, तो मैं खाली calculation वाली class change कर रहा हूँ,
+प्रिंटर वाली class और saving to DB वाली change ही नहीं करना, correct, so single responsibility principle, guys आगे समझ में, next देखते हैं, ये है open, open close principle, O stand for open close principle, अब ये क्या बोलता है, ये बोलता है, कि open for extension, but close for modification, right, तो अब इसका क्या मतलब है,
+तो अब प्रिवियस वाला ही example लेते हैं, अपनने एक DAO class बना ली थी, right, यहाँ पर single responsibility को follow करते हुए, हमने छोटी-छोटी classes बना ली, which has single responsibility,
+तो हमारे पास एक class बन गई थी, invoice DAO, data access object, जो कि इसका काम है, invoice को save करना,
+तो ये class है, जो कि आप DB में save कर रहा है, ठीक है, this file is already tested, ये file tested हो चुकी है, live है, ये, और traffic ले रही है, live traffic ले रही है, ये code, already live में है,
+मान के चलिए, अब मेरे पास एक नहीं requirement आई, कि I need to save it to the file also,
+तो मैंने क्या किया, save it to file method लिखा, इस DAO में, और ये क्या कर रहा है, file में save कर रहा है, इस invoice को,
+is this following a open close principle, no, right, क्योंकि open close principle क्या बोलता है, open for extension, आप इसको extend कर सकते हो,
+but close for modification, जो class, already tested, और live में है, उसको क्यों modify कर रहा है, आप extend कर लो,
+अगर आपको capability extra चाहिए, अगर आपको extra capability चाहिए, तो आप extend करो, लेकिन उसको already tested वाली class से उसको modify मत करो,
+ठीक है, तो यहाँ पर मैंने क्या किया, already इस class में, एक और method डाल दिया, save to file का,
+तो यह मैं, इस already tested file को change कर रहा हूँ, तो it is prone to bugs,
+तो इसको मैं कैसे improve कर सकता हूँ, तो आप देखो, यहाँ पर मैंने एक interface लिया, invoice DAO का,
+अब यहाँ पर, दो मैं कर सकता हूँ, कि invoice,
+जो DAO है, इसके पास दो है, DB और file,
+तो एक DB invoice जाओ है, यह भी इस interface को implement कर रहा है,
+और एक file invoice जाओ है, यह भी इस interface को implement कर रहा है,
+और यह save to DB कर रहा है, यह save to file कर रहा है,
+अगर future में कोई और आता है, तो मैं इसको नहीं change करूँगा,
+मैं सीधर इसको extend कर लूँगा, मानन के चलिए,
+X, Y, Z, Persistence कुछ भी करना है, कोई और मेथड, ठीक है, यहां तो मानके चलिए SQL DB है, यहां पर मानके चलिए कर रहा हूं MongoDB, तो मुझे SQL DB के code changes नहीं करने पड़ेंगे, इधर file वाले में करने पड़ेंगे, मैं सीधा MongoDB में अगर additional capability एड़ कर दूँगा, तो यह इस तरीके से ह
+तो हमारा पास तीसरा आता है, L, solid में तीसरा है, L, which is known as Liskoff's Substitution Principle, सब थोड़ा सा complex है, from rest of the others, क्यों, यह क्या बोलता है,
+इसका child है, class B, then we should be able to replace the object of A with B, B के साथ हम replace कर सकते हैं, without breaking the behavior of the program, this is very important, without breaking the behavior,
+मान के चलिए, मेरे पास एक program है, already code है, यह क्या accept कर रहा है, कि यह object accept कर रहा है, A का, और फिर इसके बाद यह कुछ, इस पे implement कर रहा है, मान के चलिए, अगर मैं इस object A की जगे, यहाँ पे इसको pass कर दूँ, object B, तो यह जो rest of the code है, इसको यह break नहीं होना चाहिए, यह still चलन
+
+
+
+Cycle में होता ही नहीं, तो यहां क्या करेगा, एक exception थो करदेगा, there is no engine, ठीक है, तो अब यहां पे हमने क्या किया, यहां पे हमने behavior change कर दिया, मान के चलिए, आज कोई मेरे पास program है, ठीक है, उसके पास bike का object आता है, अगर आज तक उसके पास motorcycle का object आ रहा है, और वो क्या कर रहा
+engine को turn on कर रहा है, और वो फिर कुछ काम कर रहा है, तो उसको पता है कि यहां मैं turn on engine करूंगा, तो engine turn होगा, ठीक है, क्योंकि मेरे पास object है, अगर मान के चलिए, आज मैं इसको change कर देता हूं, bicycle के object से, तो यह functionality break हो जाएगी, क्योंकि यहां पे मैं exception थो कर रहा हूं, तो that's what
+अगर हम सब क्लासे में capabilities, जो parents की capabilities हो कम कर देंगे, ठीक है, तो लिसकोफ का principle समझ आ गया, क्या कहता है, कि class B should be replaceable with class A, ठीक है, without breaking the behavior, और breaking the behavior हम कैसे कर सकते है, कि capability जो है, subtype हमेशा increase करे parent की ना कि उसको कम करे,
+तो अब हम चलते हैं, चौथे principle की तरफ, interface segmented principle, अब यह क्या बोलता है, कि interfaces should be such that clients should not implement unnecessary function, they do not need, तो इसको example से समझते हैं, तो मैंने यहां पे एक interface लिया, restaurant employee, अब मेरे पास बहुत सारे function है, एक है, wash dish,
+बरतंद होना है, customers को serve करना है, और food को cook करना है, तो अब मैंने एक waiter class बनाई, और इसने restaurant employees को किया,
+तो जो waiter class है, जब यह इस interface को implement कर रहा है, तो इसको सारे method जो है implement करने पड़ेंगे, तो इसने wash dish implement किया, serve customer implement किया, cook food किया,
+लेकिन क्या waiter का काम है, बरतंद होना, नहीं, क्या waiter का काम है, food को बनाना, नहीं, waiter का क्या काम है, खाली serve customers करना, तो यहाँ पर मैं क्या break कर रहा हूं, interface segmented principle, वो क्या बोलता है, जो client है, इसमें client क्या है, waiter, जो client है, waiter, should not implement unnecessary function,
+unnecessary function they do not need, मुझे इसकी जरूद भी नहीं थी, wash waiter को, wash dishes, cook food को implement करने की, लेकिन, फुर भी मुझे implement करना पड़ा, because of this interface, तो इसमें segmented का क्या मतलब है, छोटे-छोटे तुकडे, तो इसमें क्या बोलता है, interface को इतने छोटे-छोटे तुकडों में बाट दो, कि जो client है, आपक
+
+बना रहे हो, उसको unnecessary implementation ना करना पड़े, function का, clear है guys, और अब चलते हैं, अपन लास्ट, solid principle पे, जो है, D, dependency inversion principle, बहुत simple है, यह क्या कहता है,
+Class should depend on interface, rather than concrete class, ठीक है, इसको समझते हैं, क्या बोलता है, यह मान के चलो मैंने एक Macbook लिया, यह मान के चलो मेरे पास है, एक keyboard interface, यह है interface, तो keyboard में एक है wired keyboard, यह एक child class है, और एक, इसका implementation है, Bluetooth,
+Bluetooth, कीबोर्ड,
+similarly, आप एक ले लो, कि mouse है, interface,
+similarly, यहाँ पर मेरे पास है, एक wired mouse,
+और एक है, Bluetooth mouse,
+तो अभी मैंने क्या किया, यह एक Macbook बनाया, मेरे पास laptop है Macbook का, उसमें मैंने क्या किया, कि assign कर दिया, wired keyboard, यह वाला, wired keyboard, और इसका नए object बना दिया, wired mouse,
+timus, तो मैंने यहाँ पर क्या किया, यह जो concrete classes है, इस आफो इस रॉंग, अगर मायन के चलिये, मुझे future में, Macbook को, मेरे को enhance करना है, और Bluetooth करना है, तो मैं यहाँ पर नहीं कर सकता,
+तो इसको ठीक करने के लिए, मैंने क्या किया किया कि, यहाँ पर interface object लिये हैं, interface classes का, यहाँ पर मैंने वो लिये, और यहाँ पर मैंने यह वाले लिये, mouse और keyboard, ना कि concrete वाले, और यहाँ पर जो मैं है, इनको assign कर रहाँ इस तरीके से, constructor injection से,
+यहाँ पर मैंने जब भी कोई constructor होगा है, तो अगर मैं यहाँ पर wired keyboard और wired mouse भेजूगा, तो मैं यहाँ पर wired keyboard का object भेजूगा, यहाँ पर Bluetooth का भेजूगा, तो automatically मेरे जो object है, वो capable होगी किसी भी combinations को लेने के, ठीक है, वो hardcoded नहीं हो जाएंगे,
+regardless, आपे iinderfaces, milliard and riches,
+keyboard or already wired mouse, ठीक है, आपको dependency का भूता है, इनकी वजे से, जो अपन जो code लिखते है नहीं, बहुत simple हो जाता है, सिंपल होया इसкоईूविये, अ अपन cilantro हो दğूपर मैं ब्रेतराना के गे shellSi wag
+क। यहां पर मैने क्या किया था, यहां यहां यहां तो यही है, solid principles और इनकी वज़े से जो अपन जो code लिखते है ना बहुत simple हो जाता है, कुछ नहीं है अपन अल्रेडी day to day करते ही है इसको, but at least it's good to know this term, because interview में बहुत बार पूस लेते हैं, directly कि solid principles बताओ उसके, so at least we should know कि कौ
+को example से अच्छा समझ आयों और बहुत easy लगे होंगे solid principles, अगर प्लीज अच्छा लगे तो please को share किजिए guys, कुछ suggestion है तो please वो भी बताइए, and thank you guys, have a good day, bye.

@@ -3,16 +3,16 @@ const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId;
 let db1
 async function main() {
-  // const uriSrc = "mongodb://dev-SU:mdhdiIQTS@server.gibots.com:2400/aiqod-dev";  //dev
-  const uriSrc = "mongodb://staging-SU:insjWTERY@server.gibots.com:2400/?authSource=aiqod-staging"; //stage
-  // const uriSrc = "mongodb://pprod:prOd121233@172.168.0.146:27017/?authSource=prod-DB";  //prod
+  const uriSrc = "mongodb://dev-SU:mdhdiIQTS@server.gibots.com:2400/aiqod-dev";  //dev
+  // const uriSrc = "mongodb://staging-SU:insjWTERY@server.gibots.com:2400/?authSource=aiqod-staging"; //stage
+  // const uriSrc = "mongodb://pprod:prOd121233@103.58.164.118:27017/prod-DB";  //prod
   const client1 = new MongoClient(uriSrc);
 
   try {
     // Connect to the MongoDB cluster
     await client1.connect();
-    // db1 = await client1.db("aiqod-dev");  //dev
-    db1 = await client1.db("aiqod-staging"); //stage
+    db1 = await client1.db("aiqod-dev");  //dev
+    // db1 = await client1.db("aiqod-staging"); //stage
     // db1 = await client1.db("prod-DB"); //prod
     await copyDB();
   } catch (e) {
@@ -26,13 +26,14 @@ main().catch(console.error);
 
 
 //can add subscribers_number and for all subscribers enter "All User"
-let selected_Subscribers_Mobile = ["8888888803"]
+let selected_Subscribers_Mobile = ["0558908908"]
 
+// ["Import  API","Export  API","Royal Tech Smart AP Extractions"]
 //for adding new process;
-let NewProcess_Name = []
+let NewProcess_Name = ["Import  API","Export  API","Royal Tech Smart AP Extractions"]
 
 //for adding new report;
-let newReport_Name = ["Number of request received"]
+let newReport_Name = []
 
 //change report name
 /* Object structure
@@ -68,6 +69,7 @@ async function copyDB() {
       .collection("subscribers")
       .find({
         mobile: { $in: selected_Subscribers_Mobile },
+        isDelete:false
       })
       .toArray();
   }

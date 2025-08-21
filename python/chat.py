@@ -17,6 +17,7 @@ from flask_cors import CORS
 import sys
 import base64
 import mysql.connector
+import requests
 import cx_Oracle
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 config={}
@@ -77,6 +78,174 @@ def callopenai(new_chat_store):
     # print(output)
     return response,usage
 
+def complete_task( db, field_names, coll_name, prompt, chat_engine, mode, chat_store, input,context):
+    mode = mode.lower()
+
+    permission_filter = None
+ 
+    print(f"calling the mode; ")
+    print(context)
+    permission = input['permission'] if 'permission' in input else 'sub'
+    if (permission == 'org'):
+        permission_filter = { "$match": {"orgId": ObjectId(input['orgId'])}}
+    elif (permission == 'sub'):
+        permission_filter = { "$match": {"subscriberId": ObjectId(input['subscriberId'])}}
+    elif (permission == 'user'):
+        permission_filter = { "$match": {"userId": ObjectId(input['userId'])}}
+    elif (permission == 'dept'):
+        permission_filter = { "$match": {"deptId": ObjectId(input['deptId'])}}
+    print(f"1;;; ")
+
+    supervisor = input['supervisor_name']
+    employee_name = input['employee_names']
+    username = input['username']
+    this_user_tasks = db.get_collection("events").find({"isDeleted":False,"projectName": "Collab Pro", "currentEventStatus.category": "Manual", "currentEventStatus.orchestratorStatus":"inProgress","currentEventStatus.statusName":"Assign","currentEventStatus.assignToList.0.assignedToId": ObjectId(input['userId'])},{"additionalInfoVar.Task":1, "additionalInfoVar.Task Description": 1, "_id": 1 })
+    tasks_list = list(this_user_tasks)
+    print(f"222;;; ")
+
+
+    if mode == "online":
+        # complete_query = f"""you are a smart assistant who understands human intentions through messages. Read this message: {prompt} and answer in one word. The word can either be 'completeTask' or 'fetchInfo'. If the message means the sender wants to complete his tasks then return 'completeTask' or return 'fetchInfo'. Think step by step. Response should just be one word."""
+        complete_query = f"""you are a smart assistant who understands human intentions through messages. Read this task list: {tasks_list} and context: {context}. Return the id of that task whose task or task description matches the context best. If there is no context return the id of the first task. The response should just be the value of the most relevant id in string format. Think step by step. Provide the response in this json format: {{'id':''}}"""
+        if(len(chat_store)>0):
+                    # start_msg = chat_store[:1]
+                    # recent_2_msgs = chat_store[-2:]
+                    chat_store_final = []
+                    chat_store_final.append({"role": "system", "content": complete_query})
+                    print(chat_store_final)
+        response_id,usage = callopenai(chat_store_final)
+        response = repair_json(response_id)
+        # response = response_ai.choices[0].message.content
+        # print(f"""response inside function{response}""")
+        print(f"4; ")
+
+        response_json = json.loads(response)
+        response_id = response_json['id']
+        # response = response_ai.choices[0].message.content
+        #response_id = response_ai.choices[0].message.content
+    print(f"333;;; ")
+    
+    filter_criteria = {"eventId" : ObjectId(response_id) ,"statusName":"Assign"}
+
+    projection = {"assignToList": 1, "templateId": 1, "dueDate": 1, "eventStatusDesc": 1, "projectId": 1, "eventId": 1, "startDate": 1, "_id": 1}  # Include templateId, exclude _id
+
+    # Find the latest document by sorting in descending order and getting the first one
+    db = g.db
+    personal_info = db.get_collection("users").find({"_id": ObjectId(input['userId'])},{"personalInfo": 1, "_id": 1})
+    personal_info_details = {}
+    for doc in personal_info:
+        personal_info_details['temp'] = doc
+        break
+    print(f"555;;; ")
+    
+    latest_doc = db.get_collection("eventstatuses").find(filter_criteria,projection).sort("_id", -1)
+    template = {}
+    for doc in latest_doc:
+        template['temp'] = doc
+        break
+    print(f"666;;; ")
+
+    filter_2_criteria = {"_id": template['temp']['templateId']}
+    
+    project = {'additionalInfo': 1, "templateName": 1, "ruleId": 1, "_id": 0}
+
+    template_details = db.get_collection("additionalinfos").find(filter_2_criteria,project)
+    print(f"77;;; ")
+
+    task_level_template_doc = db.get_collection("events").find({"_id": template['temp']['eventId']},{"templateId": 1, "variableList": 1, "additionalInfoVar": 1, "_id": 0})
+    print(f"88;;; ")
+
+    task_level_template = {}
+
+    for doc in task_level_template_doc:
+        task_level_template['temp'] = doc
+        break
+     
+    task_level_template_details = db.get_collection("additionalinfos").find({"_id": task_level_template['temp']['templateId']},project)
+    print(f"999;;; ")
+
+    task_level_template_addinfo = {}
+
+    for doc in task_level_template_details:
+        task_level_template_addinfo = doc
+        break
+
+    task_level_template_values = [item["label"] for item in task_level_template_addinfo.get("additionalInfo", []) if item.get("required") == True]  
+    task_level_template_all_values = [item["label"] for item in task_level_template_addinfo.get("additionalInfo", [])]
+
+    additional_info = {}
+    for doc in template_details:
+        additional_info = doc
+        break
+    print(f"1000;;; ")
+    
+    final_values = [item["label"] for item in additional_info.get("additionalInfo", []) if item.get("required") == True]
+    # final_values.extend(task_level_template_values)
+    print(final_values)
+    # task_details = {"templateId": template['temp']['templateId'], "dueDate": template['temp']['dueDate'], "eventStatusDesc": template['temp']['eventStatusDesc'],"projectId": template['temp']['projectId'],"addinfolabels": final_values, "_id": template['temp']['_id']}
+    task_details = {"templateName": additional_info['templateName'], "bot_level_addinfo": additional_info['additionalInfo'],"ruleId":additional_info.get('ruleId') ,"personalInfo": personal_info_details['temp'], "startDate": template['temp']['startDate'],"assignToList": template['temp']['assignToList'],"dueDate": template['temp']['dueDate'],"templateId": template['temp']['templateId'],"eventStatusId": template['temp']['_id'],"eventId": template['temp']['eventId'], "variableList": task_level_template['temp']['variableList'],"additionalInfoVar": task_level_template['temp']['additionalInfoVar'], "taskLevelAddInfoVariables": task_level_template_all_values }
+    
+    
+    response = {
+    "completeTask": True,
+    "message": final_values,
+    "taskDetails": task_details,
+    
+    }
+    print(response)
+
+    return response
+
+def find_objective(prompt, chat_engine, mode, chat_store, input):
+    mode = mode.lower()
+    response = ''
+
+    permission_filter = None
+ 
+    print(f"calling the mode find objective; ")
+
+    permission = input['permission'] if 'permission' in input else 'sub'
+    if (permission == 'org'):
+        permission_filter = { "$match": {"orgId": ObjectId(input['orgId'])}}
+    elif (permission == 'sub'):
+        permission_filter = { "$match": {"subscriberId": ObjectId(input['subscriberId'])}}
+    elif (permission == 'user'):
+        permission_filter = { "$match": {"userId": ObjectId(input['userId'])}}
+    elif (permission == 'dept'):
+        permission_filter = { "$match": {"deptId": ObjectId(input['deptId'])}}
+
+    supervisor = input['supervisor_name']
+    employee_name = input['employee_names']
+    username = input['username']
+    client = OpenAI()
+    print(f"1; ")
+
+    if mode == "online":
+        # complete_query = f"""you are a smart assistant who understands human intentions through messages. Read this message: {prompt} and answer in one word. The word can either be 'completeTask' or 'fetchInfo'. If the message means the sender wants to complete his tasks then return 'completeTask' or return 'fetchInfo'. Think step by step. Response should just be one word."""
+        complete_query = f"""you are a smart assistant who understands human intentions through messages. Read this user message:\n ***{prompt}*** \n and answer in one word. The word can either be 'completeTask' or 'fetchInfo'. If the message means the sender wants to complete his tasks then return 'completeTask' or return 'fetchInfo'. If the word complete present in user question then its completeTask. This value should be provided as the value of key. The name of the key should be 'objective'. Also if the message has information about which task the human wants to complete then provide it in the response as the value of another key called 'context'. Think step by step. Populate the output in the following json format: {{'output':{{'objective':'fetchInfo','context':'water coercion task','reason':'..'}}}}"""
+        print(f"2; ")
+        
+        if(len(chat_store)>0):
+                    # start_msg = chat_store[:1]
+                    # recent_2_msgs = chat_store[-2:]
+                    chat_store_final = []
+                    chat_store_final.append({"role": "system", "content": complete_query})
+                    print(chat_store_final)
+        print(f"3; ")
+
+        response,usage = callopenai(chat_store_final)
+        response = repair_json(response)
+        # response = response_ai.choices[0].message.content
+        # print(f"""response inside function{response}""")
+        print(f"4; ")
+
+        response_json = json.loads(response)
+        print(f"Response JSON: {response_json}")
+        # response = str(response)
+        
+    return response_json, usage
+
+
 import google.generativeai as genai
 
 # Or use `os.getenv('GOOGLE_API_KEY')` to fetch an environment variable.
@@ -94,11 +263,14 @@ my_retry = retry.Retry(
 from tavily import TavilyClient
 tavily_client = TavilyClient(api_key="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")
 def callgemini(text,question,lang='en'):
+    print('here')
+    from datetime import date
     response = tavily_client.search(question)
+    print('Respponse')
     res = ''
     for i,news in enumerate(response['results']):
         res += f"Link:{news['url']}\nTitle: {news['title']}\nContent:{news['content']}\n"
-    prompt = f"""Answer this question {question}. You can use this content if necessary information about the question is available. Content: {text}. Today's date is {str(datetime.date.today())}. Provide the answer with reference link used for it. Provide result in html which will be appended to a existing html file."""
+    prompt = f"""Answer this question {question}. You can use this content if necessary information about the question is available. Content: {text}. Today's date is {str(date.today())}. Provide the answer with reference link used for it. Provide result in html which will be appended to a existing html file."""
     if g.news_id:
         print('using ind new id as sourc')
         response = model.generate_content(prompt)
@@ -135,6 +307,7 @@ def extract_keyvalues(text,question,language):
     return response,usage
 
 def convert_date_fields(pipeline_dict):
+    import datetime
     if isinstance(pipeline_dict, dict):
         for key, value in list(pipeline_dict.items()):  # Use list() to avoid RuntimeError (dict size change)
             if isinstance(value, dict) and "$date" in value:
@@ -149,7 +322,72 @@ def convert_date_fields(pipeline_dict):
             convert_date_fields(item)
 
     return pipeline_dict
+from datetime import datetime
 
+def convert_dates(obj):
+    if isinstance(obj, dict):
+        if "$date" in obj and isinstance(obj["$date"], str):
+            # Convert $date string to datetime object
+            return datetime.fromisoformat(obj["$date"].replace("Z", "+00:00"))
+        else:
+            return {k: convert_dates(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_dates(item) for item in obj]
+    else:
+        return obj
+def transform_regex_fields(pipeline):
+    final = []
+    for stage in pipeline:
+        if '$match' in stage:
+            transformed = {'$match': {}}
+            expr_conditions = []
+
+            for key, value in stage['$match'].items():
+                if isinstance(value, dict) and "$regex" in value:
+                    raw_pattern = value["$regex"]
+                    # Normalize only the case, preserve spaces in the pattern
+                    normalized_pattern = raw_pattern.lower()
+                    options = value.get("$options", "")
+
+                    # Prepare the transformed condition
+                    condition = {
+                        "$regexMatch": {
+                            "input": {
+                                "$replaceAll": {
+                                    "input": {"$toLower": f"${key}"},
+                                    "find": " ",
+                                    "replacement": ""
+                                }
+                            },
+                            "regex": normalized_pattern.replace(" ", ""),  # Remove spaces only from the input processing, not pattern
+                            "options": options.replace("i", "")  # Remove 'i' since input is lowercased
+                        }
+                    }
+                    expr_conditions.append(condition)
+                else:
+                    transformed['$match'][key] = value
+
+            if expr_conditions:
+                if len(expr_conditions) == 1:
+                    transformed['$match']["$expr"] = expr_conditions[0]
+                else:
+                    transformed['$match']["$expr"] = {"$and": expr_conditions}
+
+            final.append(transformed)
+        else:
+            final.append(stage)
+    return final
+
+def match_stages(pipeline):
+    # Filter out $match stages
+    if not '$match' in pipeline[0]:
+        return pipeline
+    filtered_pipeline = [stage for stage in pipeline if '$match'  in stage and '$regex' in json.dumps(stage['$match'])]
+    # If no $match stages were present, return original
+    if len(filtered_pipeline) == 0:
+        return pipeline
+    return filtered_pipeline
+    
 def create_query_retrieve_data( db, field_names, coll_name, prompt, chat_engine, mode, chat_store, input):
 
 
@@ -296,7 +534,7 @@ Only respond with mongo aggregation query in a valid array JSON format without c
                     # and the role of user is the admin of an organisation.'
                     #The employees under the user include {employee_name}'
                 else:
-                    additional_context = f'In this context, the user name is {username}.'
+                    additional_context = f'In this context, the user name is {username}\n'
                     # and the role of user is the employee of an organisation.'
                     #The manager of the user is {supervisor}'
 #                                    In this context, the user name is {username}. Use this username in match conditions only if me/my is mentioned in query requirement.
@@ -326,8 +564,8 @@ Only respond with mongo aggregation query in a valid JSON list/array format with
 Always format response in this format. {{"pipeline":[]}}.
 Its very critical, If the question is not related to schema respond empty."""
                 print(f"LLAMA {mode} Model is generating the query for you...")
-                print('user query',user_query)
-                print('additional info',additional_info)
+                # print('user query',user_query)
+                # print('additional info',additional_info)
                 
                 client = OpenAI()
 
@@ -348,6 +586,7 @@ Its very critical, If the question is not related to schema respond empty."""
 
                 #yuvarj shankar logic for wockhardt
                 import datetime
+                query = ''
                 if input['previousCollection'] == 'workhardt':
                     new_chat_store = []
 
@@ -383,10 +622,10 @@ Its very critical, If the question is not related to schema respond empty."""
                     Write a MongoDB Aggregation pipeline query.
 
                     Use the following as mongoDB collection to write the query: '{schema_name}'
-                    use this '{schema_name}' as the base table or collection schema fields, dont use it from other schemas fields. use other schema fields only in when lookup is used. in that also make user respective schema fields is being used.
+                    Dont use it from other schemas fields. use other schema fields only in when lookup is used. in that also make user respective schema fields is being used.
                     
                     You are an expert in mongodb aggregation pipeline creation. 
-                    Check the user question to create the aggregation from this schema itself {coll_name}.
+                    Check the user question to create the aggregation from this collection itself. Current CollectionName: {coll_name}.
                     Check the user question whether the output aggregation pipeline can be generated with the above mongodb schema itself. 
                     Most of the cases the output canbe generated with single collection itself. If required, use lookup with other collection schema to write the query.
                     The some scenrios are the RCPA and reporting table will not have the doctors mobile number and email id and available calldays, call time, in that case only use lookup to get the doctors details with doctoruid
@@ -394,17 +633,19 @@ Its very critical, If the question is not related to schema respond empty."""
                     Make sure, it is critical to use only the respective schema fields
 
 
-                    {str(input['multiTables']) }
+                    {str([table for table in input['multiTables'] if table['tableName'] != coll_name]) }
                     """
 
                     additional_info = f"""Additional Context: {additional_context} 
                     For any questions related to date, remember today's date is {x} and it falls on {day_name} of the current week . A week always starts with Monday ends with Sunday.      
                     Strict Rules and Regulations:
+                    
                     Its very critical to not use additional context like user match or date for generic query.
                     Date field will be in date datatype.
                     Its very critical to not add unnecassary match conditions if not prompted.
                     Its very critical Match queries must use $regex if field is type string, include case insensitive flag. 
                     Projection must exclude _id.
+                    Projection must include the match field mandatorily.
                     Check the user question whether the output aggregation pipeline can be generated with the above mongodb schema itself. Dont add additional pipelines if not required.
                     If using $regex dont enclose it in /expression/ and dont use ^ and $ in regex field.
                     if lookup is used, the value will be in array, unwind it , then the field wil be in object format,  then in projection, create a new field according to the object fields and assign them.
@@ -412,67 +653,81 @@ Its very critical, If the question is not related to schema respond empty."""
                       rcpaDetails : {{"product" : "xxx",'brand':"yyy"}},
                     Then in projection, crate like this,
                     {{"product":"$rcpaDetails.product", "brand":"$rcpaDetails.brand"}}
+                    PCPM = Total Sales (₹) in a Month / Number of Field Force (MRs) in the Team
                     In Projection, all the field value must be in string format(said only for object type of fields, if the field value is in object or dict, then only need to do this).so dont give it in object format. unwind it and then assign the field value in projection like above.
                     If lookup is not used dont do these things.
                     means all the date fields are already in date field only, so dont use for exisitng date field.
                     use when the date is need to use from llm like the user may ask for a spefic range and any particular range, in that time.  Use the following date as example, {{'$date': '2025-01-01T00:00:00.000Z'}}. DOnt use any other format.
                     Make sure, it is critical to use the respective schema fields.
+                    Cycle is determined using (Apr-Jun 2025) + joining date
                     Since i told all the field datatypes is in string expect date, need to parse to double datatype for some fields like when it is used in $sum and doing other math functions like adding, subracting, multiply.
                     parse to double when it required. whenever the group aggregation is used ans operators like $sum is used. it is critical to parse into double and then add
-                    Dont need to format any date value and give as it as in projecttion like updt': ---'$dateToString': 'format': '%Y-%m-%d %H:%M %p', 'date': '$updt'---, dont do this, give as it as.
+                    Dont need to format any date value and give as it as in projection like updt': ---'$dateToString': 'format': '%Y-%m-%d %H:%M %p', 'date': '$updt'---, dont do this, give as it as.
                     While searching with name, in regex, dont use the Dr. dr prefix
                     Only respond with mongo aggregation query in a valid JSON list/array format without code block syntax around it and each pipeline should be closed within curly braces and quotes around each stage type. 
-                    Always format response in this format. {{"pipeline":[]}}."""
+                    Always format response in this format. {{"pipeline":[],"collection_name_to_execute":""}}."""
+                   
+                    rules = f"Your task to generate a valid mongodb query based on the following user query or question: {prompt} and return the output in proper json using this format {{'pipeline':[]}}. {additional_context}. If its generic question return pipeline as empty list otherwise add atleast project stage. I need to run the query and later use llm to summarize so make sure all the necessary fields are in project."
 
-                    rules = f"Your task to generate a mongodb query based on the following user query or quetion {prompt}"
-
-                    new_chat_store.append({"role": "user", "content": user_query})
-                    new_chat_store.append({"role": "user", "content": additional_info})
-                    new_chat_store.append({"role": "user", "content": rules})
+                    # new_chat_store.append({"role": "user", "content": user_query})
+                    # new_chat_store.append({"role": "user", "content": additional_info})
+                    # new_chat_store.append({"role": "user", "content": rules})
                     print('new_chat_store  12345')
 
-                    query = f'Task: {rules}\n\nContext: {user_query}\n\nAdditional Information: {additional_info}\n\n'
+                    query = f'Task: {rules}\n\n{user_query}\n\n{additional_info}\n\n'
+                    # print (query)
 
-                print('Chat_history', new_chat_store)
-                query = f'User Query: {user_query},\n Additional Information: {additional_info},\n Rules: {rules}'
-                response_ai = client.chat.completions.create(
-                # #response_ai = client.completions.create(
-                     model="gpt-4o-mini",
-                     #model="davinci-002",
-                     #model="gpt-3.5-turbo-instruct",
-                     response_format={ "type": "json_object" },
-                     messages=new_chat_store,
-                     temperature=0,
-                     top_p=0.1
-                     )
-                '''response_ai = model.generate_content(query)
-                response = response_ai.text
-                query = format_json_llm(response)
-                print ('Res==----------->,',query)
-                token_info = response_ai.usage_metadata
-                final_query =  query
-                print ('New query==----------->,',query)'''
-                #repair the json format .
-                # query_text = repair_json(final_query)
-                # print(f"1.----------------{query_text}-------------------")
+                # print('Chat_history', new_chat_store)
+                # query = f'User Query: {user_query},\n Additional Information: {additional_info},\n Rules: {rules}'
+                if not query:
+                    response_ai = client.chat.completions.create(
+                    # #response_ai = client.completions.create(
+                        model="gpt-4o-mini",
+                        #model="davinci-002",
+                        #model="gpt-3.5-turbo-instruct",
+                        response_format={ "type": "json_object" },
+                        messages=new_chat_store,
+                        temperature=0,
+                        top_p=0.1
+                        )
+                    response = response_ai.choices[0].message.content
+                    print ('Res==----------->,',response)
+                    token_info = response_ai.usage
+                    final_query =  response
+                    query_text = repair_json(final_query)
+                    print(f"1.----------------{query_text}-------------------")
 
-                #conveting it into json format .
-                # python_object_initial = json.loads(query_text)
-                #python_object = final_query
-                #print(type(python_object),python_object)
-                response = response_ai.choices[0].message.content
-                print ('Res==----------->,',response)
-                token_info = response_ai.usage
-                final_query =  response
-                #repair the json format .
-                query_text = repair_json(final_query)
-                print(f"1.----------------{query_text}-------------------")
+                    #conveting it into json format .
+                    python_object = json.loads(query_text)
+                else:
+                    model = genai.GenerativeModel('models/gemini-2.5-flash-preview-04-17')
+                    response_ai = model.generate_content(query,generation_config={"temperature":0})
+                    response = response_ai.text
+                    query = format_json_llm(response)
+                    # print ('Res==----------->,',query)
+                    token_info = response_ai.usage_metadata
+                    #final_query =  repair_json(query)
+                    print ('New query==----------->,',query)
+                    python_object = query
+                    if 'collection_name_to_execute' in query:
+                        schema_name = query['collection_name_to_execute']
 
-                #conveting it into json format .
-                python_object = json.loads(query_text)
-                if 'pipeline' in python_object and len(python_object['pipeline']) == 0:
-                    return [],token_info,response
                 
+                #repair the json format .
+                
+                if 'pipeline' in python_object and len(python_object['pipeline'])==0 and  not query:
+                    return [],token_info,response
+                elif 'pipeline' in python_object and len(python_object['pipeline'])==0 and  query:
+                    print('Generic question')
+                    prompt_final = f' Answer this question: {prompt} in a generic way. Provide the answer in a html code.'
+                    # print(prompt)
+                    response_final = model.generate_content(prompt_final)
+                    result = format_html_llm(response_final.text)
+                    return result, response_final.usage_metadata,response_final.text
+                elif 'pipeline' in python_object and len(python_object['pipeline'])!=0 and  query:
+                    old_pipeline = python_object['pipeline']
+                    new_pipeline = match_stages(python_object['pipeline'])
+                    python_object['pipeline'] = new_pipeline
                 
 
                 if permission_filter:
@@ -490,7 +745,7 @@ Its very critical, If the question is not related to schema respond empty."""
                         origin = input['headers']['Origin']
                         if "https://staging.aiqod.com:843" in origin:
                             # url = "http://127.0.0.1:7894/adhigam-api/website/combineLines"
-                            url = "http://127.0.0.1:7894/gibots-api/user/type"
+                            url = "http://172.168.1.19:7894/gibots-api/user/type"
                             print(url)
                         else:
                             url = f"{origin}/gibots-api/user/type"
@@ -518,12 +773,38 @@ Its very critical, If the question is not related to schema respond empty."""
                 
                 print(f"2.---------------{python_object['pipeline']}---------------{type(python_object['pipeline'])} --------  {schema_name}")
                 # Fetching data from the database using the model query.
-                result_cursor = db.get_collection(schema_name).aggregate(python_object['pipeline'])
-                print(f"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<{result_cursor}")
-                final_result = list(result_cursor)
-                print(f"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<{final_result}")
-                if(len(final_result) == 0):
+                if query:
+                    myclient = pymongo.MongoClient('mongodb+srv://Yuvaraj:68DcFTTBrWCieCm@cluster0.uvgfy.mongodb.net/')
+                    db = myclient['Test']
+                    q_final = convert_date_fields(python_object['pipeline'])
+                    q_final = transform_regex_fields(q_final)
+                    print(q_final)
+
+                    result_cursor = db.get_collection(schema_name).aggregate(q_final)
+                    final_result = list(result_cursor)
+                    if(len(final_result)>=100 or '$sum' in response):
+                        q_final = convert_date_fields(old_pipeline)
+                        q_final = transform_regex_fields(q_final)
+                        print("lots of result, executing old query")
+                        result_cursor = db.get_collection(schema_name).aggregate(q_final)
+                        final_result = list(result_cursor)
+                else:
+                    result_cursor = db.get_collection(schema_name).aggregate(python_object['pipeline'])
+                    final_result = list(result_cursor)
+
+                # print(f"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<{result_cursor}")
+                
+                print(f"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<{len(final_result)}")
+                
+
+                if(len(final_result) == 0 and not query):
                     return [], token_info, response
+                elif(len(final_result) == 0 and query):
+                    prompt_final = f' Answer this question: {prompt} in a generic way. Provide the answer in a html code.'
+                        # print(prompt)
+                    response_final = model.generate_content(prompt_final)
+                    result = format_html_llm(response_final.text)
+                    return result, response_final.usage_metadata,response_final.text
                 else:
                     format_output = []
                     for res in final_result:
@@ -535,6 +816,19 @@ Its very critical, If the question is not related to schema respond empty."""
                                 format_obj[key] = res[key]
                         format_output.append(format_obj)
                     final_result = format_output
+                    if (len(final_result)<100 and query):
+                        prompt_final = f'{additional_context}. Using this reference table data, {final_result}. {"Data Explanation:"+input["attachmentExplanation"] if "attachmentExplanation" in input else ""} Answer this question: {prompt}. Provide the answer in HTML format. If the response includes multiple line items or entries, use a styled <table> with proper borders. If it\'s a single item or short response, use styled <p> tags instead of a table. Choose the formatting that best fits the structure of the content.'
+                        # print(prompt)
+                        response_final = model.generate_content(prompt_final)
+                        result = format_html_llm(response_final.text)
+                        return result, response_final.usage_metadata,response_final.text
+                    elif(final_result and query):
+                        prompt_final = f'{additional_context}. Using this reference table data, {final_result[0:50]}. {"Data Explanation:"+input["attachmentExplanation"] if "attachmentExplanation" in input else ""} Answer this question: {prompt}. Provide the answer in HTML format. If the response includes multiple line items or entries, use a styled <table> with proper borders. If it\'s a single item or short response, use styled <p> tags instead of a table. Choose the formatting that best fits the structure of the content.'
+                        # print(prompt)
+                        response_final = model.generate_content(prompt_final)
+                        result = format_html_llm(response_final.text)
+                        return result, response_final.usage_metadata,response_final.text
+
                 '''else:
                     for res in final_result:
                         if '_id' in res:
@@ -650,6 +944,9 @@ def limitcheck_middleware_old(func):
         elif 'https://staging.aiqod.com:843' in origin:
             uri = config['stageDbLink']
             db_name = config['stageDb']
+        elif 'https://dev.aiqod.com:843' in origin or 'localhost' in origin:
+            uri = config['devDbLink']
+            db_name = config['devDb']
         elif 'https://demo.aiqod.com:3443' in origin:
             uri = config['demoDbLink']
             db_name = config['demoDb']
@@ -662,6 +959,12 @@ def limitcheck_middleware_old(func):
         user_token_from_db = list(db.get_collection('LLM_Tokens').find({'subscriber_id': subscriber_id, 'mode': mode, 'collection': collection_name}))
         supervisor_name = ''
         employee_names = []
+        subscriber = db.get_collection('subscribers').find_one({'_id':ObjectId(subscriber_id)})
+        if 'defaultChatCollection' in subscriber and input['collN'] == 'Collab Pro' and subscriber['defaultChatCollection']:
+            print('change to default collection')
+            input['collN'] = subscriber['defaultChatCollection']
+            print("Default collection",input['collN'])
+            
         if (supervisor != 'admin'):
             supervisor_list = db.get_collection('users').find({"_id": ObjectId(supervisor)})
             for user in supervisor_list:
@@ -697,31 +1000,9 @@ class DecimalEncoder(json.JSONEncoder):
 import mysql.connector
 from mysql.connector import Error
 
-import paramiko
-
-# SSH connection details
-ssh_host = "150.230.232.245"  # Your public IP
-ssh_port = 22
-ssh_username = "ubuntu"
-ssh_pkey = "/home/ubuntu/new_ssd/publicfolder/liberty-fs/Ubuntu_Bastion1.key"
-
-import paramiko
-import json
+# import paramiko
 
 
-# MySQL connection details from the \status command
-mysql_host = "172.16.3.192"
-mysql_port = 3306
-mysql_username = "Aiqod"
-mysql_password = "A!q0DmyTVS25"  # Your password
-database_name = 'myTVSPartsmart'
-# Create SSH client
-client = paramiko.SSHClient()
-client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-print("Connecting to SSH...")
-client.connect(hostname=ssh_host, port=ssh_port, username=ssh_username, key_filename=ssh_pkey)
-print("Connected to SSH")
-client.get_transport().set_keepalive(600) 
 
 def update_summary(query: str, response: str,result=None) -> str:
     prompt = f"""
@@ -739,6 +1020,29 @@ def update_summary(query: str, response: str,result=None) -> str:
 
 def run_mysql_query(query, params=None):
     try:
+                # SSH connection details
+        ssh_host = "150.230.232.245"  # Your public IP
+        ssh_port = 22
+        ssh_username = "ubuntu"
+        # ssh_pkey = "/home/ubuntu/new_ssd/publicfolder/liberty-fs/Ubuntu_Bastion1.key"
+        ssh_pkey = "/home/user/Downloads/Ubuntu_Bastion1.key"
+        import paramiko
+        import json
+
+
+        # MySQL connection details from the \status command
+        mysql_host = "172.16.3.192"
+        mysql_port = 3306
+        mysql_username = "Aiqod"
+        mysql_password = "A!q0DmyTVS25"  # Your password
+        database_name = 'myTVSPartsmart'
+        # Create SSH client
+        client = paramiko.SSHClient()
+        client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        print("Connecting to SSH...")
+        client.connect(hostname=ssh_host, port=ssh_port, username=ssh_username, key_filename=ssh_pkey)
+        print("Connected to SSH")
+        client.get_transport().set_keepalive(600) 
         remote_query_file = "/tmp/temp_query.sql"
         print("Creating temporary SQL file...")
         
@@ -806,7 +1110,7 @@ def format_html_llm(text):
     if match:       
         return match[0]
     else:
-        return None
+        return text
 
 def format_sql_llm(text):
     regex_pattern = r'```sql(.*?)```'
@@ -2063,6 +2367,7 @@ def getMultiCollectionName(collectionNames,db,input):
     print('tableMetaData length   ',len(tableMetaData))
     tableToFind = []
     print('tableToFind   ',tableToFind)
+    attachmentExplanation = []
     if tableMetaData:
         for table in tableMetaData:
             if table.get('isAttachExplanation') is True and "attachmentExplanation" in table:
@@ -2070,6 +2375,7 @@ def getMultiCollectionName(collectionNames,db,input):
                 tableDic={}
                 tableDic['tableName'] = table['tableName']
                 tableDic['explanation'] = table['attachmentExplanation']
+                attachmentExplanation.append({'TableName': table['tableName'],'FieldDescription':table['attachmentExplanation']})
                 tableDic['fields']=[]
                 for fields in table['fields']:
                         if 'description' in fields and fields['description']:
@@ -2099,26 +2405,31 @@ def getMultiCollectionName(collectionNames,db,input):
     Reporting table will have the employee name doctor name, future meeting activity date and call type. it doesn't have any what is going to discuss and all.
     so determine accordingly.
     Do not generate multiple classifications or create new types; strictly choose from the given list.
-
+    If the question is related to doctor classification/segment use DML
+    HQ, Ex HQ, Outstation are related to DML townType.
+    Anythig related to reporting manager details of employee or employee details use fieldForces.
     Provide a brief justification for your choice based on the document’s characteristics and the given descriptions.
 
     Input Format:
     user query: {userQuery}
 
     Document Types & Descriptions:
-    {tableToFind}
+    {attachmentExplanation}
     …
 
     Output Format:
-    Always format response in this format. {{"document_type":"","justification":""}}.
+    Always format response in this format. {{"document_type":"","reason":""}}.
     '''
-    print('prompt   ',prompt)   
-    reqDocumentType,usage = callopenai([{"role":"system","content":prompt}])
-    reqDocumentType = json.loads(reqDocumentType)
+    # print('prompt   ',prompt)   
+    # reqDocumentType,usage = callopenai([{"role":"system","content":prompt}])
+    # reqDocumentType = json.loads(reqDocumentType)
+    response = model.generate_content(prompt)
+    reqDocumentType = format_json_llm(response.text)
+    
     print('reqDocumentType    type', type(reqDocumentType)) 
-    print('reqDocumentType   ', reqDocumentType['document_type']) 
+    # print('reqDocumentType   ', reqDocumentType['document_type']) 
 
-    return reqDocumentType['document_type']
+    return reqDocumentType['document_type'] if reqDocumentType and 'document_type' in reqDocumentType else input['previousCollection']
 @app.route('/chatbot/chat',methods=['GET', 'POST'])
 @limitcheck_middleware_old
 
@@ -2274,7 +2585,7 @@ def chatbot():
                 previous_total_token = document['total_token_used']
                 api_call_count = document['api_call_count']
 
-        user_chat_from_db = list(db.get_collection('SmartChatHistory').find({'userId': userId, 'mode': mode}))
+        user_chat_from_db = list(db.get_collection('SmartChatHistory').find({'userId': userId, 'mode': mode,'current': True}))
         chat_store = None
         chat_memory = None
         if(mode == 'offline'):
@@ -2342,7 +2653,19 @@ def chatbot():
             # except:
             #     chat_history = []
             #chat_engine = SimpleChatEngine.from_defaults(chat_history=chat_history)
-            result, token, response_ai = create_query_retrieve_data(db, field_keys, collection_name, prompt, {}, mode, chat_store,input)
+            if(collection_name == "Collab Pro"):
+
+                response_of_find_objective, token = find_objective(prompt, {}, mode, chat_store,input)
+                objective = response_of_find_objective["output"]["objective"]
+                context = response_of_find_objective["output"]["context"]
+                print(objective)
+                if(objective != 'completeTask'):
+                    result, token, response_ai = create_query_retrieve_data(db, field_keys, collection_name, prompt, {}, mode, chat_store,input)
+                else:
+                    print('calling complete task')
+                    result = complete_task(db, field_keys, collection_name, prompt, {}, mode, chat_store,input,context)
+            else:
+                result, token, response_ai = create_query_retrieve_data(db, field_keys, collection_name, prompt, {}, mode, chat_store,input)
             if (result and len(result)>0):
                 response = result
             else:
@@ -2385,7 +2708,13 @@ def chatbot():
                 'mode': mode,
                 'model': 'gemini'
             }
-            db.get_collection('SmartChatHistory').update_one({'userId': userId,'mode': mode}, {"$set": db_obj}, upsert=True)
+            chatbot_history = db.get_collection('SmartChatHistory').find_one({'userId': userId,'mode': mode,'current':True})
+        
+            if not chatbot_history or (chatbot_history and len(bson.BSON.encode(chatbot_history)) >= 16 * 1024 * 1024): 
+                if chatbot_history and (len(bson.BSON.encode(chatbot_history)) >= 16 * 1024 * 1024):
+                    db.get_collection('SmartChatHistory').update_one({"_id":chatbot_history['_id']},{"current": False})     
+                
+            db.get_collection('SmartChatHistory').update_one({'userId': userId,'mode': mode,'current':True}, {"$set": db_obj}, upsert=True)
         else:
             print("checking 6")
             updated_history = chat_store.json()
@@ -2419,13 +2748,15 @@ def chatbot():
             "created_time": datetime.datetime.utcnow()
         }
         db.get_collection('LLM_Tokens').update_one({'userId': userId,'mode': mode, 'collection': collection_name}, {"$set": token_data}, upsert=True)
-        print (response)
+        # print (response)
         outputData = None
         if (type == 'context'):
             outputData={'type':'str','status':1,'response':str(response) , 'response_type': 'output'}
         else :
             if (len(response) == 0):
                 outputData={'type':'str','status':1,'response':"No data found for the query. Please try again with different criteria or provide additional details to help us locate the information you're looking for.", 'response_type': 'output'}
+            elif(isinstance(response,dict) and response):
+                outputData={'type':'str','response':response , 'response_type': 'output'}
             elif (isinstance(response,str) and len(response)>0):
                 outputData={'type':'str','status':0,'response':response , 'response_type': 'output'}
             else:
@@ -2739,6 +3070,542 @@ def update_order_status():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+@app.route('/chatbot/nudgeCreate',methods=['GET', 'POST'])
+def NudegGeneration():
+    # sem.acquire()
+    print('using this api nudge fileGeneration')
+    try:
+        data=request.json
+        input =data['input']
+        from bson import ObjectId
+     
+
+        import pytz
+        mongodb_uri = config['stageDbLink']
+        database_name = 'aiqod-staging'
+        client = MongoClient(mongodb_uri)
+        db = client[database_name]
+        user_id = input['userId']
+        from datetime import datetime
+
+
+        # print (len(dml_docs),len(rcpa_docs),len(reporting_docs))
+        
+        model = genai.GenerativeModel('models/gemini-2.5-flash-preview-04-17')
+        
+        SAMPLE_SIZE = 20
+        PREDEFINED_CATEGORIES = ["Remainder/Follow-up Nudges", "Product Selling Strategy", "Doctor Visit", "Sales","Performance"]
+        def format_json_llm(text):
+            """
+            Extracts and repairs JSON from a text string, typically LLM output.
+            """
+            if not text:
+                print("Error: Received empty text to parse.")
+                return None
+
+            regex_pattern = r'```json(.*?)```'
+            match = re.findall(regex_pattern, text, flags=re.S)
+
+            json_str_to_parse = ""
+            if match:
+                json_str_to_parse = match[0].strip()
+            else:
+                # If no triple backticks, assume the whole text might be JSON
+                # This is a common fallback if the LLM forgets the backticks
+                json_str_to_parse = text.strip()
+
+            if not json_str_to_parse:
+                print("Error: No JSON content found after regex/stripping.")
+                return None
+
+            try:
+                # Use a robust JSON repair tool
+                repaired_json_str = repair_json(json_str_to_parse)
+                return json.loads(repaired_json_str)
+            except json.JSONDecodeError as e:
+                print(f"Error decoding JSON: {e}")
+                print(f"Problematic JSON string: {json_str_to_parse}")
+                return None
+            except Exception as e:
+                print(f"An unexpected error occurred during JSON parsing: {e}")
+                return None
+
+        def get_ist_timestamp():
+            """Returns the current time in IST, formatted."""
+            ist = pytz.timezone('Asia/Kolkata')
+            now_ist = datetime.now(ist)
+            return now_ist.strftime("%Y-%m-%d %I:%M %p (%Z)")
+
+        def generate_and_store_nudges(user_id_str, db_conn, llm_model):
+            """
+            Fetches data, generates nudges using an LLM, and stores them in MongoDB.
+            """
+            try:
+                user_object_id = ObjectId(user_id_str)
+            except Exception as e:
+                print(f"Error: Invalid user_id format '{user_id_str}'. Details: {e}")
+                return
+
+            # Fetch data
+            try:
+                dml_docs = list(db_conn.get_collection('DML').aggregate([
+                    {'$match': {'userId': {'$in': [user_object_id]}}},
+                    {'$project':{'fees':0,'followUpFees':0}},
+                    {'$sample': {'size': SAMPLE_SIZE}}
+                ]))
+                rcpa_docs = list(db_conn.get_collection('RCPA').aggregate([
+                    {'$match': {'userId': {'$in': [user_object_id]}}},
+                    {'$project': {"compQuantity": 0, "compRxn": 0, "compValue": 0}},
+                    {'$sample': {'size': SAMPLE_SIZE}}
+                ]))
+                reporting_docs = list(db_conn.get_collection('reporting').aggregate([
+                    {'$match': {'userId': {'$in': [user_object_id]}}},
+                    {'$sample': {'size': SAMPLE_SIZE}}
+                ]))
+            except Exception as e:
+                print(f"Error fetching data from MongoDB for user {user_id_str}. Details: {e}")
+                return
+
+            if not any([dml_docs, rcpa_docs, reporting_docs]):
+                print(f"No data found for user {user_id_str}. Skipping nudge generation.")
+                # Optionally, you could store a specific "no data" nudge or log this.
+                return
+
+            # Construct the prompt
+            prompt = f"""You are a smart field activity assistant designed to generate professional recommendations for medical reps based on structured field performance data and competitor insights.
+        Your goal is to provide concise, friendly, and actionable recommendations or insights with a business tone that is still conversational.
+        Crucially, AVOID GENERIC NUDGES. All recommendations must be supported by data proof from the provided information.
+        Fee details, if mentioned, should be in rupees. Do not mention the data source (e.g., "RCPA data shows...") in your output.
+
+        Given the following data:
+        DML data (Doctor and activity details): {dml_docs}
+        RCPA data (Retail Chemist Prescription Audit - product prescriptions, competitor info): {rcpa_docs}
+        Reporting data (Employee activities, call reports, locations): {reporting_docs}
+
+        Based on this data, generate nudges considering these scenarios:
+        - Daily call performance: Comment on meeting benchmarks and provide motivation.
+        - Competitor prescriptions: Recommend visiting the doctor to reinforce your brand.
+        - Top prescribed products: Suggest promoting those brands in upcoming calls.
+
+        Recommendations Category expected:
+        {PREDEFINED_CATEGORIES}
+
+        Here are some examples of the kind of nudges, their categories, tone, and actionability. Use these as a reference:
+
+        **Example Nudges for Reference:**
+
+        *   **Category: Remainder/Follow-up Nudges**
+            *   "You met Dr. Ashish P 10 days ago. Plan a follow-up today at 12 PM, your usual meeting time."
+            *   "You may miss your monthly call average by 1 call. Please consider meeting Dr. [Doctor's Name], who hasn't been visited this month, to catch up."
+            *   "You haven't met Dr. [Doctor's Name] for 25 days. Your work plan indicates you'll be in their area today/soon. Would you like to schedule a call?"
+            *   "Since you're in the [Area Name] area, consider a quick visit to Chemist [Chemist's Name]."
+            *   "Dr. [Doctor's Name] had asked for the Advanced Report on [Topic/Product]. You're scheduled to meet them next week. Ensure you have the report ready by tomorrow."
+
+        *   **Category: Doctor Visit**
+            *   "Visits to Cat 4,5,6 HCPs like Dr. [HCP Name 1] and Dr. [HCP Name 2] are pending. Please schedule these meetings soon to maintain coverage."
+            *   "You're meeting Dr. Ranjeet M today. Quick reminder: your last interaction on [Date] focused on [Topic/Product discussed]."
+            *   "Your mirroring partner, [Partner's Name], met Dr. Murali yesterday. To avoid visit redundancy, you might want to reschedule your upcoming visit or focus on a different agenda."
+
+        *   **Category: Performance**
+            *   "Great work! You've achieved 80% (₹160,000) of your monthly target of ₹200,000. Let's focus on promoting Brand Glaritus with Dr. [Doctor Name 1] and Dr. [Doctor Name 2] to close the remaining ₹40,000 gap."
+            *   "Your daily call average is currently 9, while the Wockhardt team average is 11. Let's aim for at least 2 more impactful calls today!"
+            *   "Brand Sitawok sales are [Amount/Percentage] behind target this month. Let's boost this by highlighting its [Key Feature/Benefit] during your calls with [Doctor Specialty] specialists."
+            *   "Excellent! If you can achieve an additional ₹[Billing Shortfall] in billing, totaling ₹[Target Billing Amount] by month-end, you'll earn a bonus of ₹[Bonus Amount]."
+            *   "You're currently projected to miss your quarterly incentive by [Percentage]% (approx. ₹[Amount]). Reaching a sales figure of ₹[Target Revenue] this month is key to securing it."
+            *   "Order booking is ₹[Amount] short of your typical monthly figures. Reviewing pending orders with [Stockist Name 1] and [Stockist Name 2] could help close this."
+            *   "Your average in-clinic time per call has reduced by [Percentage/Minutes] this month. Check your day-wise report to ensure quality interaction time."
+            *   "Your daily compliance was [Percentage]% yesterday, with a missed visit to Chemist [Chemist's Name]. Let's ensure all planned interactions are covered today."
+
+        *   **Category: Sales Strategy**
+            *   "Prescriptions for Brand [Product Name] from Dr. Mohit A dropped by 20% last month. During your next visit, try to understand the reasons and reinforce its efficacy in [Specific Indication], perhaps sharing the latest study results."
+            *   "Dr. Avijit's prescriptions for Brand [Product Name] increased by [Percentage/Number] after the recent CME on [Topic]. Consider inviting him to the upcoming [Event Type] webinar to build on this positive momentum."
+            *   "Data shows less than [Target Time/Percentage of Calls] was spent detailing Brand X last week, and its sales show a slight dip. For your next few calls with [Doctor Profile], try leading with Brand X and highlighting its unique benefits like [Benefit 1] and [Benefit 2]."
+            *   "The monthly incentive for Brand [Brand Name] (Target: [Target Amount/Units]) is currently at [Current Achievement]. Let's focus on promoting it by emphasizing its [Unique Selling Proposition] to doctors like Dr. [Doctor A] and Dr. [Doctor B] who have shown past interest."
+
+        *   **Category: Payment Collection**
+            *   "Stockist Galaxystar Pharma has pending payments of ₹[Amount], overdue by [Number] days. Please prioritize a follow-up call or visit today."
+
+        *   **Category: Reminders & Admin Tasks**
+            *   "Your DCR for [Date/Period] was saved 2 days ago and is due for submission. It's likely to get locked tomorrow. Would you like to review and submit it now?"
+            *   "Marketing has shared a ‘Doctor Survey for Brand X’. Please ensure this is completed with key doctors like Dr. [Example Doctor 1] and Dr. [Example Doctor 2] within the next 2 days."
+            *   "Just a heads-up: your monthly expense report for [Month] has been processed. To ensure timely reimbursement next month, please remember to submit your report by the 4th."
+
+        (Note: When generating, use specific data from the input for placeholders like [Doctor's Name], [Amount], [Brand Name], etc. If specific data for a placeholder isn't available but the scenario is relevant, craft the nudge to prompt general action or awareness.)
+
+        Respond **only** with the recommendation text, no other headers or explanations.
+        Generate the recommendations in different format. Be creative.
+        Populate the output in the following JSON format:
+        ```json
+        {{
+        "output": [
+            {{
+            "CategoryName1": ["recommendation1_for_category1", "recommendation2_for_category1"]
+            }}
+        ]
+        }}```
+        """
+            # Generate content using the LLM
+            try:
+                result = model.generate_content(prompt, generation_config={"temperature": 1.5}) # temp 1.0 is fine
+                llm_response_text = result.text
+            except Exception as e:
+                print(f"Error calling LLM model: {e}")
+                return
+
+            if not llm_response_text:
+                print("LLM returned an empty response.")
+                return
+
+            final_output_json = format_json_llm(llm_response_text)
+
+            if not final_output_json:
+                print("Failed to parse LLM response into JSON.")
+                return
+
+            # Validate the structure of final_output_json
+            if not isinstance(final_output_json, dict) or 'output' not in final_output_json:
+                print(f"LLM JSON does not contain 'output' key. Received: {final_output_json}")
+                return
+            if not isinstance(final_output_json['output'], list) or not final_output_json['output']:
+                print(f"LLM JSON 'output' is not a non-empty list. Received: {final_output_json['output']}")
+                return
+
+            # Process and store nudges
+            formatted_time = get_ist_timestamp()
+            nudges_collection = db.get_collection('nudgesQuestions')
+            nudges_inserted_count = 0
+
+            # The LLM is expected to return a list containing one dictionary of categories.
+            # Example: {"output": [{"Sales": [...], "Doctor Visit": [...]}]}
+            for output_item in final_output_json['output']: # output_item is a dict like {"Sales": [...]}
+                if not isinstance(output_item, dict):
+                    print(f"Warning: Expected a dictionary within the 'output' list, got {type(output_item)}. Skipping item: {output_item}")
+                    continue
+
+                for category_name, recommendations in output_item.items():
+                    if not isinstance(recommendations, list):
+                        print(f"Warning: Expected a list of recommendations for category '{category_name}', got {type(recommendations)}. Skipping category.")
+                        continue
+
+                    for recommendation_text in recommendations:
+                        if not isinstance(recommendation_text, str):
+                            print(f"Warning: Expected a string for recommendation in category '{category_name}', got {type(recommendation_text)}. Skipping recommendation.")
+                            continue
+                        
+                        # Optional: Validate category_name against PREDEFINED_CATEGORIES if strict adherence is needed
+                        # if category_name not in PREDEFINED_CATEGORIES:
+                        #     print(f"Warning: LLM generated an unknown category '{category_name}'. Storing anyway.")
+
+                        nudge_doc = {
+                            "userId": ObjectId(user_id),
+                            "response": f'{recommendation_text}\nGenerated on {formatted_time}',
+                            "category": category_name, # The actual category name from LLM
+                            "isDeleted": False,
+                            "createdAt": datetime.utcnow() # Good practice to have a creation timestamp
+                        }
+                        try:
+                            nudges_collection.insert_one(nudge_doc)
+                            nudges_inserted_count += 1
+                        except Exception as e:
+                            print(f"Error inserting nudge into MongoDB: {e}. Nudge: {nudge_doc}")
+
+            print(f"Successfully inserted {nudges_inserted_count} nudges for user {user_id}.")
+            return final_output_json
+
+        final_output_json = generate_and_store_nudges(user_id,db,model)
+        
+       
+        try:
+            outputData = {'output':final_output_json,'statusCode':'200'}
+        except Exception as e:
+            print (e)
+            outputData={'output':'Please upload valid File' , 'statusCode': '400'}
+            
+
+        
+
+        
+        #outputData['Execution_time'] = "{:.6f}".format(execution_time)
+        #torch.cuda.empty_cache()
+        #outputData={'mlOutput':'done' , 'statusCode': '200'}
+        taskData = { 'projectId': data['projectId'], 'botId': data['botId'], 'eventId': input['eventId'], 'status': 'Complete', 'outputParameters': outputData, 'iterationId': data['iterationId'] }
+        head = {'authorization': data['token'], 'content-type': "application/json"}
+        print('response ------------------->',taskData)
+
+        '''if 'requestURL' in config_value_json:
+            response = requests.request("POST", config_value_json['requestURL'], json=taskData, headers=head)
+        else:'''
+        response = requests.request("POST", config['requestURL'], json=taskData, headers=head)
+
+        return json.dumps(outputData)
+
+    except Exception as e:
+        # sem.release()
+        print(e)
+        outputData={'output':str(e), 'statusCode': '202'}
+        taskData = { 'projectId': data['projectId'], 'botId': data['botId'], 'eventId': input['eventId'], 'status': 'Complete', 'outputParameters': outputData, 'iterationId': data['iterationId'] }
+        head = {'authorization': data['token'], 'content-type': "application/json"}
+        response = requests.request("POST", config['requestURL'],verify=False, json=taskData, headers=head)
+
+        return json.dumps(outputData)
+
+@app.route('/chatbot/nudgeCreateCategorywise',methods=['GET', 'POST'])
+def NudegGenerationCategoryWise():
+    # sem.acquire()
+    print('using this api nudge fileGeneration')
+    try:
+        data=request.json
+        input =data['input']
+        from bson import ObjectId
+     
+
+        import pytz
+        mongodb_uri = config['stageDbLink']
+        database_name = 'aiqod-staging'
+        client = MongoClient(mongodb_uri)
+        db = client[database_name]
+        user_id = input['userId']
+        
+        from datetime import datetime
+
+
+        # print (len(dml_docs),len(rcpa_docs),len(reporting_docs))
+        
+        model = genai.GenerativeModel('models/gemini-2.5-flash-preview-04-17')
+        
+        SAMPLE_SIZE = 20
+        PREDEFINED_CATEGORIES = input['category']
+        def format_json_llm(text):
+            """
+            Extracts and repairs JSON from a text string, typically LLM output.
+            """
+            if not text:
+                print("Error: Received empty text to parse.")
+                return None
+
+            regex_pattern = r'```json(.*?)```'
+            match = re.findall(regex_pattern, text, flags=re.S)
+
+            json_str_to_parse = ""
+            if match:
+                json_str_to_parse = match[0].strip()
+            else:
+                # If no triple backticks, assume the whole text might be JSON
+                # This is a common fallback if the LLM forgets the backticks
+                json_str_to_parse = text.strip()
+
+            if not json_str_to_parse:
+                print("Error: No JSON content found after regex/stripping.")
+                return None
+
+            try:
+                # Use a robust JSON repair tool
+                repaired_json_str = repair_json(json_str_to_parse)
+                return json.loads(repaired_json_str)
+            except json.JSONDecodeError as e:
+                print(f"Error decoding JSON: {e}")
+                print(f"Problematic JSON string: {json_str_to_parse}")
+                return None
+            except Exception as e:
+                print(f"An unexpected error occurred during JSON parsing: {e}")
+                return None
+
+        def get_ist_timestamp():
+            """Returns the current time in IST, formatted."""
+            ist = pytz.timezone('Asia/Kolkata')
+            now_ist = datetime.now(ist)
+            return now_ist.strftime("%Y-%m-%d %I:%M %p (%Z)")
+
+        def generate_and_store_nudges(user_id_str, db_conn, llm_model):
+            """
+            Fetches data, generates nudges using an LLM, and stores them in MongoDB.
+            """
+            try:
+                user_object_id = ObjectId(user_id_str)
+            except Exception as e:
+                print(f"Error: Invalid user_id format '{user_id_str}'. Details: {e}")
+                return
+
+            # Fetch data
+            try:
+                dml_docs = list(db_conn.get_collection('DML').aggregate([
+                    {'$match': {'userId': {'$in': [user_object_id]}}},
+                    {'$project':{'fees':0,'followUpFees':0}},
+                    {'$sample': {'size': SAMPLE_SIZE}}
+                ]))
+                rcpa_docs = list(db_conn.get_collection('RCPA').aggregate([
+                    {'$match': {'userId': {'$in': [user_object_id]}}},
+                    {'$project': {"compQuantity": 0, "compRxn": 0, "compValue": 0}},
+                    {'$sample': {'size': SAMPLE_SIZE}}
+                ]))
+                reporting_docs = list(db_conn.get_collection('reporting').aggregate([
+                    {'$match': {'userId': {'$in': [user_object_id]}}},
+                    {'$sample': {'size': SAMPLE_SIZE}}
+                ]))
+            except Exception as e:
+                print(f"Error fetching data from MongoDB for user {user_id_str}. Details: {e}")
+                return
+
+            if not any([dml_docs, rcpa_docs, reporting_docs]):
+                print(f"No data found for user {user_id_str}. Skipping nudge generation.")
+                # Optionally, you could store a specific "no data" nudge or log this.
+                return
+
+            # Construct the prompt
+            prompt = f"""You are a smart field activity assistant designed to generate professional recommendations for medical reps based on structured field performance data and competitor insights.
+        Your goal is to provide concise, friendly, and actionable recommendations or insights with a business tone that is still conversational.
+        Crucially, AVOID GENERIC NUDGES. All recommendations must be supported by data proof from the provided information.
+        Fee details, if mentioned, should be in rupees. Do not mention the data source (e.g., "RCPA data shows...") in your output.
+
+        Given the following data:
+        DML data (Doctor and activity details): {dml_docs}
+        RCPA data (Retail Chemist Prescription Audit - product prescriptions, competitor info): {rcpa_docs}
+        Reporting data (Employee activities, call reports, locations): {reporting_docs}
+
+        Based on this data, generate nudges considering these scenarios:
+        - Daily call performance: Comment on meeting benchmarks and provide motivation.
+        - Competitor prescriptions: Recommend visiting the doctor to reinforce your brand.
+        - Top prescribed products: Suggest promoting those brands in upcoming calls.
+
+        Category expected:
+        {PREDEFINED_CATEGORIES}
+
+        Here are some examples of the kind of nudges, their categories, tone, and actionability. Use these as a reference:
+
+        **Example Nudges for Reference:**
+
+        *   **Category: Remainder/Follow-up Nudges**
+            *   "You met Dr. Ashish P 10 days ago. Plan a follow-up today at 12 PM, your usual meeting time."
+            *   "You may miss your monthly call average by 1 call. Please consider meeting Dr. [Doctor's Name], who hasn't been visited this month, to catch up."
+            *   "You haven't met Dr. [Doctor's Name] for 25 days. Your work plan indicates you'll be in their area today/soon. Would you like to schedule a call?"
+            *   "Since you're in the [Area Name] area, consider a quick visit to Chemist [Chemist's Name]."
+            *   "Dr. [Doctor's Name] had asked for the Advanced Report on [Topic/Product]. You're scheduled to meet them next week. Ensure you have the report ready by tomorrow."
+
+        *   **Category: Doctor Visit**
+            *   "Visits to Cat 4,5,6 HCPs like Dr. [HCP Name 1] and Dr. [HCP Name 2] are pending. Please schedule these meetings soon to maintain coverage."
+            *   "You're meeting Dr. Ranjeet M today. Quick reminder: your last interaction on [Date] focused on [Topic/Product discussed]."
+            *   "Your mirroring partner, [Partner's Name], met Dr. Murali yesterday. To avoid visit redundancy, you might want to reschedule your upcoming visit or focus on a different agenda."
+
+        *   **Category: Performance**
+            *   "Great work! You've achieved 80% (₹160,000) of your monthly target of ₹200,000. Let's focus on promoting Brand Glaritus with Dr. [Doctor Name 1] and Dr. [Doctor Name 2] to close the remaining ₹40,000 gap."
+            *   "Your daily call average is currently 9, while the Wockhardt team average is 11. Let's aim for at least 2 more impactful calls today!"
+            *   "Brand Sitawok sales are [Amount/Percentage] behind target this month. Let's boost this by highlighting its [Key Feature/Benefit] during your calls with [Doctor Specialty] specialists."
+            *   "Excellent! If you can achieve an additional ₹[Billing Shortfall] in billing, totaling ₹[Target Billing Amount] by month-end, you'll earn a bonus of ₹[Bonus Amount]."
+            *   "You're currently projected to miss your quarterly incentive by [Percentage]% (approx. ₹[Amount]). Reaching a sales figure of ₹[Target Revenue] this month is key to securing it."
+            *   "Order booking is ₹[Amount] short of your typical monthly figures. Reviewing pending orders with [Stockist Name 1] and [Stockist Name 2] could help close this."
+            *   "Your average in-clinic time per call has reduced by [Percentage/Minutes] this month. Check your day-wise report to ensure quality interaction time."
+            *   "Your daily compliance was [Percentage]% yesterday, with a missed visit to Chemist [Chemist's Name]. Let's ensure all planned interactions are covered today."
+
+        *   **Category: Sales Strategy**
+            *   "Prescriptions for Brand [Product Name] from Dr. Mohit A dropped by 20% last month. During your next visit, try to understand the reasons and reinforce its efficacy in [Specific Indication], perhaps sharing the latest study results."
+            *   "Dr. Avijit's prescriptions for Brand [Product Name] increased by [Percentage/Number] after the recent CME on [Topic]. Consider inviting him to the upcoming [Event Type] webinar to build on this positive momentum."
+            *   "Data shows less than [Target Time/Percentage of Calls] was spent detailing Brand X last week, and its sales show a slight dip. For your next few calls with [Doctor Profile], try leading with Brand X and highlighting its unique benefits like [Benefit 1] and [Benefit 2]."
+            *   "The monthly incentive for Brand [Brand Name] (Target: [Target Amount/Units]) is currently at [Current Achievement]. Let's focus on promoting it by emphasizing its [Unique Selling Proposition] to doctors like Dr. [Doctor A] and Dr. [Doctor B] who have shown past interest."
+
+        *   **Category: Payment Collection**
+            *   "Stockist Galaxystar Pharma has pending payments of ₹[Amount], overdue by [Number] days. Please prioritize a follow-up call or visit today."
+
+        *   **Category: Reminders & Admin Tasks**
+            *   "Your DCR for [Date/Period] was saved 2 days ago and is due for submission. It's likely to get locked tomorrow. Would you like to review and submit it now?"
+            *   "Marketing has shared a ‘Doctor Survey for Brand X’. Please ensure this is completed with key doctors like Dr. [Example Doctor 1] and Dr. [Example Doctor 2] within the next 2 days."
+            *   "Just a heads-up: your monthly expense report for [Month] has been processed. To ensure timely reimbursement next month, please remember to submit your report by the 4th."
+
+        (Note: When generating, use specific data from the input for placeholders like [Doctor's Name], [Amount], [Brand Name], etc. If specific data for a placeholder isn't available but the scenario is relevant, craft the nudge to prompt general action or awareness.)
+
+        Respond **only** with the recommendation text, no other headers or explanations.
+        Generate the recommendations in different format. Be creative.
+        Populate the output in the following JSON format:
+        ```json
+        {{
+        "output": 
+            {{
+            {PREDEFINED_CATEGORIES}: ["recommendation1_for_category1", "recommendation2_for_category1"]
+            }}
+        
+        }}```
+        """
+            # Generate content using the LLM
+            try:
+                result = model.generate_content(prompt, generation_config={"temperature": 1.5}) # temp 1.0 is fine
+                llm_response_text = result.text
+            except Exception as e:
+                print(f"Error calling LLM model: {e}")
+                return
+
+            if not llm_response_text:
+                print("LLM returned an empty response.")
+                return
+
+            final_output_json = format_json_llm(llm_response_text)
+
+            if not final_output_json:
+                print("Failed to parse LLM response into JSON.")
+                return
+
+            # Validate the structure of final_output_json
+            if not isinstance(final_output_json, dict) or 'output' not in final_output_json:
+                print(f"LLM JSON does not contain 'output' key. Received: {final_output_json}")
+                return
+            
+            # Process and store nudges
+            formatted_time = get_ist_timestamp()
+            nudges_collection = db.get_collection('nudgesQuestions')
+            nudges_inserted_count = 0
+
+            # The LLM is expected to return a list containing one dictionary of categories.
+            # Example: {"output": [{"Sales": [...], "Doctor Visit": [...]}]}
+            
+
+            for category_name, recommendations in final_output_json['output'].items():
+                if not isinstance(recommendations, list):
+                    print(f"Warning: Expected a list of recommendations for category '{category_name}', got {type(recommendations)}. Skipping category.")
+                    continue
+
+                for recommendation_text in recommendations:
+                    if not isinstance(recommendation_text, str):
+                        print(f"Warning: Expected a string for recommendation in category '{category_name}', got {type(recommendation_text)}. Skipping recommendation.")
+                        continue
+                    
+                    # Optional: Validate category_name against PREDEFINED_CATEGORIES if strict adherence is needed
+                    # if category_name not in PREDEFINED_CATEGORIES:
+                    #     print(f"Warning: LLM generated an unknown category '{category_name}'. Storing anyway.")
+
+                    nudge_doc = {
+                        "userId": ObjectId(user_id),
+                        "response": f'{recommendation_text}\nGenerated on {formatted_time}',
+                        "category": category_name, # The actual category name from LLM
+                        "isDeleted": False,
+                        "createdAt": datetime.utcnow() # Good practice to have a creation timestamp
+                    }
+                    try:
+                        nudges_collection.insert_one(nudge_doc)
+                        nudges_inserted_count += 1
+                    except Exception as e:
+                        print(f"Error inserting nudge into MongoDB: {e}. Nudge: {nudge_doc}")
+
+            print(f"Successfully inserted {nudges_inserted_count} nudges for user {user_id}.")
+            return final_output_json
+
+        final_output_json = generate_and_store_nudges(user_id,db,model)
+        
+       
+        try:
+            outputData = {'output':final_output_json,'statusCode':'200'}
+        except Exception as e:
+            print (e)
+            outputData={'output':'Please upload valid File' , 'statusCode': '400'}
+
+
+        return json.dumps(outputData)
+
+    except Exception as e:
+        # sem.release()
+        print(e)
+        outputData={'output':str(e), 'statusCode': '202'}
+        return json.dumps(outputData)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

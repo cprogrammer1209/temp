@@ -10,7 +10,9 @@ async function searchBuses(source, destination, operator = null) {
   await page.goto('https://tickets.paytm.com/bus/');
   await page.getByRole('textbox', { name: 'From' }).click();
   await page.getByRole('textbox', { name: 'From' }).fill('pune');
-  await page.getByText('PuneMaharashtra', { exact: true }).click();
+  
+  await page.waitForSelector('#source-section .dcrjM');
+await page.click('#source-section .dcrjM >> nth=0');
   await page.getByRole('textbox', { name: 'To' }).click();
   await page.getByRole('textbox', { name: 'To' }).fill('nagpur');
   await page.getByText('NagpurMaharashtra', { exact: true }).click();

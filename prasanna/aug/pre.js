@@ -1,0 +1,1 @@
+"{   \"mongourl\":\"mongodb://pprod:prOd121233@192.168.28.131:27017/prod-DB\",   \"dbname\":\"prod-DB\",   \"apirUrl\":\"https://product.aiqod.com/\" }"

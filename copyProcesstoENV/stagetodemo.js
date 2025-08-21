@@ -13,16 +13,18 @@ async function main() {
   // const uriSrc = "mongodb://debug-nodelete:ThsnYU@172.168.1.232:27017/?authSource=debug-db";
   // mongodb://domo-1:domonodel@172.168.1.199:27017/?authSource=demo
   const uriSrc =
-    // "mongodb://domo-1:domonodel@172.168.1.199:27017/?authSource=demo";
-    "mongodb://staging-SU:insjWTERY@server.gibots.com:2400/?authSource=aiqod-staging";  //prod
+  // "mongodb://dev-SU:mdhdiIQTS@172.168.1.199:27017/?authSource=aiqod-dev";
+    "mongodb://domo-1:domonodel@172.168.1.199:27017/?authSource=demo";
+    // "mongodb://staging-SU:insjWTERY@server.gibots.com:2400/?authSource=aiqod-staging";  //prod
 
   //destination db
   // const uriDest = "mongodb://dev-SU:mdhdiIQTS@172.168.1.199:27017/?authSource=aiqod-dev";
   // const uriDest = "mongodb://dev-SU:mdhdiIQTS@172.168.1.199:27017/?authSource=aiqod-dev";
   // const uriDest = "mongodb://staging-SU:insjWTERY@server.gibots.com:2400/?authSource=aiqod-staging";
   const uriDest =
-  "mongodb://domo-1:domonodel@172.168.1.199:27017/?authSource=demo"
-    // "mongodb://pprod:prOd121233@172.168.0.146:27017/?authSource=prod-DB";
+  "mongodb://dev-SU:mdhdiIQTS@172.168.1.199:27017/?authSource=aiqod-dev";
+  // "mongodb://domo-1:domonodel@172.168.1.199:27017/?authSource=demo"
+    // "mongodb://pprod:prOd121233@103.58.164.118:27017/prod-DB";
     // "mongodb://staging-SU:insjWTERY@server.gibots.com:2400/?authSource=aiqod-staging";
 
   //uriSrc
@@ -35,13 +37,13 @@ async function main() {
     // Connect to the MongoDB cluster
     await client1.connect();
 
-    db1 = await client1.db("aiqod-staging");
+    db1 = await client1.db("demo");
 
     await client2.connect();
 
     // db2 = await client2.db("prod-DB");
-    // db2 = await client2.db("prod-DB");
-    db2 = await client2.db("demo");
+    db2 = await client2.db("aiqod-dev");
+    // db2 = await client2.db("demo");
 
     await copyDB();
   } catch (e) {
@@ -62,9 +64,9 @@ let routesMapping = {
 
 //staging path for data ingestion bot : {'requestURL':'http://172.168.1.19:7895/gibots-orch/orchestrator/botsiowrite','acknowledgeURL':'http://172.168.1.19:7895/gibots-orch/orchestrator/acknowledge', 'mountpath':'/home/ubuntu/new_ssd/publicfolder/liberty-fs/handbook/'}
 
-let addInfos = ["handbookData","My Knowledge Hub","Handbook Approval Form", "My Knowledge Hub File","Handbook Documents Approval Form",];
+let addInfos = [];
 
-let processes = [];
+let processes = ["Import  API","Export  API","Royal Tech Smart AP Extractions"];
 
 let reports = []
 

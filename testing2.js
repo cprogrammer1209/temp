@@ -1,0 +1,42 @@
+[
+  {
+    $match: {
+      $or: [
+        { orgId: "662b515be421fedde2247c47" },
+        { subscriberId: "5beaabd82ac6767c86dc311c" },
+      ],
+    },
+  },
+  {
+    $project: {
+      IEC: { $ifNull: ["$IEC", ""] },
+      CompanyID: { $ifNull: ["$CompanyID", ""] },
+      UserID: { $ifNull: ["$UserID", ""] },
+      Branch: { $ifNull: ["$Branch", ""] },
+      JobNo: { $ifNull: ["$JobNo", ""] },
+      JobType: { $ifNull: ["$JobType", ""] },
+      WorkingPeriod: { $ifNull: ["$WorkingPeriod", ""] },
+      PageCount: { $ifNull: ["$PageCount", ""] },
+      PdfCount: { $ifNull: ["$PdfCount", ""] },
+      JobStatus: { $ifNull: ["$JobStatus", ""] },
+      FileName: { $ifNull: ["$FileName", ""] },
+      InvoiceStartTime: { $ifNull: ["$InvoiceStartTime", ""] },
+      InvoiceResponseTime: { $ifNull: ["$InvoiceResponseTime", ""] },
+      Status: { $ifNull: ["$Status", ""] },
+      ImporterName: { $ifNull: ["$ImporterName", ""] },
+      ImporterAdd1: { $ifNull: ["$ImporterAdd1", ""] },
+      ImporterAdd2: { $ifNull: ["$ImporterAdd2", ""] },
+      ImporterAdd3: { $ifNull: ["$ImporterAdd3", ""] },
+      ImporterAdd4: { $ifNull: ["$ImporterAdd4", ""] },
+      CountryOfShipment: { $ifNull: ["$CountryOfShipment", ""] },
+      CountryOfOrigin: { $ifNull: ["$CountryOfOrigin", ""] },
+      PortOfOrgin: { $ifNull: ["$PortOfOrgin", ""] },
+      PortOfShipment: { $ifNull: ["$PortOfShipment", ""] },
+      CustomHouse: { $ifNull: ["$CustomHouse", ""] },
+      TotalCarton: { $ifNull: ["$TotalCarton", ""] },
+      TotalGrossWeight: { $ifNull: ["$TotalGrossWeight", ""] },
+      TotalNetWeight: { $ifNull: ["$TotalNetWeight", ""] },
+    },
+  },
+  { $limit: 10 },
+]
